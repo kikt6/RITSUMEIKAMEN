@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>立命館仮面浪人サークル | 連絡ページ</title>
+    <link rel="icon" type="image/png" href="./assets/ritsumeikan-kamen-logo.png" />
+    <link rel="apple-touch-icon" href="./assets/ritsumeikan-kamen-logo.png" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <header class="hero">
+        <div class="hero__content">
+          <p class="eyebrow" id="siteName">立命館仮面浪人サークル</p>
+          <h1 id="pageTitle">入会者向け連絡ページ</h1>
+          <p class="lead" id="pageLead"></p>
+          <div class="hero__meta">
+            <span id="updatedAt"></span>
+            <a class="primary-link" id="primaryLink" href="#">相談フォーム</a>
+          </div>
+        </div>
+        <div class="hero__visual" aria-hidden="true">
+          <img class="hero__logo" src="./assets/ritsumeikan-kamen-logo.png" alt="" />
+        </div>
+      </header>
+
+      <section class="section notice-section">
+        <div class="section__header">
+          <h2>お知らせ</h2>
+          <span id="noticeCount"></span>
+        </div>
+        <div class="notice-grid" id="notices"></div>
+      </section>
+
+      <section class="alert" id="importantNotice" aria-label="重要なお知らせ"></section>
+
+      <section class="section mock-exam" id="mockExam" aria-label="次回模試日程"></section>
+
+      <section class="section library-hours" aria-label="立命館大学図書館の開館時間">
+        <div class="section__header section__header--stack">
+          <div>
+            <h2 id="libraryTitle">立命館大学 図書館開館時間</h2>
+            <p id="libraryLead"></p>
+          </div>
+          <a class="source-link" id="librarySourceLink" href="https://www.ritsumei.ac.jp/lib/a03/010/" target="_blank" rel="noopener noreferrer">詳しく見る</a>
+        </div>
+        <div class="month-controls" id="libraryMonthControls" aria-label="表示月の切り替え"></div>
+        <div class="library-grid" id="libraryCalendars"></div>
+      </section>
+
+      <section class="section coop-hours" aria-label="立命館生協・学食の営業時間">
+        <div class="section__header section__header--stack">
+          <div>
+            <h2 id="coopTitle">学食・生協営業時間</h2>
+            <p id="coopLead"></p>
+          </div>
+          <a class="source-link" id="coopSourceLink" href="https://www.ritsco-op.jp/schedule/schedule_202605.html" target="_blank" rel="noopener noreferrer">詳しく見る</a>
+        </div>
+        <p class="coop-range" id="coopRange"></p>
+        <div class="coop-table-wrap" id="coopHours"></div>
+      </section>
+    </main>
+
+    <script src="./content.js"></script>
+    <script src="./exam-schedule.js"></script>
+    <script src="./library-hours.js"></script>
+    <script src="./coop-hours.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
