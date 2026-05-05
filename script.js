@@ -326,6 +326,42 @@ function renderCoopHours() {
 
   table.append(tbody);
   root.append(table);
+
+  if (dayCount === 1) {
+    const cards = document.createElement("div");
+    cards.className = "coop-cards";
+
+    rows.forEach((row) => {
+      const key = toDateKey(days[0]);
+      const info = row.days.get(key);
+      const card = document.createElement("article");
+      card.className = `coop-card ${getCoopDayClass(info)}`;
+
+      const heading = document.createElement("div");
+      heading.className = "coop-card__heading";
+      const name = document.createElement("h3");
+      name.textContent = row.name;
+      const meta = document.createElement("span");
+      meta.textContent = [row.campus, row.building].filter(Boolean).join(" / ");
+      heading.append(name, meta);
+
+      const hours = document.createElement("p");
+      hours.className = "coop-card__hours";
+      hours.textContent = info ? simplifyCoopHours(info.hours) : "未掲載";
+
+      const detail = document.createElement("a");
+      detail.className = "detail-link";
+      detail.href = row.detailUrl || coopHours?.sourceUrl || "#";
+      detail.target = "_blank";
+      detail.rel = "noopener noreferrer";
+      detail.textContent = "詳しく見る";
+
+      card.append(heading, hours, detail);
+      cards.append(card);
+    });
+
+    root.append(cards);
+  }
 }
 
 function collectCoopRows(days) {

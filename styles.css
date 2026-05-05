@@ -578,6 +578,10 @@ h1 {
   line-height: 1.35;
 }
 
+.coop-cards {
+  display: none;
+}
+
 .quick-links,
 .notice-grid,
 .resource-grid,
@@ -763,6 +767,75 @@ h1 {
   .library-weekdays,
   .library-days {
     min-width: 560px;
+  }
+
+  .coop-table-wrap {
+    overflow-x: visible;
+    border: 0;
+    background: transparent;
+  }
+
+  .coop-table--today {
+    display: none;
+  }
+
+  .coop-cards {
+    display: grid;
+    gap: 10px;
+  }
+
+  .coop-card {
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 14px;
+    background: #fff;
+  }
+
+  .coop-card.is-open {
+    background: #f4fbf6;
+  }
+
+  .coop-card.is-special {
+    background: #fff8d8;
+  }
+
+  .coop-card.is-closed {
+    background: #fff0ed;
+  }
+
+  .coop-card__heading {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 12px;
+  }
+
+  .coop-card h3 {
+    margin-bottom: 0;
+    font-size: 0.98rem;
+    line-height: 1.45;
+  }
+
+  .coop-card__heading span {
+    flex-shrink: 0;
+    border-radius: 999px;
+    padding: 5px 8px;
+    background: var(--green-soft);
+    color: var(--green);
+    font-size: 0.74rem;
+    font-weight: 900;
+  }
+
+  .coop-card__hours {
+    margin: 10px 0 0;
+    color: var(--muted);
+    font-size: 0.9rem;
+    font-weight: 900;
+    line-height: 1.45;
+  }
+
+  .coop-card.is-closed .coop-card__hours {
+    color: var(--red);
   }
 
   .quick-links,
