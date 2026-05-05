@@ -7,7 +7,9 @@ const byId = (id) => document.getElementById(id);
 
 function setText(id, value) {
   const element = byId(id);
-  if (element) element.textContent = value || "";
+  if (!element) return;
+  element.textContent = value || "";
+  element.hidden = !value;
 }
 
 function setLink(element, item) {

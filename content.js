@@ -2,8 +2,8 @@
 // 文章は "..." の中を書き換え、項目を増やす時は { ... } をコピーして追加してください。
 window.siteContent = {
   siteName: "立命館仮面浪人サークル",
-  pageTitle: "入会者向け連絡ページ",
-  lead: "活動予定、お知らせ、教材リンク、相談先をまとめています。必要な情報だけ確認して、自分のペースで使ってください。",
+  pageTitle: "RITSUMEIKAMEN",
+  lead: "",
   updatedAt: "2026-05-06",
   primaryLink: {
     label: "相談フォーム",
