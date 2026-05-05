@@ -377,7 +377,9 @@ h1 {
 }
 
 .library-month {
+  overflow-x: auto;
   padding: 12px 14px 14px;
+  -webkit-overflow-scrolling: touch;
 }
 
 .library-weekdays,
@@ -733,6 +735,11 @@ h1 {
 
   .section__header--stack {
     flex-direction: column;
+  }
+
+  .library-weekdays,
+  .library-days {
+    min-width: 560px;
   }
 
   .quick-links,

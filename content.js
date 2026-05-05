@@ -9,11 +9,6 @@ window.siteContent = {
     label: "相談フォーム",
     url: "#",
   },
-  importantNotice: {
-    label: "重要",
-    title: "次回ミーティングの出欠を入力してください",
-    body: "参加できない場合も、相談したいことがあればフォームに残しておいてください。",
-  },
   mockExam: {
     title: "次回模試日程",
     lead: "模擬試験PDFの一覧から、今日から2か月以内に入った未実施の模試だけを自動表示します。",

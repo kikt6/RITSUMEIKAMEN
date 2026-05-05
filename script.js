@@ -531,7 +531,6 @@ if (primaryLink && content.primaryLink) {
   setLink(primaryLink, content.primaryLink);
 }
 
-renderImportantNotice();
 renderMockExam();
 renderLibraryCalendars();
 renderCoopHours();
