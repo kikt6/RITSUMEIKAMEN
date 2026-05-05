@@ -2,13 +2,9 @@
 // 文章は "..." の中を書き換え、項目を増やす時は { ... } をコピーして追加してください。
 window.siteContent = {
   siteName: "立命館仮面浪人サークル",
-  pageTitle: "RITSUMEIKAMEN",
+  pageTitle: "立命館仮面浪人サークル",
   lead: "",
   updatedAt: "2026-05-06",
-  primaryLink: {
-    label: "相談フォーム",
-    url: "#",
-  },
   mockExam: {
     title: "次回模試日程",
     lead: "模擬試験PDFの一覧から、今日から2か月以内に入った未実施の模試だけを自動表示します。",
@@ -31,15 +27,14 @@ window.siteContent = {
     ],
   },
   coop: {
-    title: "学食・生協営業時間",
-    lead: "立命館生協の公式営業時間ページに従って、全キャンパスの店舗を今後2週間分だけ表示します。",
+    title: "今日の学食・生協営業時間",
+    lead: "立命館生協の公式営業時間ページに従って、今日の全キャンパス店舗だけを表示します。他の日程は公式ページで確認してください。",
     sourceUrl: "https://www.ritsco-op.jp/schedule/schedule_202605.html",
-    displayDays: 14,
+    displayDays: 1,
     previewDate: "",
   },
   quickLinks: [
     { label: "共有ドライブ", url: "#" },
-    { label: "匿名相談フォーム", url: "#" },
     { label: "模試記録シート", url: "#" },
     { label: "年間カレンダー", url: "#" },
   ],
@@ -89,12 +84,6 @@ window.siteContent = {
     },
   ],
   contacts: [
-    {
-      tag: "相談",
-      title: "匿名相談フォーム",
-      body: "成績、大学生活、受験計画について相談できます。",
-      url: "#",
-    },
     {
       tag: "連絡",
       title: "代表への連絡",

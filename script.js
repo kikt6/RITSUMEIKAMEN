@@ -194,6 +194,7 @@ function renderLibraryCalendars(monthOffset = 0) {
     const monthData = calendar.months?.[monthOffset];
     const days = monthData?.days || [];
     const firstDay = days[0] ? parseLocalDate(days[0].date).getDay() : 0;
+    const todayKey = toDateKey(getToday());
 
     for (let i = 0; i < firstDay; i += 1) {
       const blank = document.createElement("div");
@@ -204,6 +205,7 @@ function renderLibraryCalendars(monthOffset = 0) {
     days.forEach((day) => {
       const cell = document.createElement("div");
       cell.className = day.closed ? "library-day is-closed" : "library-day";
+      if (day.date === todayKey) cell.classList.add("is-today");
       cell.style.setProperty("--day-bg", normalizeCalendarColor(day.bgcolor));
 
       const date = document.createElement("span");
@@ -250,7 +252,11 @@ function renderCoopHours() {
   const days = Array.from({ length: dayCount }, (_, index) => addDays(today, index));
   const rows = collectCoopRows(days);
 
-  setText("coopRange", `${formatFullDateLabel(days[0])}から${dayCount}日間 / ${rows.length}店舗`);
+  const rangeText =
+    dayCount === 1
+      ? `今日（${formatFullDateLabel(days[0])}）の営業時間 / ${rows.length}店舗`
+      : `${formatFullDateLabel(days[0])}から${dayCount}日間 / ${rows.length}店舗`;
+  setText("coopRange", rangeText);
 
   root.innerHTML = "";
   if (!coopHours || rows.length === 0) {
@@ -259,7 +265,7 @@ function renderCoopHours() {
   }
 
   const table = document.createElement("table");
-  table.className = "coop-table";
+  table.className = dayCount === 1 ? "coop-table coop-table--today" : "coop-table";
 
   const thead = document.createElement("thead");
   const headerRow = document.createElement("tr");
@@ -527,11 +533,6 @@ setText("pageLead", content.lead);
 setText("updatedAt", formatUpdatedAt(content.updatedAt));
 setText("noticeCount", `${(content.notices || []).length}件`);
 setText("scheduleMonth", content.scheduleMonth);
-
-const primaryLink = byId("primaryLink");
-if (primaryLink && content.primaryLink) {
-  setLink(primaryLink, content.primaryLink);
-}
 
 renderMockExam();
 renderLibraryCalendars();
