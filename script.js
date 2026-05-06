@@ -190,13 +190,8 @@ function renderCommonTestCountdown() {
     return;
   }
 
-  setText("commonTestTitle", settings.title || "共通テスト1日目開始まで");
+  setText("commonTestTitle", settings.title || "共通テスト開始まで");
   setText("commonTestTarget", settings.targetLabel || "");
-
-  const sourceLink = byId("commonTestSourceLink");
-  if (sourceLink) {
-    sourceLink.href = settings.sourceUrl || "https://www.dnc.ac.jp/kyotsu/shiken_jouhou/r9/";
-  }
 
   const update = () => {
     const totalSeconds = Math.max(0, Math.floor((target.getTime() - Date.now()) / 1000));
@@ -658,7 +653,6 @@ function initSideTabs() {
     tabs.classList.toggle("is-collapsed", !expanded);
     toggle.setAttribute("aria-expanded", String(expanded));
     toggle.setAttribute("aria-label", expanded ? "タブを隠す" : "タブを開く");
-    toggle.textContent = expanded ? "閉" : "開";
   };
 
   toggle.addEventListener("click", () => {

@@ -6,65 +6,16 @@
     <title>立命館仮面浪人サークル</title>
     <link rel="icon" type="image/png" href="./assets/ritsumeikan-kamen-logo.png" />
     <link rel="apple-touch-icon" href="./assets/ritsumeikan-kamen-logo.png" />
-    <link rel="stylesheet" href="./styles.css?v=20260506-6" />
+    <link rel="stylesheet" href="./styles.css?v=20260507-2" />
   </head>
   <body>
-    <section class="auth-gate" id="authGate" hidden>
-      <div class="auth-card">
-        <img class="auth-card__logo" src="./assets/ritsumeikan-kamen-logo.png" alt="立命館仮面浪人サークル" />
-        <p class="eyebrow">MEMBER</p>
-        <h1>会員ログイン</h1>
-
-        <div class="auth-tabs" role="tablist" aria-label="ログイン方法">
-          <button class="is-active" type="button" id="loginTab">ログイン</button>
-          <button type="button" id="registerTab">会員登録</button>
-        </div>
-
-        <form class="auth-form" id="loginForm">
-          <label>
-            <span>ログインID（メールアドレス）</span>
-            <input id="loginEmail" name="email" type="email" autocomplete="email" required />
-          </label>
-          <label>
-            <span>パスワード</span>
-            <input id="loginPassword" name="password" type="password" autocomplete="current-password" required />
-          </label>
-          <button class="auth-submit" type="submit">ログイン</button>
-          <button class="auth-text-button" id="passwordResetButton" type="button">パスワードを再設定</button>
-        </form>
-
-        <form class="auth-form" id="registerForm" hidden>
-          <label>
-            <span>名前</span>
-            <input id="registerName" name="name" type="text" autocomplete="name" required />
-          </label>
-          <label>
-            <span>ログインID（メールアドレス）</span>
-            <input id="registerEmail" name="email" type="email" autocomplete="email" required />
-          </label>
-          <label>
-            <span>パスワード</span>
-            <input id="registerPassword" name="password" type="password" autocomplete="new-password" minlength="6" required />
-          </label>
-          <label>
-            <span>パスワード確認</span>
-            <input id="registerPasswordConfirm" name="passwordConfirm" type="password" autocomplete="new-password" minlength="6" required />
-          </label>
-          <label class="auth-register-code" id="registrationCodeWrap" hidden>
-            <span>登録コード</span>
-            <input id="registrationCode" name="registrationCode" type="text" autocomplete="off" />
-          </label>
-          <button class="auth-submit" type="submit">登録する</button>
-        </form>
-
-        <button class="apple-signin" id="appleSignInButton" type="button" hidden>Appleでサインイン</button>
-        <p class="auth-message" id="authMessage" role="status"></p>
-      </div>
-    </section>
-
     <main class="page">
       <nav class="side-tabs is-collapsed" id="sideTabs" aria-label="ページ内タブ">
-        <button class="side-tabs__toggle" id="sideTabsToggle" type="button" aria-expanded="false" aria-label="タブを開く">開</button>
+        <button class="side-tabs__toggle" id="sideTabsToggle" type="button" aria-expanded="false" aria-label="タブを開く">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </button>
         <div class="side-tabs__links">
           <a href="#librarySection">開館時間</a>
           <a href="#coopSection">営業時間</a>
@@ -72,32 +23,25 @@
         </div>
       </nav>
 
-      <section class="countdown-panel" id="commonTestCountdown" aria-label="共通テスト1日目開始までのカウントダウン">
-        <div class="countdown-panel__title">
-          <p class="eyebrow">COMMON TEST</p>
-          <h2 id="commonTestTitle">共通テスト1日目開始まで</h2>
-          <p id="commonTestTarget"></p>
-        </div>
-        <div class="countdown-clock" aria-live="polite">
-          <span><strong id="countdownDays">0</strong><small>日</small></span>
-          <span><strong id="countdownHours">00</strong><small>時間</small></span>
-          <span><strong id="countdownMinutes">00</strong><small>分</small></span>
-          <span><strong id="countdownSeconds">00</strong><small>秒</small></span>
-        </div>
-        <a class="countdown-source" id="commonTestSourceLink" href="https://www.dnc.ac.jp/kyotsu/shiken_jouhou/r9/" target="_blank" rel="noopener noreferrer">公式日程</a>
-      </section>
-
       <header class="hero">
         <div class="hero__content">
           <p class="eyebrow" id="siteName">立命館仮面浪人サークル</p>
           <h1 id="pageTitle">立命館仮面浪人サークル</h1>
+          <section class="hero-countdown" id="commonTestCountdown" aria-label="共通テスト開始までのカウントダウン">
+            <div class="hero-countdown__title">
+              <h2 id="commonTestTitle">共通テスト開始まで</h2>
+              <p id="commonTestTarget"></p>
+            </div>
+            <div class="countdown-clock" aria-live="polite">
+              <span><strong id="countdownDays">0</strong><small>日</small></span>
+              <span><strong id="countdownHours">00</strong><small>時間</small></span>
+              <span><strong id="countdownMinutes">00</strong><small>分</small></span>
+              <span><strong id="countdownSeconds">00</strong><small>秒</small></span>
+            </div>
+          </section>
           <p class="lead" id="pageLead"></p>
           <div class="hero__meta">
             <span id="updatedAt"></span>
-            <div class="auth-status" id="authStatus" hidden>
-              <span id="authUserLabel"></span>
-              <button id="logoutButton" type="button">ログアウト</button>
-            </div>
           </div>
         </div>
         <div class="hero__visual" aria-hidden="true">
@@ -142,15 +86,10 @@
       <section class="section mock-exam" id="mockExam" aria-label="次回模試日程"></section>
     </main>
 
-    <script src="https://www.gstatic.com/firebasejs/12.7.0/firebase-app-compat.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/12.7.0/firebase-auth-compat.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/12.7.0/firebase-firestore-compat.js"></script>
-    <script src="./firebase-config.js?v=20260506-6"></script>
-    <script src="./content.js?v=20260506-6"></script>
-    <script src="./exam-schedule.js?v=20260506-6"></script>
-    <script src="./library-hours.js?v=20260506-6"></script>
-    <script src="./coop-hours.js?v=20260506-6"></script>
-    <script src="./script.js?v=20260506-6"></script>
-    <script src="./auth.js?v=20260506-6"></script>
+    <script src="./content.js?v=20260507-2"></script>
+    <script src="./exam-schedule.js?v=20260507-2"></script>
+    <script src="./library-hours.js?v=20260507-2"></script>
+    <script src="./coop-hours.js?v=20260507-2"></script>
+    <script src="./script.js?v=20260507-2"></script>
   </body>
 </html>

@@ -5,9 +5,9 @@
   --ink: #202322;
   --muted: #66706b;
   --line: #dfe5dd;
-  --green: #214f3a;
-  --green-soft: #e5f0e9;
-  --red: #a63c32;
+  --green: #9d1717;
+  --green-soft: #f7e6e6;
+  --red: #9d1717;
   --red-soft: #fff0ed;
   --gold: #c7953d;
   --gold-soft: #fff8ed;
@@ -32,8 +32,8 @@ body {
   min-height: 100vh;
   margin: 0;
   background:
-    radial-gradient(circle at 18% 10%, rgba(199, 149, 61, 0.18), transparent 28rem),
-    linear-gradient(135deg, var(--paper), #eef4f1 56%, #fbf2ec);
+    radial-gradient(circle at 18% 10%, rgba(157, 23, 23, 0.16), transparent 28rem),
+    linear-gradient(135deg, var(--paper), #f7eeee 56%, #fff8ed);
   color: var(--ink);
 }
 
@@ -74,8 +74,18 @@ a {
 
 .side-tabs__toggle {
   width: 46px;
+  display: inline-grid;
+  place-items: center;
+  gap: 4px;
   padding: 0;
   cursor: pointer;
+}
+
+.side-tabs__toggle span {
+  width: 18px;
+  height: 2px;
+  border-radius: 999px;
+  background: currentColor;
 }
 
 .side-tabs__links {
@@ -103,28 +113,27 @@ a {
   display: none;
 }
 
-.countdown-panel {
+.hero-countdown {
+  max-width: 640px;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) auto auto;
-  align-items: center;
-  gap: 18px;
-  margin-bottom: 18px;
-  border: 1px solid rgba(199, 149, 61, 0.34);
+  gap: 10px;
+  margin: 0 0 22px;
+  border: 1px solid rgba(255, 255, 255, 0.22);
   border-radius: 8px;
-  padding: clamp(16px, 4vw, 24px);
-  background: linear-gradient(135deg, #fff, var(--gold-soft));
-  box-shadow: 0 8px 28px rgba(31, 42, 35, 0.08);
+  padding: 14px;
+  background: rgba(255, 255, 255, 0.12);
 }
 
-.countdown-panel h2 {
-  margin-bottom: 6px;
-  font-size: clamp(1.35rem, 3.5vw, 2.1rem);
+.hero-countdown h2 {
+  margin-bottom: 0;
+  color: #fff;
+  font-size: 1rem;
   line-height: 1.2;
 }
 
-.countdown-panel__title p:last-child {
+.hero-countdown__title p:last-child {
   margin-bottom: 0;
-  color: var(--muted);
+  color: rgba(255, 255, 255, 0.76);
   font-weight: 900;
 }
 
@@ -138,177 +147,36 @@ a {
   min-width: 0;
   display: grid;
   place-items: center;
-  border: 1px solid rgba(33, 79, 58, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.16);
   border-radius: 8px;
   padding: 10px 8px;
-  background: #fff;
+  background: rgba(255, 255, 255, 0.14);
 }
 
 .countdown-clock strong {
-  color: var(--green);
+  color: #fff;
   font-size: clamp(1.35rem, 4vw, 2rem);
   line-height: 1;
 }
 
 .countdown-clock small {
   margin-top: 5px;
-  color: var(--muted);
+  color: rgba(255, 255, 255, 0.72);
   font-size: 0.72rem;
   font-weight: 900;
 }
 
-.countdown-source {
-  min-height: 38px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  padding: 0 12px;
-  background: #fff;
-  color: var(--green);
-  font-size: 0.86rem;
-  font-weight: 900;
-  text-decoration: none;
-  white-space: nowrap;
-}
-
-.auth-gate {
-  min-height: 100vh;
-  display: grid;
-  place-items: center;
-  padding: 24px;
-}
-
-.auth-card {
-  width: min(100%, 430px);
-  border: 1px solid rgba(223, 229, 221, 0.94);
-  border-radius: 8px;
-  padding: clamp(22px, 5vw, 34px);
-  background: rgba(255, 255, 255, 0.94);
-  box-shadow: var(--shadow);
-}
-
-.auth-card__logo {
-  width: 84px;
-  aspect-ratio: 1;
-  display: block;
-  margin-bottom: 18px;
-  border-radius: 50%;
-  object-fit: cover;
-  box-shadow: 0 12px 30px rgba(31, 42, 35, 0.16);
-}
-
-.auth-card h1 {
-  max-width: none;
-  margin-bottom: 20px;
-  font-size: clamp(2rem, 7vw, 3rem);
-  line-height: 1.05;
-}
-
-.auth-tabs {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 8px;
-  margin-bottom: 18px;
-}
-
-.auth-tabs button,
-.auth-submit,
-.apple-signin,
-.auth-text-button,
-.auth-status button {
-  min-height: 42px;
-  border-radius: 8px;
-  border: 1px solid var(--line);
-  padding: 0 12px;
-  font: inherit;
-  font-weight: 900;
-  cursor: pointer;
-}
-
-.auth-tabs button {
-  background: #fff;
-  color: var(--ink);
-}
-
-.auth-tabs button.is-active,
-.auth-submit {
-  border-color: var(--green);
-  background: var(--green);
-  color: #fff;
-}
-
-.auth-form {
-  display: grid;
-  gap: 12px;
-}
-
-.auth-form label {
-  display: grid;
-  gap: 7px;
-  color: var(--muted);
-  font-size: 0.82rem;
-  font-weight: 900;
-}
-
-.auth-form input {
-  width: 100%;
-  min-height: 46px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  padding: 0 12px;
-  background: #fff;
-  color: var(--ink);
-  font: inherit;
-}
-
-.auth-form input:focus {
-  outline: 2px solid rgba(199, 149, 61, 0.42);
-  outline-offset: 2px;
-}
-
-.auth-text-button {
-  border: 0;
-  background: transparent;
-  color: var(--green);
-}
-
-.apple-signin {
-  width: 100%;
-  margin-top: 12px;
-  border-color: #000;
-  background: #000;
-  color: #fff;
-}
-
-.auth-message {
-  min-height: 22px;
-  margin: 14px 0 0;
-  color: var(--muted);
-  font-size: 0.88rem;
-  font-weight: 900;
-}
-
-.auth-message[data-tone="error"] {
-  color: var(--red);
-}
-
-.auth-message[data-tone="success"] {
-  color: var(--green);
-}
-
 .hero {
-  min-height: 360px;
+  min-height: 340px;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(260px, 0.48fr);
+  grid-template-columns: minmax(0, 1fr) minmax(240px, 0.42fr);
   align-items: stretch;
-  gap: clamp(20px, 4vw, 48px);
+  gap: clamp(20px, 4vw, 44px);
   margin-bottom: 18px;
   overflow: hidden;
   border-radius: 8px;
   background:
-    linear-gradient(135deg, rgba(33, 79, 58, 0.96), rgba(54, 82, 91, 0.92)),
+    linear-gradient(135deg, rgba(157, 23, 23, 0.97), rgba(104, 18, 29, 0.94)),
     url("data:image/svg+xml,%3Csvg width='900' height='420' viewBox='0 0 900 420' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 334C126 212 246 360 380 246C514 132 604 66 754 130C822 158 862 144 900 116V420H0Z' fill='%23ffffff' fill-opacity='.12'/%3E%3Cpath d='M74 84h228v14H74zM74 122h178v14H74zM636 250h170v14H636zM636 288h118v14H636z' fill='%23ffffff' fill-opacity='.16'/%3E%3Ccircle cx='716' cy='120' r='68' fill='%23e7b95a' fill-opacity='.18'/%3E%3C/svg%3E");
   background-size: cover;
   box-shadow: var(--shadow);
@@ -329,12 +197,12 @@ a {
 }
 
 .hero__logo {
-  width: min(100%, 330px);
+  width: min(100%, 300px);
   aspect-ratio: 1;
   object-fit: cover;
   border-radius: 50%;
   border: 5px solid rgba(255, 255, 255, 0.72);
-  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.34);
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.32);
 }
 
 .eyebrow {
@@ -387,20 +255,6 @@ h1 {
 
 .hero__meta span {
   background: rgba(255, 255, 255, 0.16);
-}
-
-.auth-status {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.auth-status button {
-  min-height: 42px;
-  border-color: rgba(255, 255, 255, 0.34);
-  background: rgba(255, 255, 255, 0.14);
-  color: #fff;
-  font-size: 0.78rem;
 }
 
 .primary-link {
@@ -1064,14 +918,6 @@ h1 {
     grid-template-columns: 1fr;
   }
 
-  .countdown-panel {
-    grid-template-columns: 1fr;
-  }
-
-  .countdown-source {
-    width: fit-content;
-  }
-
   .hero__visual {
     min-height: 180px;
     padding-top: 0;
@@ -1115,7 +961,7 @@ h1 {
     font-size: 0.82rem;
   }
 
-  .countdown-panel {
+  .hero-countdown {
     gap: 12px;
     margin-bottom: 11px;
   }

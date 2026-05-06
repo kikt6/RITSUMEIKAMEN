@@ -6,10 +6,9 @@ window.siteContent = {
   lead: "",
   updatedAt: "2026-05-06",
   commonTest: {
-    title: "共通テスト1日目開始まで",
+    title: "共通テスト開始まで",
     targetAt: "2027-01-16T09:30:00+09:00",
-    targetLabel: "2027年1月16日（土）9:30開始想定",
-    sourceUrl: "https://www.dnc.ac.jp/kyotsu/shiken_jouhou/r9/",
+    targetLabel: "",
   },
   mockExam: {
     title: "次回模試日程",
@@ -44,7 +43,13 @@ window.siteContent = {
     { label: "模試記録シート", url: "#" },
     { label: "年間カレンダー", url: "#" },
   ],
-  notices: [],
+  notices: [
+    {
+      tag: "お知らせ",
+      title: "もう少しでリリースやで",
+      body: "",
+    },
+  ],
   scheduleMonth: "2026年5月",
   schedule: [
     {

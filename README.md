@@ -18,14 +18,13 @@
 
 ## 共通テストカウントダウン
 
-ページ最上部のカウントダウンは `content.js` の `commonTest.targetAt` を変更します。
+サークル名の下に出るカウントダウンは `content.js` の `commonTest.targetAt` を変更します。
 
 ```js
 commonTest: {
-  title: "共通テスト1日目開始まで",
+  title: "共通テスト開始まで",
   targetAt: "2027-01-16T09:30:00+09:00",
-  targetLabel: "2027年1月16日（土）9:30開始想定",
-  sourceUrl: "https://www.dnc.ac.jp/kyotsu/shiken_jouhou/r9/",
+  targetLabel: "",
 },
 ```
 
@@ -75,45 +74,6 @@ mockExam: {
 
 各店舗の「詳しく見る」から、立命館生協の公式営業時間ページ内の該当キャンパスへ移動できます。
 
-## 会員ログイン
-
-`firebase-config.js` にFirebaseの設定値を入れると、ログイン画面と会員登録画面が有効になります。設定値が空の間は、今まで通りページを表示します。
-
-Firebase側で先にやること:
-
-- Firebase Authenticationで「メール/パスワード」を有効にする
-- Firestore Databaseを作成する
-- GitHub PagesのURLをAuthenticationの承認済みドメインに追加する
-- Appleでサインインを使う場合は、Apple Developer側の設定後にFirebase AuthenticationでAppleを有効にする
-
-Firestoreのルール例:
-
-```txt
-rules_version = '2';
-
-service cloud.firestore {
-  match /databases/{database}/documents {
-    match /members/{userId} {
-      allow create, read, update: if request.auth != null && request.auth.uid == userId;
-    }
-  }
-}
-```
-
-登録画面を使えるようにするかは、`firebase-config.js` の `enableRegistration` で切り替えます。
-
-```js
-window.authSettings = {
-  requireLogin: true,
-  enableRegistration: true,
-  enableAppleSignIn: false,
-  memberProfileCollection: "members",
-  registrationCode: "",
-};
-```
-
-`registrationCode` に文字を入れると、登録画面に登録コード欄が出ます。ただしこれは簡易的な制限なので、本気で会員だけにする場合はFirebase側で会員を管理してください。
-
 ## 項目の追加例
 
 お知らせや予定を増やすときは、同じ形の `{ ... }` をコピーして追加してください。
@@ -141,10 +101,8 @@ window.authSettings = {
 - `library-hours.js`: 立命館大学図書館公式カレンダーから取得した開館時間
 - `coop-hours.js`: 立命館生協公式ページから取得した営業時間
 - `script.js`: `content.js` の内容をHTMLに表示する処理
-- `firebase-config.js`: Firebaseの設定
-- `auth.js`: ログイン・会員登録処理
 - `assets/ritsumeikan-kamen-logo.png`: サークルロゴ
 
 ## 注意
 
-Firebase設定値を入れるまではログイン機能は有効になりません。パスワードを自分でFirestoreへ保存しないでください。パスワード管理はFirebase Authenticationに任せます。
+このページはログインなしの静的HTMLです。URLを知っている人は閲覧できます。
