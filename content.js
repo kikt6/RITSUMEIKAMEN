@@ -14,7 +14,7 @@ window.siteContent = {
   },
   libraries: {
     title: "立命館大学 図書館開館時間",
-    lead: "立命館大学図書館の公式カレンダーに従って、全図書館の開館時間を今月・来月で確認できます。",
+    lead: "立命館大学図書館の公式カレンダーに従って、KIC・BKC・OICごとに開館時間を確認できます。",
     sourceUrl: "https://www.ritsumei.ac.jp/lib/a03/010/",
     calendars: [
       { name: "平井嘉一郎記念図書館", campus: "衣笠", countercd: "101001" },
@@ -28,7 +28,7 @@ window.siteContent = {
   },
   coop: {
     title: "今日の学食・生協営業時間",
-    lead: "立命館生協の公式営業時間ページに従って、今日の全キャンパス店舗だけを表示します。他の日程は公式ページで確認してください。",
+    lead: "立命館生協の公式営業時間ページに従って、今日の営業時間をKIC・BKC・OICごとに表示します。他の日程は公式ページで確認してください。",
     sourceUrl: "https://www.ritsco-op.jp/schedule/schedule_202605.html",
     displayDays: 1,
     previewDate: "",

@@ -3,6 +3,16 @@ const examSchedule = window.examSchedule || [];
 const libraryHours = window.libraryHours || null;
 const coopHours = window.coopHours || null;
 
+const campusOptions = [
+  { label: "KIC", value: "kic", names: ["衣笠", "KIC"] },
+  { label: "BKC", value: "bkc", names: ["BKC"] },
+  { label: "OIC", value: "oic", names: ["OIC"] },
+];
+
+let activeLibraryMonthOffset = 0;
+let activeLibraryCampus = "kic";
+let activeCoopCampus = "kic";
+
 const byId = (id) => document.getElementById(id);
 
 function setText(id, value) {
@@ -145,9 +155,35 @@ function formatDateLabel(date) {
   return `${date.getMonth() + 1}/${date.getDate()}`;
 }
 
-function renderLibraryCalendars(monthOffset = 0) {
+function getCampusOption(value) {
+  return campusOptions.find((option) => option.value === value) || campusOptions[0];
+}
+
+function campusMatches(campus, value) {
+  const option = getCampusOption(value);
+  return option.names.includes(String(campus || ""));
+}
+
+function renderCampusControls(rootId, activeValue, onSelect) {
+  const root = byId(rootId);
+  if (!root) return;
+  root.innerHTML = "";
+
+  campusOptions.forEach((option) => {
+    const button = document.createElement("button");
+    button.type = "button";
+    button.textContent = option.label;
+    button.className = option.value === activeValue ? "is-active" : "";
+    button.addEventListener("click", () => onSelect(option.value));
+    root.append(button);
+  });
+}
+
+function renderLibraryCalendars(monthOffset = activeLibraryMonthOffset, campusValue = activeLibraryCampus) {
   const settings = content.libraries || {};
   const calendars = libraryHours?.libraries || settings.calendars || [];
+  activeLibraryMonthOffset = monthOffset;
+  activeLibraryCampus = getCampusOption(campusValue).value;
 
   setText("libraryTitle", settings.title || "立命館大学 図書館開館時間");
   setText("libraryLead", settings.lead || "");
@@ -157,14 +193,18 @@ function renderLibraryCalendars(monthOffset = 0) {
     sourceLink.href = settings.sourceUrl || "https://www.ritsumei.ac.jp/lib/a03/010/";
   }
 
-  renderLibraryMonthControls(monthOffset);
+  renderLibraryMonthControls(activeLibraryMonthOffset);
+  renderCampusControls("libraryCampusControls", activeLibraryCampus, (value) => {
+    renderLibraryCalendars(activeLibraryMonthOffset, value);
+  });
 
   const root = byId("libraryCalendars");
   if (!root) return;
   root.innerHTML = "";
 
-  const month = libraryHours?.months?.[monthOffset] || getMonthQuery(monthOffset);
-  calendars.forEach((calendar) => {
+  const visibleCalendars = calendars.filter((calendar) => campusMatches(calendar.campus, activeLibraryCampus));
+
+  visibleCalendars.forEach((calendar) => {
     const card = document.createElement("article");
     card.className = "library-card";
 
@@ -191,7 +231,7 @@ function renderLibraryCalendars(monthOffset = 0) {
     const grid = document.createElement("div");
     grid.className = "library-days";
 
-    const monthData = calendar.months?.[monthOffset];
+    const monthData = calendar.months?.[activeLibraryMonthOffset];
     const days = monthData?.days || [];
     const firstDay = days[0] ? parseLocalDate(days[0].date).getDay() : 0;
     const todayKey = toDateKey(getToday());
@@ -231,13 +271,14 @@ function renderLibraryCalendars(monthOffset = 0) {
     root.append(card);
   });
 
-  renderEmpty(root, "図書館カレンダーはまだありません。");
+  renderEmpty(root, `${getCampusOption(activeLibraryCampus).label}の図書館カレンダーはまだありません。`);
 }
 
-function renderCoopHours() {
+function renderCoopHours(campusValue = activeCoopCampus) {
   const settings = content.coop || {};
   const root = byId("coopHours");
   if (!root) return;
+  activeCoopCampus = getCampusOption(campusValue).value;
 
   setText("coopTitle", settings.title || "学食・生協営業時間");
   setText("coopLead", settings.lead || "");
@@ -250,12 +291,15 @@ function renderCoopHours() {
   const today = getToday(settings.previewDate);
   const dayCount = Number(settings.displayDays) || 14;
   const days = Array.from({ length: dayCount }, (_, index) => addDays(today, index));
-  const rows = collectCoopRows(days);
+  const campusLabel = getCampusOption(activeCoopCampus).label;
+  const rows = collectCoopRows(days).filter((row) => campusMatches(row.campus, activeCoopCampus));
+
+  renderCampusControls("coopCampusControls", activeCoopCampus, renderCoopHours);
 
   const rangeText =
     dayCount === 1
-      ? `今日（${formatFullDateLabel(days[0])}）の営業時間 / ${rows.length}店舗`
-      : `${formatFullDateLabel(days[0])}から${dayCount}日間 / ${rows.length}店舗`;
+      ? `今日（${formatFullDateLabel(days[0])}）の営業時間 / ${campusLabel} / ${rows.length}店舗`
+      : `${formatFullDateLabel(days[0])}から${dayCount}日間 / ${campusLabel} / ${rows.length}店舗`;
   setText("coopRange", rangeText);
 
   root.innerHTML = "";
@@ -414,7 +458,7 @@ function renderLibraryMonthControls(activeOffset) {
     button.type = "button";
     button.textContent = offset === 0 ? `今月 ${month.label}` : `来月 ${month.label}`;
     button.className = offset === activeOffset ? "is-active" : "";
-    button.addEventListener("click", () => renderLibraryCalendars(offset));
+    button.addEventListener("click", () => renderLibraryCalendars(offset, activeLibraryCampus));
     root.append(button);
   });
 }
