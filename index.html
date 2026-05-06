@@ -6,9 +6,62 @@
     <title>立命館仮面浪人サークル</title>
     <link rel="icon" type="image/png" href="./assets/ritsumeikan-kamen-logo.png" />
     <link rel="apple-touch-icon" href="./assets/ritsumeikan-kamen-logo.png" />
-    <link rel="stylesheet" href="./styles.css?v=20260506-4" />
+    <link rel="stylesheet" href="./styles.css?v=20260506-5" />
   </head>
   <body>
+    <section class="auth-gate" id="authGate" hidden>
+      <div class="auth-card">
+        <img class="auth-card__logo" src="./assets/ritsumeikan-kamen-logo.png" alt="立命館仮面浪人サークル" />
+        <p class="eyebrow">MEMBER</p>
+        <h1>会員ログイン</h1>
+
+        <div class="auth-tabs" role="tablist" aria-label="ログイン方法">
+          <button class="is-active" type="button" id="loginTab">ログイン</button>
+          <button type="button" id="registerTab">会員登録</button>
+        </div>
+
+        <form class="auth-form" id="loginForm">
+          <label>
+            <span>ログインID（メールアドレス）</span>
+            <input id="loginEmail" name="email" type="email" autocomplete="email" required />
+          </label>
+          <label>
+            <span>パスワード</span>
+            <input id="loginPassword" name="password" type="password" autocomplete="current-password" required />
+          </label>
+          <button class="auth-submit" type="submit">ログイン</button>
+          <button class="auth-text-button" id="passwordResetButton" type="button">パスワードを再設定</button>
+        </form>
+
+        <form class="auth-form" id="registerForm" hidden>
+          <label>
+            <span>名前</span>
+            <input id="registerName" name="name" type="text" autocomplete="name" required />
+          </label>
+          <label>
+            <span>ログインID（メールアドレス）</span>
+            <input id="registerEmail" name="email" type="email" autocomplete="email" required />
+          </label>
+          <label>
+            <span>パスワード</span>
+            <input id="registerPassword" name="password" type="password" autocomplete="new-password" minlength="6" required />
+          </label>
+          <label>
+            <span>パスワード確認</span>
+            <input id="registerPasswordConfirm" name="passwordConfirm" type="password" autocomplete="new-password" minlength="6" required />
+          </label>
+          <label class="auth-register-code" id="registrationCodeWrap" hidden>
+            <span>登録コード</span>
+            <input id="registrationCode" name="registrationCode" type="text" autocomplete="off" />
+          </label>
+          <button class="auth-submit" type="submit">登録する</button>
+        </form>
+
+        <button class="apple-signin" id="appleSignInButton" type="button" hidden>Appleでサインイン</button>
+        <p class="auth-message" id="authMessage" role="status"></p>
+      </div>
+    </section>
+
     <main class="page">
       <header class="hero">
         <div class="hero__content">
@@ -17,6 +70,10 @@
           <p class="lead" id="pageLead"></p>
           <div class="hero__meta">
             <span id="updatedAt"></span>
+            <div class="auth-status" id="authStatus" hidden>
+              <span id="authUserLabel"></span>
+              <button id="logoutButton" type="button">ログアウト</button>
+            </div>
           </div>
         </div>
         <div class="hero__visual" aria-hidden="true">
@@ -61,10 +118,15 @@
       <section class="section mock-exam" id="mockExam" aria-label="次回模試日程"></section>
     </main>
 
-    <script src="./content.js?v=20260506-4"></script>
-    <script src="./exam-schedule.js?v=20260506-4"></script>
-    <script src="./library-hours.js?v=20260506-4"></script>
-    <script src="./coop-hours.js?v=20260506-4"></script>
-    <script src="./script.js?v=20260506-4"></script>
+    <script src="https://www.gstatic.com/firebasejs/12.7.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/12.7.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/12.7.0/firebase-firestore-compat.js"></script>
+    <script src="./firebase-config.js?v=20260506-5"></script>
+    <script src="./content.js?v=20260506-5"></script>
+    <script src="./exam-schedule.js?v=20260506-5"></script>
+    <script src="./library-hours.js?v=20260506-5"></script>
+    <script src="./coop-hours.js?v=20260506-5"></script>
+    <script src="./script.js?v=20260506-5"></script>
+    <script src="./auth.js?v=20260506-5"></script>
   </body>
 </html>
