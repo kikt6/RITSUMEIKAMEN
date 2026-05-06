@@ -358,21 +358,15 @@ function renderCoopHours(campusValue = activeCoopCampus) {
       const name = document.createElement("h3");
       name.textContent = row.name;
       const meta = document.createElement("span");
-      meta.textContent = [row.campus, row.building].filter(Boolean).join(" / ");
-      heading.append(name, meta);
+      meta.textContent = row.building || "";
+      heading.append(name);
+      if (row.building) heading.append(meta);
 
       const hours = document.createElement("p");
       hours.className = "coop-card__hours";
       hours.textContent = info ? simplifyCoopHours(info.hours) : "未掲載";
 
-      const detail = document.createElement("a");
-      detail.className = "detail-link";
-      detail.href = row.detailUrl || coopHours?.sourceUrl || "#";
-      detail.target = "_blank";
-      detail.rel = "noopener noreferrer";
-      detail.textContent = "詳しく見る";
-
-      card.append(heading, hours, detail);
+      card.append(heading, hours);
       cards.append(card);
     });
 
@@ -409,14 +403,9 @@ function renderCoopHours(campusValue = activeCoopCampus) {
     const shopName = document.createElement("strong");
     shopName.textContent = row.name;
     const meta = document.createElement("span");
-    meta.textContent = [row.campus, row.building].filter(Boolean).join(" / ");
-    const detail = document.createElement("a");
-    detail.className = "detail-link";
-    detail.href = row.detailUrl || coopHours?.sourceUrl || "#";
-    detail.target = "_blank";
-    detail.rel = "noopener noreferrer";
-    detail.textContent = "詳しく見る";
-    shopCell.append(shopName, meta, detail);
+    meta.textContent = row.building || "";
+    shopCell.append(shopName);
+    if (row.building) shopCell.append(meta);
     tr.append(shopCell);
 
     days.forEach((day) => {
