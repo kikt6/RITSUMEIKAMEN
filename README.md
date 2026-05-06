@@ -5,6 +5,7 @@
 基本的には `content.js` だけ編集します。
 
 - ページ上部の文章: `siteName`, `pageTitle`, `lead`, `updatedAt`
+- 共通テストカウントダウン: `commonTest`
 - 重要なお知らせ: `importantNotice`
 - 次回模試日程の表示設定: `mockExam`
 - 図書館カレンダー: `libraries`
@@ -14,6 +15,21 @@
 - 予定: `schedule`
 - 教材・資料: `resources`
 - 連絡先: `contacts`
+
+## 共通テストカウントダウン
+
+ページ最上部のカウントダウンは `content.js` の `commonTest.targetAt` を変更します。
+
+```js
+commonTest: {
+  title: "共通テスト1日目開始まで",
+  targetAt: "2027-01-16T09:30:00+09:00",
+  targetLabel: "2027年1月16日（土）9:30開始想定",
+  sourceUrl: "https://www.dnc.ac.jp/kyotsu/shiken_jouhou/r9/",
+},
+```
+
+令和9年度の本試験日は大学入試センター公式ページに従っています。時間割が正式公表されたら `targetAt` と `targetLabel` を必要に応じて更新してください。
 
 ## 次回模試日程
 

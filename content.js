@@ -5,6 +5,12 @@ window.siteContent = {
   pageTitle: "立命館仮面浪人サークル",
   lead: "",
   updatedAt: "2026-05-06",
+  commonTest: {
+    title: "共通テスト1日目開始まで",
+    targetAt: "2027-01-16T09:30:00+09:00",
+    targetLabel: "2027年1月16日（土）9:30開始想定",
+    sourceUrl: "https://www.dnc.ac.jp/kyotsu/shiken_jouhou/r9/",
+  },
   mockExam: {
     title: "次回模試日程",
     lead: "模擬試験PDFの一覧から、今日から2か月以内に入った未実施の模試だけを自動表示します。",

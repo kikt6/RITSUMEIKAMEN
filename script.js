@@ -179,6 +179,46 @@ function renderCampusControls(rootId, activeValue, onSelect) {
   });
 }
 
+function renderCommonTestCountdown() {
+  const root = byId("commonTestCountdown");
+  if (!root) return;
+
+  const settings = content.commonTest || {};
+  const target = new Date(settings.targetAt || "2027-01-16T09:30:00+09:00");
+  if (Number.isNaN(target.getTime())) {
+    root.hidden = true;
+    return;
+  }
+
+  setText("commonTestTitle", settings.title || "共通テスト1日目開始まで");
+  setText("commonTestTarget", settings.targetLabel || "");
+
+  const sourceLink = byId("commonTestSourceLink");
+  if (sourceLink) {
+    sourceLink.href = settings.sourceUrl || "https://www.dnc.ac.jp/kyotsu/shiken_jouhou/r9/";
+  }
+
+  const update = () => {
+    const totalSeconds = Math.max(0, Math.floor((target.getTime() - Date.now()) / 1000));
+    const days = Math.floor(totalSeconds / 86400);
+    const hours = Math.floor((totalSeconds % 86400) / 3600);
+    const minutes = Math.floor((totalSeconds % 3600) / 60);
+    const seconds = totalSeconds % 60;
+
+    setText("countdownDays", String(days));
+    setText("countdownHours", String(hours).padStart(2, "0"));
+    setText("countdownMinutes", String(minutes).padStart(2, "0"));
+    setText("countdownSeconds", String(seconds).padStart(2, "0"));
+
+    if (totalSeconds === 0) {
+      setText("commonTestTarget", "開始時刻になりました。");
+    }
+  };
+
+  update();
+  window.setInterval(update, 1000);
+}
+
 function renderLibraryCalendars(monthOffset = activeLibraryMonthOffset, campusValue = activeLibraryCampus) {
   const settings = content.libraries || {};
   const calendars = libraryHours?.libraries || settings.calendars || [];
@@ -609,6 +649,27 @@ function renderEmpty(root, text) {
   root.append(empty);
 }
 
+function initSideTabs() {
+  const tabs = byId("sideTabs");
+  const toggle = byId("sideTabsToggle");
+  if (!tabs || !toggle) return;
+
+  const setExpanded = (expanded) => {
+    tabs.classList.toggle("is-collapsed", !expanded);
+    toggle.setAttribute("aria-expanded", String(expanded));
+    toggle.setAttribute("aria-label", expanded ? "タブを隠す" : "タブを開く");
+    toggle.textContent = expanded ? "閉" : "開";
+  };
+
+  toggle.addEventListener("click", () => {
+    setExpanded(tabs.classList.contains("is-collapsed"));
+  });
+
+  tabs.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => setExpanded(false));
+  });
+}
+
 setText("siteName", content.siteName);
 setText("pageTitle", content.pageTitle);
 setText("pageLead", content.lead);
@@ -616,6 +677,8 @@ setText("updatedAt", formatUpdatedAt(content.updatedAt));
 setText("noticeCount", `${(content.notices || []).length}件`);
 setText("scheduleMonth", content.scheduleMonth);
 
+initSideTabs();
+renderCommonTestCountdown();
 renderMockExam();
 renderLibraryCalendars();
 renderCoopHours();

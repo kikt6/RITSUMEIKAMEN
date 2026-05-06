@@ -24,6 +24,10 @@
   display: none !important;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   min-height: 100vh;
   margin: 0;
@@ -41,6 +45,132 @@ a {
   width: min(1120px, calc(100% - 32px));
   margin: 0 auto;
   padding: 28px 0 48px;
+}
+
+.side-tabs {
+  position: fixed;
+  left: 10px;
+  top: 50%;
+  z-index: 30;
+  display: grid;
+  gap: 8px;
+  width: 146px;
+  transform: translateY(-50%);
+  transition: width 160ms ease;
+}
+
+.side-tabs__toggle,
+.side-tabs__links a {
+  min-height: 42px;
+  border: 1px solid rgba(33, 79, 58, 0.2);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.94);
+  color: var(--green);
+  box-shadow: 0 8px 24px rgba(31, 42, 35, 0.14);
+  font: inherit;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+.side-tabs__toggle {
+  width: 46px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.side-tabs__links {
+  display: grid;
+  gap: 8px;
+}
+
+.side-tabs__links a {
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+  white-space: nowrap;
+}
+
+.side-tabs__links a:hover,
+.side-tabs__toggle:hover {
+  filter: brightness(0.97);
+}
+
+.side-tabs.is-collapsed {
+  width: 46px;
+}
+
+.side-tabs.is-collapsed .side-tabs__links {
+  display: none;
+}
+
+.countdown-panel {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto auto;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 18px;
+  border: 1px solid rgba(199, 149, 61, 0.34);
+  border-radius: 8px;
+  padding: clamp(16px, 4vw, 24px);
+  background: linear-gradient(135deg, #fff, var(--gold-soft));
+  box-shadow: 0 8px 28px rgba(31, 42, 35, 0.08);
+}
+
+.countdown-panel h2 {
+  margin-bottom: 6px;
+  font-size: clamp(1.35rem, 3.5vw, 2.1rem);
+  line-height: 1.2;
+}
+
+.countdown-panel__title p:last-child {
+  margin-bottom: 0;
+  color: var(--muted);
+  font-weight: 900;
+}
+
+.countdown-clock {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(64px, 1fr));
+  gap: 8px;
+}
+
+.countdown-clock span {
+  min-width: 0;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(33, 79, 58, 0.12);
+  border-radius: 8px;
+  padding: 10px 8px;
+  background: #fff;
+}
+
+.countdown-clock strong {
+  color: var(--green);
+  font-size: clamp(1.35rem, 4vw, 2rem);
+  line-height: 1;
+}
+
+.countdown-clock small {
+  margin-top: 5px;
+  color: var(--muted);
+  font-size: 0.72rem;
+  font-weight: 900;
+}
+
+.countdown-source {
+  min-height: 38px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 0 12px;
+  background: #fff;
+  color: var(--green);
+  font-size: 0.86rem;
+  font-weight: 900;
+  text-decoration: none;
+  white-space: nowrap;
 }
 
 .auth-gate {
@@ -287,6 +417,7 @@ h1 {
 
 .section {
   margin-top: 28px;
+  scroll-margin-top: 18px;
 }
 
 .section__header {
@@ -933,6 +1064,14 @@ h1 {
     grid-template-columns: 1fr;
   }
 
+  .countdown-panel {
+    grid-template-columns: 1fr;
+  }
+
+  .countdown-source {
+    width: fit-content;
+  }
+
   .hero__visual {
     min-height: 180px;
     padding-top: 0;
@@ -951,6 +1090,43 @@ h1 {
   .page {
     width: min(100% - 22px, 560px);
     padding-top: 11px;
+  }
+
+  .side-tabs {
+    left: 7px;
+    top: auto;
+    bottom: 76px;
+    width: 132px;
+    transform: none;
+  }
+
+  .side-tabs.is-collapsed {
+    width: 42px;
+  }
+
+  .side-tabs__toggle {
+    width: 42px;
+    min-height: 40px;
+  }
+
+  .side-tabs__links a {
+    min-height: 38px;
+    padding: 0 10px;
+    font-size: 0.82rem;
+  }
+
+  .countdown-panel {
+    gap: 12px;
+    margin-bottom: 11px;
+  }
+
+  .countdown-clock {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 6px;
+  }
+
+  .countdown-clock span {
+    padding: 8px 4px;
   }
 
   .hero {
