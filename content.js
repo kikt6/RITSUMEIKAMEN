@@ -4,7 +4,7 @@ window.siteContent = {
   siteName: "立命館仮面浪人サークル",
   pageTitle: "立命館仮面浪人サークル",
   lead: "",
-  updatedAt: "2026-05-06",
+  updatedAt: "2026-05-07",
   commonTest: {
     title: "共通テスト開始まで",
     targetAt: "2027-01-16T09:30:00+09:00",
@@ -48,6 +48,7 @@ window.siteContent = {
       tag: "お知らせ",
       title: "もう少しでリリースやで",
       body: "",
+      expiresAt: "",
     },
   ],
   scheduleMonth: "2026年5月",

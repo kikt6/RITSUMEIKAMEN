@@ -9,9 +9,12 @@ const campusOptions = [
   { label: "OIC", value: "oic", names: ["OIC"] },
 ];
 
+const libraryCampusStorageKey = "ritsumeikamen-library-campus";
+const coopCampusStorageKey = "ritsumeikamen-coop-campus";
+
 let activeLibraryMonthOffset = 0;
-let activeLibraryCampus = "kic";
-let activeCoopCampus = "kic";
+let activeLibraryCampus = getSavedCampus(libraryCampusStorageKey);
+let activeCoopCampus = getSavedCampus(coopCampusStorageKey);
 
 const byId = (id) => document.getElementById(id);
 
@@ -155,6 +158,23 @@ function formatDateLabel(date) {
   return `${date.getMonth() + 1}/${date.getDate()}`;
 }
 
+function getSavedCampus(key) {
+  try {
+    const saved = window.localStorage?.getItem(key);
+    return campusOptions.some((option) => option.value === saved) ? saved : "kic";
+  } catch {
+    return "kic";
+  }
+}
+
+function saveCampus(key, value) {
+  try {
+    window.localStorage?.setItem(key, value);
+  } catch {
+    // localStorage may be unavailable in some private browsing modes.
+  }
+}
+
 function getCampusOption(value) {
   return campusOptions.find((option) => option.value === value) || campusOptions[0];
 }
@@ -219,6 +239,7 @@ function renderLibraryCalendars(monthOffset = activeLibraryMonthOffset, campusVa
   const calendars = libraryHours?.libraries || settings.calendars || [];
   activeLibraryMonthOffset = monthOffset;
   activeLibraryCampus = getCampusOption(campusValue).value;
+  saveCampus(libraryCampusStorageKey, activeLibraryCampus);
 
   setText("libraryTitle", settings.title || "立命館大学 図書館開館時間");
   setText("libraryLead", settings.lead || "");
@@ -231,6 +252,7 @@ function renderLibraryCalendars(monthOffset = activeLibraryMonthOffset, campusVa
   renderLibraryMonthControls(activeLibraryMonthOffset);
   renderCampusControls("libraryCampusControls", activeLibraryCampus, (value) => {
     renderLibraryCalendars(activeLibraryMonthOffset, value);
+    renderTodayLibrary(value);
   });
 
   const root = byId("libraryCalendars");
@@ -309,11 +331,54 @@ function renderLibraryCalendars(monthOffset = activeLibraryMonthOffset, campusVa
   renderEmpty(root, `${getCampusOption(activeLibraryCampus).label}の図書館カレンダーはまだありません。`);
 }
 
+function renderTodayLibrary(campusValue = activeLibraryCampus) {
+  const settings = content.libraries || {};
+  const calendars = libraryHours?.libraries || settings.calendars || [];
+  const root = byId("todayLibrary");
+  if (!root) return;
+
+  activeLibraryCampus = getCampusOption(campusValue).value;
+  saveCampus(libraryCampusStorageKey, activeLibraryCampus);
+  renderCampusControls("todayLibraryCampusControls", activeLibraryCampus, (value) => {
+    renderTodayLibrary(value);
+    renderLibraryCalendars(activeLibraryMonthOffset, value);
+  });
+
+  const today = getToday(settings.previewDate);
+  const todayKey = toDateKey(today);
+  const campusLabel = getCampusOption(activeLibraryCampus).label;
+  setText("todayLibraryLead", `${formatFullDateLabel(today)} / ${campusLabel}`);
+
+  root.innerHTML = "";
+  calendars
+    .filter((calendar) => campusMatches(calendar.campus, activeLibraryCampus))
+    .forEach((calendar) => {
+      const day = (calendar.months || [])
+        .flatMap((month) => month.days || [])
+        .find((item) => item.date === todayKey);
+
+      const card = document.createElement("article");
+      card.className = `today-library-card ${day?.closed ? "is-closed" : ""}`;
+
+      const name = document.createElement("h3");
+      name.textContent = calendar.name;
+
+      const hours = document.createElement("p");
+      hours.textContent = day ? simplifyHours(day.hours) : "未掲載";
+
+      card.append(name, hours);
+      root.append(card);
+    });
+
+  renderEmpty(root, `${campusLabel}の今日の図書館情報はありません。`);
+}
+
 function renderCoopHours(campusValue = activeCoopCampus) {
   const settings = content.coop || {};
   const root = byId("coopHours");
   if (!root) return;
   activeCoopCampus = getCampusOption(campusValue).value;
+  saveCampus(coopCampusStorageKey, activeCoopCampus);
 
   setText("coopTitle", settings.title || "学食・生協営業時間");
   setText("coopLead", settings.lead || "");
@@ -558,12 +623,21 @@ function renderQuickLinks() {
   renderEmpty(root, "リンクはまだありません。");
 }
 
+function isVisibleItem(item) {
+  if (!item?.expiresAt) return true;
+  return parseLocalDate(item.expiresAt) >= getToday();
+}
+
+function getVisibleItems(items) {
+  return (items || []).filter(isVisibleItem);
+}
+
 function renderCards(id, items, emptyMessage = "表示する項目はまだありません。") {
   const root = byId(id);
   if (!root) return;
   root.innerHTML = "";
 
-  (items || []).forEach((item) => {
+  getVisibleItems(items).forEach((item) => {
     const card = document.createElement("article");
     card.className = "card";
 
@@ -653,16 +727,24 @@ function initSideTabs() {
   });
 }
 
+function registerServiceWorker() {
+  if (!("serviceWorker" in navigator)) return;
+  if (location.protocol !== "https:" && location.hostname !== "localhost") return;
+  navigator.serviceWorker.register("./service-worker.js").catch(() => {});
+}
+
 setText("siteName", content.siteName);
 setText("pageTitle", content.pageTitle);
 setText("pageLead", content.lead);
 setText("updatedAt", formatUpdatedAt(content.updatedAt));
-setText("noticeCount", `${(content.notices || []).length}件`);
+setText("noticeCount", `${getVisibleItems(content.notices).length}件`);
 setText("scheduleMonth", content.scheduleMonth);
 
+registerServiceWorker();
 initSideTabs();
 renderCommonTestCountdown();
 renderMockExam();
+renderTodayLibrary();
 renderLibraryCalendars();
 renderCoopHours();
 renderQuickLinks();

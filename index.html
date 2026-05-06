@@ -3,10 +3,15 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#9d1717" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="立命館仮面浪人サークル" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <title>立命館仮面浪人サークル</title>
     <link rel="icon" type="image/png" href="./assets/ritsumeikan-kamen-logo.png" />
     <link rel="apple-touch-icon" href="./assets/ritsumeikan-kamen-logo.png" />
-    <link rel="stylesheet" href="./styles.css?v=20260507-3" />
+    <link rel="manifest" href="./site.webmanifest?v=20260507-4" />
+    <link rel="stylesheet" href="./styles.css?v=20260507-4" />
   </head>
   <body>
     <main class="page">
@@ -49,6 +54,17 @@
         </div>
       </header>
 
+      <section class="section today-library" id="todayLibrarySection" aria-label="今日の図書館">
+        <div class="section__header section__header--stack">
+          <div>
+            <h2>今日の図書館</h2>
+            <p id="todayLibraryLead"></p>
+          </div>
+        </div>
+        <div class="control-row campus-controls" id="todayLibraryCampusControls" aria-label="今日の図書館キャンパス切り替え"></div>
+        <div class="today-library-grid" id="todayLibrary"></div>
+      </section>
+
       <section class="section notice-section">
         <div class="section__header">
           <h2>お知らせ</h2>
@@ -86,10 +102,10 @@
       <section class="section mock-exam" id="mockExam" aria-label="次回模試日程"></section>
     </main>
 
-    <script src="./content.js?v=20260507-3"></script>
-    <script src="./exam-schedule.js?v=20260507-3"></script>
-    <script src="./library-hours.js?v=20260507-3"></script>
-    <script src="./coop-hours.js?v=20260507-3"></script>
-    <script src="./script.js?v=20260507-3"></script>
+    <script src="./content.js?v=20260507-4"></script>
+    <script src="./exam-schedule.js?v=20260507-4"></script>
+    <script src="./library-hours.js?v=20260507-4"></script>
+    <script src="./coop-hours.js?v=20260507-4"></script>
+    <script src="./script.js?v=20260507-4"></script>
   </body>
 </html>

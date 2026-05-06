@@ -438,6 +438,53 @@ h1 {
   box-shadow: 0 8px 28px rgba(31, 42, 35, 0.06);
 }
 
+.today-library {
+  --green: #214f3a;
+  --green-soft: #e5f0e9;
+  --red: #a63c32;
+  padding: clamp(16px, 4vw, 24px);
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.78);
+  box-shadow: 0 8px 28px rgba(31, 42, 35, 0.06);
+}
+
+.today-library-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 8px;
+}
+
+.today-library-card {
+  min-width: 0;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 10px 12px;
+  background: #f4fbf6;
+}
+
+.today-library-card.is-closed {
+  background: #fff0ed;
+}
+
+.today-library-card h3 {
+  margin-bottom: 4px;
+  color: var(--ink);
+  font-size: 0.94rem;
+  line-height: 1.35;
+}
+
+.today-library-card p {
+  margin-bottom: 0;
+  color: var(--green);
+  font-size: 0.92rem;
+  font-weight: 900;
+  line-height: 1.35;
+}
+
+.today-library-card.is-closed p {
+  color: var(--red);
+}
+
 .coop-hours {
   padding: clamp(18px, 4vw, 28px);
   border: 1px solid var(--line);
