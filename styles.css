@@ -205,6 +205,28 @@ a {
   box-shadow: 0 24px 70px rgba(0, 0, 0, 0.32);
 }
 
+.faq-hero {
+  display: grid;
+  align-content: center;
+  gap: 12px;
+  min-height: 220px;
+  margin-bottom: 18px;
+  border-radius: 8px;
+  padding: clamp(26px, 6vw, 48px);
+  background: linear-gradient(135deg, rgba(157, 23, 23, 0.97), rgba(104, 18, 29, 0.94));
+  box-shadow: var(--shadow);
+  color: #fff;
+}
+
+.faq-hero h1 {
+  margin-bottom: 4px;
+}
+
+.faq-hero .source-link {
+  width: fit-content;
+  color: var(--green);
+}
+
 .eyebrow {
   margin: 0 0 8px;
   color: var(--gold);
@@ -827,13 +849,18 @@ h1 {
 .quick-links,
 .notice-grid,
 .resource-grid,
-.contact-grid {
+.contact-grid,
+.official-link-grid {
   display: grid;
   gap: 12px;
 }
 
 .quick-links {
   grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.official-link-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .notice-grid,
@@ -843,6 +870,7 @@ h1 {
 }
 
 .quick-link,
+.official-link,
 .card,
 .event,
 .side-note {
@@ -861,7 +889,21 @@ h1 {
   text-decoration: none;
 }
 
+.official-link {
+  min-height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  padding: 12px;
+  color: var(--green);
+  font-weight: 900;
+  text-align: center;
+  text-decoration: none;
+}
+
 .quick-link:hover,
+.official-link:hover,
 .card a:hover,
 .source-link:hover,
 .detail-link:hover {
@@ -962,6 +1004,38 @@ h1 {
   text-align: center;
 }
 
+.faq-list {
+  display: grid;
+  gap: 10px;
+  padding: clamp(18px, 4vw, 28px);
+  border: 1px solid var(--line);
+  background: #fff;
+  box-shadow: 0 8px 28px rgba(31, 42, 35, 0.06);
+}
+
+.faq-item {
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 12px;
+}
+
+.faq-item:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.faq-item h2 {
+  margin-bottom: 6px;
+  color: var(--green);
+  font-size: 1rem;
+  line-height: 1.45;
+}
+
+.faq-item p {
+  margin-bottom: 0;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
 @media (max-width: 900px) {
   .hero,
   .section--split {
@@ -974,6 +1048,7 @@ h1 {
   }
 
   .quick-links,
+  .official-link-grid,
   .notice-grid,
   .resource-grid,
   .contact-grid,
@@ -1106,6 +1181,7 @@ h1 {
   }
 
   .quick-links,
+  .official-link-grid,
   .notice-grid,
   .resource-grid,
   .contact-grid,

@@ -43,6 +43,10 @@ window.siteContent = {
     { label: "模試記録シート", url: "#" },
     { label: "年間カレンダー", url: "#" },
   ],
+  officialLinks: [
+    { label: "CAMPUS WEB", url: "https://www.ritsumei.ac.jp/rsp/" },
+    { label: "Moodle", url: "https://www.ritsumei.ac.jp/pathways-future/course/moodle.html" },
+  ],
   notices: [
     {
       tag: "お知らせ",

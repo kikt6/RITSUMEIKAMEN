@@ -10,6 +10,7 @@
 - 次回模試日程の表示設定: `mockExam`
 - 図書館カレンダー: `libraries`
 - 学食・生協営業時間: `coop`
+- 公式リンク: `officialLinks`
 - ボタンリンク: `quickLinks`
 - お知らせ: `notices`
 - 予定: `schedule`
@@ -78,6 +79,14 @@ mockExam: {
 
 各店舗の「詳しく見る」から、立命館生協の公式営業時間ページ内の該当キャンパスへ移動できます。
 
+## 公式リンク
+
+ページ最下部に、`content.js` の `officialLinks` を表示します。いったん `CAMPUS WEB` と `Moodle` のみ入れています。
+
+## よくある質問
+
+`faq.html` にFAQページがあります。トップページの一番下から移動できます。
+
 ## 項目の追加例
 
 お知らせや予定を増やすときは、同じ形の `{ ... }` をコピーして追加してください。
@@ -102,6 +111,7 @@ mockExam: {
 ## ファイル構成
 
 - `index.html`: ページの骨組み
+- `faq.html`: よくある質問ページ
 - `styles.css`: 見た目
 - `content.js`: 更新する内容
 - `exam-schedule.js`: PDFから作った模試一覧

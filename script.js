@@ -623,6 +623,21 @@ function renderQuickLinks() {
   renderEmpty(root, "リンクはまだありません。");
 }
 
+function renderOfficialLinks() {
+  const root = byId("officialLinks");
+  if (!root) return;
+  root.innerHTML = "";
+
+  (content.officialLinks || []).forEach((item) => {
+    const link = document.createElement("a");
+    link.className = "official-link";
+    setLink(link, item);
+    root.append(link);
+  });
+
+  renderEmpty(root, "公式リンクはまだありません。");
+}
+
 function isVisibleItem(item) {
   if (!item?.expiresAt) return true;
   return parseLocalDate(item.expiresAt) >= getToday();
@@ -748,6 +763,7 @@ renderTodayLibrary();
 renderLibraryCalendars();
 renderCoopHours();
 renderQuickLinks();
+renderOfficialLinks();
 renderCards("notices", content.notices, "現在お知らせはありません。");
 renderCards("resources", content.resources);
 renderCards("contacts", content.contacts);
