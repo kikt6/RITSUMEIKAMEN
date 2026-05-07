@@ -1250,6 +1250,42 @@ h1 {
   margin: 0;
 }
 
+.entrance-date-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.entrance-date-card {
+  min-width: 0;
+  display: grid;
+  gap: 7px;
+  border: 1px solid rgba(157, 23, 23, 0.18);
+  border-radius: 8px;
+  padding: 12px;
+  background: #fff;
+}
+
+.entrance-date-card span {
+  color: var(--red);
+  font-size: 0.76rem;
+  font-weight: 900;
+}
+
+.entrance-date-card strong {
+  color: var(--ink);
+  font-size: 0.92rem;
+  line-height: 1.45;
+}
+
+.entrance-date-card a {
+  color: var(--muted);
+  font-size: 0.74rem;
+  font-weight: 900;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 .site-footer {
   border: 1px solid rgba(157, 23, 23, 0.18);
   border-radius: 8px;
@@ -1478,6 +1514,7 @@ h1 {
   .notice-grid,
   .resource-grid,
   .contact-grid,
+  .entrance-date-grid,
   .library-grid {
     grid-template-columns: 1fr;
   }
