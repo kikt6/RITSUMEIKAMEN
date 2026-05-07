@@ -478,6 +478,10 @@ h1 {
 
 .today-library-card {
   min-width: 0;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 10px;
   border: 1px solid var(--line);
   border-radius: 8px;
   padding: 10px 12px;
@@ -504,6 +508,32 @@ h1 {
 }
 
 .today-library-card.is-closed p {
+  color: var(--red);
+}
+
+.today-library-card__tomorrow {
+  min-width: 72px;
+  display: grid;
+  justify-items: end;
+  gap: 2px;
+  border-left: 1px solid var(--line);
+  padding-left: 10px;
+  color: var(--muted);
+  text-align: right;
+}
+
+.today-library-card__tomorrow span {
+  font-size: 0.68rem;
+  font-weight: 900;
+}
+
+.today-library-card__tomorrow strong {
+  color: var(--green);
+  font-size: 0.78rem;
+  line-height: 1.25;
+}
+
+.today-library-card__tomorrow.is-closed strong {
   color: var(--red);
 }
 

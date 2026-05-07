@@ -348,6 +348,7 @@ function renderTodayLibrary(campusValue = activeLibraryCampus) {
 
   const today = getToday(settings.previewDate);
   const todayKey = toDateKey(today);
+  const tomorrowKey = toDateKey(addDays(today, 1));
   const campusLabel = getCampusOption(activeLibraryCampus).label;
   setText("todayLibraryLead", `${formatFullDateLabel(today)} / ${campusLabel}`);
 
@@ -358,9 +359,15 @@ function renderTodayLibrary(campusValue = activeLibraryCampus) {
       const day = (calendar.months || [])
         .flatMap((month) => month.days || [])
         .find((item) => item.date === todayKey);
+      const tomorrow = (calendar.months || [])
+        .flatMap((month) => month.days || [])
+        .find((item) => item.date === tomorrowKey);
 
       const card = document.createElement("article");
       card.className = `today-library-card ${day?.closed ? "is-closed" : ""}`;
+
+      const main = document.createElement("div");
+      main.className = "today-library-card__main";
 
       const name = document.createElement("h3");
       name.textContent = calendar.name;
@@ -368,7 +375,18 @@ function renderTodayLibrary(campusValue = activeLibraryCampus) {
       const hours = document.createElement("p");
       hours.textContent = day ? simplifyHours(day.hours) : "未掲載";
 
-      card.append(name, hours);
+      const tomorrowBlock = document.createElement("div");
+      tomorrowBlock.className = `today-library-card__tomorrow ${tomorrow?.closed ? "is-closed" : ""}`;
+
+      const tomorrowLabel = document.createElement("span");
+      tomorrowLabel.textContent = "明日";
+
+      const tomorrowHours = document.createElement("strong");
+      tomorrowHours.textContent = tomorrow ? simplifyHours(tomorrow.hours) : "未掲載";
+
+      main.append(name, hours);
+      tomorrowBlock.append(tomorrowLabel, tomorrowHours);
+      card.append(main, tomorrowBlock);
       root.append(card);
     });
 
