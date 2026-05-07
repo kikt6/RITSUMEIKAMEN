@@ -300,14 +300,16 @@ function renderLibraryCalendars(monthOffset = activeLibraryMonthOffset, campusVa
     }
 
     days.forEach((day) => {
+      const cellDate = parseLocalDate(day.date);
       const cell = document.createElement("div");
       cell.className = day.closed ? "library-day is-closed" : "library-day";
+      if (cellDate.getDay() === 0) cell.classList.add("is-sunday");
       if (day.date === todayKey) cell.classList.add("is-today");
-      cell.style.setProperty("--day-bg", normalizeCalendarColor(day.bgcolor));
+      cell.style.setProperty("--day-bg", cellDate.getDay() === 0 ? "#ffe7e3" : normalizeCalendarColor(day.bgcolor));
 
       const date = document.createElement("span");
       date.className = "library-day__date";
-      date.textContent = String(parseLocalDate(day.date).getDate());
+      date.textContent = String(cellDate.getDate());
 
       const hours = document.createElement("span");
       hours.className = "library-day__hours";
