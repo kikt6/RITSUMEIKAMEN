@@ -7,8 +7,8 @@
     <title>よくある質問 | 立命館仮面浪人サークル</title>
     <link rel="icon" type="image/png" href="./assets/ritsumeikan-kamen-logo.png" />
     <link rel="apple-touch-icon" href="./assets/ritsumeikan-kamen-logo.png" />
-    <link rel="manifest" href="./site.webmanifest?v=20260507-8" />
-    <link rel="stylesheet" href="./styles.css?v=20260507-8" />
+    <link rel="manifest" href="./site.webmanifest?v=20260507-11" />
+    <link rel="stylesheet" href="./styles.css?v=20260507-11" />
   </head>
   <body>
     <main class="page">
@@ -19,82 +19,102 @@
       </header>
 
       <section class="section faq-list" aria-label="よくある質問">
-        <article class="faq-item">
-          <h2>このページで何が見れる？</h2>
+        <details class="faq-item">
+          <summary>このページで何が見れる？</summary>
           <p>今日の図書館、図書館カレンダー、生協営業時間、次回模試日程、お知らせを確認できます。</p>
-        </article>
+        </details>
 
-        <article class="faq-item">
-          <h2>このサークルでは何をする？</h2>
+        <details class="faq-item">
+          <summary>このサークルでは何をする？</summary>
           <p>Discordでの情報共有、各キャンパスでの勉強会、キャンパスをまたいだセット演習、共通テスト・二次試験直前演習、履修相談を行います。</p>
-        </article>
+        </details>
 
-        <article class="faq-item">
-          <h2>参加費はかかる？</h2>
+        <details class="faq-item">
+          <summary>参加費はかかる？</summary>
           <p>参加費はかかりません。</p>
-        </article>
+        </details>
 
-        <article class="faq-item">
-          <h2>参加は強制？</h2>
+        <details class="faq-item">
+          <summary>参加は強制？</summary>
           <p>強制ではありません。自分で進めたい人も、仲間と刺激し合いたい人も、それぞれの距離感で参加できます。</p>
-        </article>
+        </details>
 
-        <article class="faq-item">
-          <h2>キャンパス切り替えは保存される？</h2>
+        <details class="faq-item">
+          <summary>キャンパス切り替えは保存される？</summary>
           <p>KIC/BKC/OICの選択は同じブラウザに保存されます。次に開いた時も前回選んだキャンパスで表示されます。</p>
-        </article>
+        </details>
 
-        <article class="faq-item">
-          <h2>営業時間や開館時間が違う時は？</h2>
+        <details class="faq-item">
+          <summary>営業時間や開館時間が違う時は？</summary>
           <p>公式ページ側の臨時変更がある場合があります。迷った時は各セクションの公式ページを確認してください。</p>
-        </article>
+        </details>
 
-        <article class="faq-item">
-          <h2>お知らせは誰が更新する？</h2>
+        <details class="faq-item">
+          <summary>お知らせは誰が更新する？</summary>
           <p>開発者が `content.js` を編集して更新します。期限付きのお知らせは、期限を過ぎると自動で非表示になります。</p>
-        </article>
+        </details>
 
-        <article class="faq-item">
-          <h2>休学について知りたい時は？</h2>
+        <details class="faq-item">
+          <summary>休学について知りたい時は？</summary>
           <p>休学は学部・時期・理由によって扱いが変わります。仮面浪人目的での休学が認められるとは限らないので、所属学部の事務室で申請期限、必要書類、学費、復学後の履修リスクを確認してください。</p>
-          <ol class="faq-flow" aria-label="休学確認フロー">
-            <li><span>1</span><strong>学部事務室へ相談</strong><small>申請期限と必要書類を確認</small></li>
-            <li><span>2</span><strong>休学届を準備</strong><small>理由、期間、学費の扱いを整理</small></li>
-            <li><span>3</span><strong>面談・確認</strong><small>教授・事務室との確認が入る場合あり</small></li>
-            <li><span>4</span><strong>許可後の計画</strong><small>復学時期、単位、留年リスクを見積もる</small></li>
-          </ol>
-        </article>
+          <div class="leave-map" aria-label="休学判断マップ">
+            <div class="leave-map__lane">
+              <h3>手続きの流れ</h3>
+              <ol class="leave-steps">
+                <li><span>1</span><strong>学部事務室へ相談</strong><small>申請期限・必要書類・学費を確認</small></li>
+                <li><span>2</span><strong>休学届を受け取る</strong><small>理由と期間を整理して書く</small></li>
+                <li><span>3</span><strong>提出時に理由確認</strong><small>事務室で事情を聞かれる場合あり</small></li>
+                <li><span>4</span><strong>教授などと面談</strong><small>今後の見通しを説明する場合あり</small></li>
+                <li><span>5</span><strong>許可後に休学</strong><small>復学時期と履修計画を必ず残す</small></li>
+              </ol>
+            </div>
 
-        <article class="faq-item">
-          <h2>共通テストと定期試験は被る？</h2>
+            <div class="leave-map__lane leave-map__lane--risk">
+              <h3>失敗した時の重さ</h3>
+              <div class="risk-chain">
+                <div><strong>休学中</strong><span>単位を積めない</span></div>
+                <div><strong>復学後</strong><span>必修・専門の回収が重い</span></div>
+                <div><strong>残留時</strong><span>ほぼ留年、5回生も視野</span></div>
+              </div>
+              <ul class="risk-list">
+                <li>配当回生、開講学期、前提科目の都合で履修の連鎖が崩れる可能性がある。</li>
+                <li>休学中の費用、奨学金、復学後の納付時期は事前確認が必要。</li>
+                <li>受験後に残留した場合、単位回収、就活、ゼミ・研究室、生活リズムの立て直しが同時に来る。</li>
+              </ul>
+            </div>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>共通テストと定期試験は被る？</summary>
           <p>基本的には大きな問題になりにくいですが、万が一に備えて後期の履修で教養科目を詰め込みすぎない方が安全です。残留した場合の単位回収も考えて履修を組んでください。</p>
-        </article>
+        </details>
 
-        <article class="faq-item">
-          <h2>履修はどう組む？</h2>
+        <details class="faq-item">
+          <summary>履修はどう組む？</summary>
           <p>秋学期は教養科目を抑えめにしつつ、基礎専門・専門など残留時に必要になる単位はある程度残しておくのが無難です。全休を作れるなら、まとまった勉強時間として使いやすくなります。</p>
-        </article>
+        </details>
 
-        <article class="faq-item">
-          <h2>受験費用はどれくらい見ておく？</h2>
+        <details class="faq-item">
+          <summary>受験費用はどれくらい見ておく？</summary>
           <p>受験料、模試、交通費、参考書などで最低でも15万円程度は見ておくと安心です。受験校数や遠征の有無で大きく変わります。</p>
-        </article>
+        </details>
 
-        <article class="faq-item">
-          <h2>学内の印刷機はどう使う？</h2>
+        <details class="faq-item">
+          <summary>学内の印刷機はどう使う？</summary>
           <p>プリントステーションのRAINBOW複合機で、資料の印刷や文献コピーができます。自分のPC・スマホから印刷する場合は、学内Wi-Fiに接続してプリンタードライバーを設定します。設置PCを使う場合はRAINBOWユーザーIDでログインして、USBやオンラインストレージのデータを印刷できます。利用後は複合機の操作パネルでログアウトし、学生証・原本・印刷物の置き忘れに注意してください。学生は年間の印刷枚数に上限があるので、最新条件は公式案内を確認してください。</p>
           <a class="faq-reference" href="https://it.support.ritsumei.ac.jp/hc/ja/articles/900006851923-%E3%83%97%E3%83%AA%E3%83%B3%E3%83%88%E3%82%B9%E3%83%86%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%81%AE%E5%88%A9%E7%94%A8%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6" target="_blank" rel="noopener noreferrer">プリントステーションの公式案内</a>
-        </article>
+        </details>
 
-        <article class="faq-item">
-          <h2>サークル内の情報は外に出していい？</h2>
+        <details class="faq-item">
+          <summary>サークル内の情報は外に出していい？</summary>
           <p>Discord内の活動内容や共有資料の口外は禁止です。写真・動画を扱う時は肖像権にも注意してください。</p>
-        </article>
+        </details>
 
-        <article class="faq-item">
-          <h2>スマホのホーム画面に追加できる？</h2>
+        <details class="faq-item">
+          <summary>スマホのホーム画面に追加できる？</summary>
           <p>できます。SafariやChromeの共有メニューからホーム画面に追加してください。</p>
-        </article>
+        </details>
       </section>
     </main>
   </body>

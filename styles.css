@@ -1014,24 +1014,59 @@ h1 {
 }
 
 .faq-item {
-  border-bottom: 1px solid var(--line);
-  padding-bottom: 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 0;
+  background: #fff;
+  overflow: hidden;
 }
 
-.faq-item:last-child {
-  border-bottom: 0;
-  padding-bottom: 0;
-}
-
-.faq-item h2 {
-  margin-bottom: 6px;
+.faq-item summary {
+  position: relative;
+  min-height: 54px;
+  display: flex;
+  align-items: center;
+  padding: 14px 46px 14px 16px;
   color: var(--green);
   font-size: 1rem;
+  font-weight: 900;
   line-height: 1.45;
+  cursor: pointer;
+  list-style: none;
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item summary::after {
+  content: "+";
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  width: 26px;
+  height: 26px;
+  display: grid;
+  place-items: center;
+  border-radius: 999px;
+  background: var(--green-soft);
+  transform: translateY(-50%);
+  color: var(--green);
+  font-size: 1rem;
+  font-weight: 900;
+}
+
+.faq-item[open] summary {
+  border-bottom: 1px solid var(--line);
+  background: #fff8ed;
+}
+
+.faq-item[open] summary::after {
+  content: "-";
 }
 
 .faq-item p {
-  margin-bottom: 0;
+  margin: 14px 16px 0;
   color: var(--muted);
   line-height: 1.7;
 }
@@ -1041,7 +1076,7 @@ h1 {
   min-height: 34px;
   display: inline-flex;
   align-items: center;
-  margin-top: 10px;
+  margin: 10px 16px 16px;
   border-radius: 8px;
   padding: 0 10px;
   background: var(--green-soft);
@@ -1055,28 +1090,68 @@ h1 {
   filter: brightness(0.97);
 }
 
-.faq-flow {
+.leave-map {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 8px;
-  margin: 14px 0 0;
-  padding: 0;
-  list-style: none;
+  grid-template-columns: minmax(0, 1.15fr) minmax(260px, 0.85fr);
+  gap: 14px;
+  margin: 16px;
 }
 
-.faq-flow li {
+.leave-map__lane {
   min-width: 0;
-  display: grid;
-  gap: 6px;
   border: 1px solid var(--line);
   border-radius: 8px;
-  padding: 12px;
+  padding: 14px;
+  background: #fff;
+}
+
+.leave-map__lane--risk {
+  border-color: #efd0cc;
+  background: #fff7f5;
+}
+
+.leave-map__lane h3 {
+  margin-bottom: 12px;
+  color: var(--green);
+  font-size: 0.98rem;
+}
+
+.leave-steps {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: step;
+}
+
+.leave-steps li {
+  position: relative;
+  display: grid;
+  grid-template-columns: 34px minmax(0, 1fr);
+  column-gap: 10px;
+  row-gap: 3px;
+  align-items: start;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 10px;
   background: #fff8ed;
 }
 
-.faq-flow span {
-  width: 28px;
-  height: 28px;
+.leave-steps li:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  left: 26px;
+  bottom: -11px;
+  width: 2px;
+  height: 10px;
+  background: var(--green);
+}
+
+.leave-steps span {
+  grid-row: span 2;
+  width: 30px;
+  height: 30px;
   display: grid;
   place-items: center;
   border-radius: 999px;
@@ -1086,17 +1161,69 @@ h1 {
   font-weight: 900;
 }
 
-.faq-flow strong {
+.leave-steps strong,
+.risk-chain strong {
   color: var(--ink);
   font-size: 0.92rem;
   line-height: 1.35;
 }
 
-.faq-flow small {
+.leave-steps small,
+.risk-chain span {
   color: var(--muted);
   font-size: 0.78rem;
   font-weight: 800;
   line-height: 1.45;
+}
+
+.risk-chain {
+  display: grid;
+  gap: 8px;
+}
+
+.risk-chain div {
+  display: grid;
+  gap: 3px;
+  border-left: 5px solid var(--green);
+  border-radius: 8px;
+  padding: 10px 12px;
+  background: #fff;
+}
+
+.risk-chain div:last-child {
+  border-left-color: var(--red);
+  background: #fff0ed;
+}
+
+.risk-list {
+  display: grid;
+  gap: 8px;
+  margin: 12px 0 0;
+  padding-left: 1.15rem;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+.result-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 14px 16px 0;
+}
+
+.results-section .result-list {
+  margin: 0;
+}
+
+.result-list span {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 7px 10px;
+  background: #fff8ed;
+  color: var(--ink);
+  font-size: 0.82rem;
+  font-weight: 900;
+  line-height: 1.3;
 }
 
 @media (max-width: 900px) {
@@ -1163,7 +1290,7 @@ h1 {
     padding: 8px 4px;
   }
 
-  .faq-flow {
+  .leave-map {
     grid-template-columns: 1fr;
   }
 
