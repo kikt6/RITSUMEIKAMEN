@@ -50,7 +50,7 @@ window.siteContent = {
   notices: [
     {
       tag: "お知らせ",
-      title: "もう少しでリリースやで",
+      title: "リリースしました",
       body: "",
       expiresAt: "",
     },
