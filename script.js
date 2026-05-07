@@ -585,7 +585,7 @@ function normalizeCalendarColor(color) {
   const value = String(color || "").toLowerCase();
   if (value === "#ff6666") return "#ffe7e3";
   if (value === "#99ffff") return "#e1f5f5";
-  if (value === "#ffff00") return "#fff5b8";
+  if (value === "#ffff00") return "#f4fbf6";
   return "#ffffff";
 }
 

@@ -578,7 +578,7 @@ h1 {
   line-height: 1.45;
 }
 
-.library-card span {
+.library-card__header > span {
   border-radius: 999px;
   padding: 5px 9px;
   background: var(--green-soft);
@@ -1215,6 +1215,21 @@ h1 {
   margin: 0;
 }
 
+.site-footer {
+  border: 1px solid rgba(157, 23, 23, 0.18);
+  border-radius: 8px;
+  padding: 14px 16px;
+  background: rgba(255, 255, 255, 0.72);
+  color: var(--muted);
+  font-weight: 900;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.site-footer p {
+  margin: 0;
+}
+
 .result-list span {
   border: 1px solid var(--line);
   border-radius: 999px;
@@ -1312,9 +1327,58 @@ h1 {
     flex-direction: column;
   }
 
+  .library-month {
+    overflow-x: visible;
+    padding: 10px 8px 12px;
+  }
+
+  .library-card__header {
+    padding: 12px 10px 0;
+  }
+
+  .library-card h3 {
+    font-size: 0.9rem;
+  }
+
+  .library-card__header > span {
+    padding: 4px 7px;
+    font-size: 0.68rem;
+  }
+
   .library-weekdays,
   .library-days {
-    min-width: 560px;
+    min-width: 0;
+    gap: 3px;
+  }
+
+  .library-weekdays span {
+    min-height: 20px;
+    font-size: 0.66rem;
+  }
+
+  .library-day {
+    min-height: 47px;
+    border-radius: 5px;
+    padding: 4px 3px;
+    gap: 2px;
+  }
+
+  .library-day__date {
+    font-size: 0.7rem;
+  }
+
+  .library-day__hours {
+    font-size: 0.58rem;
+    line-height: 1.16;
+    word-break: normal;
+    overflow-wrap: normal;
+  }
+
+  .library-day.is-today .library-day__date::after {
+    min-height: 14px;
+    margin-left: 2px;
+    padding: 0 3px;
+    font-size: 0.55rem;
   }
 
   .coop-table-wrap {
