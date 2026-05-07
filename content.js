@@ -44,7 +44,7 @@ window.siteContent = {
     { label: "年間カレンダー", url: "#" },
   ],
   officialLinks: [
-    { label: "CAMPUS WEB", url: "https://www.ritsumei.ac.jp/rsp/" },
+    { label: "CAMPUS WEB", url: "https://cw.ritsumei.ac.jp/campusweb/sv/main" },
     { label: "Moodle", url: "https://www.ritsumei.ac.jp/pathways-future/course/moodle.html" },
   ],
   notices: [
