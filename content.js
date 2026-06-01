@@ -4,7 +4,7 @@ window.siteContent = {
   siteName: "立命館仮面浪人サークル",
   pageTitle: "立命館仮面浪人サークル",
   lead: "",
-  updatedAt: "2026-05-07",
+  updatedAt: "2026-06-01",
   commonTest: {
     title: "共通テスト開始まで",
     targetAt: "2027-01-16T09:30:00+09:00",
@@ -48,6 +48,13 @@ window.siteContent = {
     { label: "Moodle", url: "https://www.ritsumei.ac.jp/pathways-future/course/moodle.html" },
   ],
   notices: [
+    {
+      tag: "模試",
+      title: "駿台 東大実戦・京大実戦の申し込み開始",
+      body: "駿台の東大入試実戦模試・京大入試実戦模試の申し込みが始まっています。受験予定者は日程・会場・締切を早めに確認してください。",
+      url: "https://www2.sundai.ac.jp/moshi/",
+      expiresAt: "",
+    },
     {
       tag: "お知らせ",
       title: "リリースしました",
