@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#9d1717" />
+    <title>空き教室一覧 | 立命館仮面浪人サークル</title>
+    <link rel="icon" type="image/png" href="./assets/ritsumeikan-kamen-logo.png" />
+    <link rel="apple-touch-icon" href="./assets/ritsumeikan-kamen-logo.png" />
+    <link rel="manifest" href="./site.webmanifest?v=20260602-1" />
+    <link rel="stylesheet" href="./styles.css?v=20260602-1" />
+  </head>
+  <body>
+    <main class="page rooms-page">
+      <header class="faq-hero rooms-hero">
+        <p class="eyebrow">ROOMS</p>
+        <h1>空き教室一覧</h1>
+        <p>ログイン後に取得したシラバス・時間割の教室データを読み込んで、キャンパス・曜日・時限ごとの空き教室を確認できます。</p>
+        <div class="hero-link-row">
+          <a class="source-link" href="./index.html">トップへ戻る</a>
+          <a class="source-link" href="https://syllabus.ritsumei.ac.jp/syllabus/s/?language=ja" target="_blank" rel="noopener noreferrer">オンラインシラバス</a>
+        </div>
+      </header>
+
+      <section class="section room-status" aria-label="空き教室データの状態">
+        <div class="section__header section__header--stack">
+          <div>
+            <h2>検索条件</h2>
+            <p id="roomDataNote">データを読み込むと、ここで空き教室を絞り込めます。</p>
+          </div>
+          <span class="source-pill" id="roomUpdatedAt"></span>
+        </div>
+        <div class="room-filter-grid">
+          <div>
+            <span class="room-filter-label">キャンパス</span>
+            <div class="control-row campus-controls" id="roomCampusControls" aria-label="キャンパス切り替え"></div>
+          </div>
+          <div>
+            <span class="room-filter-label">曜日</span>
+            <div class="control-row room-day-controls" id="roomDayControls" aria-label="曜日切り替え"></div>
+          </div>
+          <div>
+            <span class="room-filter-label">時限</span>
+            <div class="control-row room-period-controls" id="roomPeriodControls" aria-label="時限切り替え"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section room-results" aria-label="空き教室一覧">
+        <div class="section__header section__header--stack">
+          <div>
+            <h2 id="roomResultTitle">空き教室</h2>
+            <p id="roomResultLead"></p>
+          </div>
+          <span class="source-pill" id="roomResultCount"></span>
+        </div>
+        <div class="room-summary-grid" id="roomSummary"></div>
+        <div class="room-grid" id="availableRooms"></div>
+      </section>
+
+      <section class="section room-results" aria-label="使用中の教室">
+        <div class="section__header section__header--stack">
+          <div>
+            <h2>使用中の教室</h2>
+            <p>同じ曜日・時限で授業が登録されている教室です。</p>
+          </div>
+          <span class="source-pill" id="occupiedRoomCount"></span>
+        </div>
+        <div class="occupied-list" id="occupiedRooms"></div>
+      </section>
+
+      <section class="section room-import" aria-label="空き教室データ更新">
+        <div class="section__header section__header--stack">
+          <div>
+            <h2>データ更新</h2>
+            <p>CSVを貼り付けると、この端末だけに保存して空き教室を計算します。サーバーには送信しません。</p>
+          </div>
+        </div>
+        <textarea id="roomCsvInput" spellcheck="false" placeholder="type,campus,building,room,day,period,course&#10;room,KIC,存心館,ZS101,,,&#10;class,KIC,存心館,ZS101,月,1,英語"></textarea>
+        <div class="room-import-actions">
+          <button class="primary-action" type="button" id="roomCsvApply">CSVを読み込む</button>
+          <button class="ghost-action" type="button" id="roomCsvReset">保存データを消す</button>
+        </div>
+        <details class="room-format">
+          <summary>CSVの書き方</summary>
+          <p>見出しは日本語でも使えます。教室マスタ行は `type=room`、授業行は `type=class` にしてください。全教室マスタがない場合は、授業データに出てきた教室だけを候補として判定します。</p>
+          <pre><code>type,campus,building,room,day,period,course
+room,KIC,存心館,ZS101,,,
+room,KIC,存心館,ZS102,,,
+class,KIC,存心館,ZS101,月,1,英語
+class,KIC,存心館,ZS102,月,2,法学入門</code></pre>
+        </details>
+      </section>
+    </main>
+
+    <script src="./classroom-data.js?v=20260602-1"></script>
+    <script src="./rooms.js?v=20260602-1"></script>
+  </body>
+</html>

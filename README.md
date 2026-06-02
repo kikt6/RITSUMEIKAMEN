@@ -83,6 +83,22 @@ mockExam: {
 
 ページ最下部に、`content.js` の `officialLinks` を表示します。いったん `CAMPUS WEB` と `Moodle` のみ入れています。
 
+## 空き教室一覧
+
+`rooms.html` に空き教室ページがあります。オンラインシラバスや時間割から取得した教室データをCSVで貼り付けると、キャンパス・曜日・時限ごとの空き教室を表示します。
+
+CSVは次の形で読み込めます。
+
+```csv
+type,campus,building,room,day,period,course
+room,KIC,存心館,ZS101,,,
+room,KIC,存心館,ZS102,,,
+class,KIC,存心館,ZS101,月,1,英語
+class,KIC,存心館,ZS102,月,2,法学入門
+```
+
+教室マスタ行は `type=room`、授業行は `type=class` です。全教室マスタがない場合は、授業データに出てきた教室だけを候補として判定します。
+
 ## よくある質問
 
 `faq.html` にFAQページがあります。トップページの一番下から移動できます。
@@ -112,12 +128,15 @@ mockExam: {
 
 - `index.html`: ページの骨組み
 - `faq.html`: よくある質問ページ
+- `rooms.html`: 空き教室一覧ページ
 - `styles.css`: 見た目
 - `content.js`: 更新する内容
+- `classroom-data.js`: 空き教室一覧の初期データ
 - `exam-schedule.js`: PDFから作った模試一覧
 - `library-hours.js`: 立命館大学図書館公式カレンダーから取得した開館時間
 - `coop-hours.js`: 立命館生協公式ページから取得した営業時間
 - `script.js`: `content.js` の内容をHTMLに表示する処理
+- `rooms.js`: 空き教室一覧の表示・CSV読み込み処理
 - `site.webmanifest`: スマホのホーム画面追加用設定
 - `service-worker.js`: ホーム画面追加と簡易キャッシュ用
 - `assets/ritsumeikan-kamen-logo.png`: サークルロゴ
