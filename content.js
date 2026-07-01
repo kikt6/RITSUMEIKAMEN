@@ -4,7 +4,7 @@ window.siteContent = {
   siteName: "立命館仮面浪人サークル",
   pageTitle: "立命館仮面浪人サークル",
   lead: "",
-  updatedAt: "2026-06-02",
+  updatedAt: "2026-07-01",
   commonTest: {
     title: "共通テスト開始まで",
     targetAt: "2027-01-16T09:30:00+09:00",
@@ -34,7 +34,7 @@ window.siteContent = {
   coop: {
     title: "今日の学食・生協営業時間",
     lead: "立命館生協の公式営業時間ページに従って、今日の営業時間をKIC・BKC・OICごとに表示します。他の日程は公式ページで確認してください。",
-    sourceUrl: "https://www.ritsco-op.jp/schedule/schedule_202605.html",
+    sourceUrl: "https://www.ritsco-op.jp/schedule/schedule_202607.html",
     displayDays: 1,
     previewDate: "",
   },

@@ -1,15 +1,15 @@
 // Generated from Ritsumeikan University Library official calendar pages.
 window.libraryHours = {
   "sourceUrl": "https://www.ritsumei.ac.jp/lib/a03/010/",
-  "generatedAt": "2026-05-06",
+  "generatedAt": "2026-07-01",
   "months": [
     {
-      "query": "2026-05",
-      "label": "2026/05"
+      "query": "2026-07",
+      "label": "2026/07"
     },
     {
-      "query": "2026-06",
-      "label": "2026/06"
+      "query": "2026-08",
+      "label": "2026/08"
     }
   ],
   "libraries": [
@@ -19,500 +19,508 @@ window.libraryHours = {
       "countercd": "101001",
       "months": [
         {
-          "query": "2026-05",
-          "label": "2026/05",
+          "query": "2026-07",
+          "label": "2026/07",
           "days": [
             {
-              "date": "2026-05-01",
-              "displayDate": "2026/05/01(金)",
+              "date": "2026-07-01",
+              "displayDate": "2026/07/01(水)",
               "hours": "8:30-22:00",
               "bgcolor": "#FFFFFF",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-02",
-              "displayDate": "2026/05/02(土)",
+              "date": "2026-07-02",
+              "displayDate": "2026/07/02(木)",
+              "hours": "8:30-22:00",
+              "bgcolor": "#FFFFFF",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-07-03",
+              "displayDate": "2026/07/03(金)",
+              "hours": "8:30-22:00",
+              "bgcolor": "#FFFFFF",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-07-04",
+              "displayDate": "2026/07/04(土)",
               "hours": "10:00-17:00",
               "bgcolor": "#99FFFF",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-03",
-              "displayDate": "2026/05/03(日)",
-              "hours": "閉館 / Closed",
-              "bgcolor": "#FF6666",
-              "fontcolor": "#4D4D4D",
-              "closed": true
-            },
-            {
-              "date": "2026-05-04",
-              "displayDate": "2026/05/04(月)",
-              "hours": "閉館 / Closed",
-              "bgcolor": "#FF6666",
-              "fontcolor": "#4D4D4D",
-              "closed": true
-            },
-            {
-              "date": "2026-05-05",
-              "displayDate": "2026/05/05(火)",
-              "hours": "閉館 / Closed",
-              "bgcolor": "#FF6666",
-              "fontcolor": "#4D4D4D",
-              "closed": true
-            },
-            {
-              "date": "2026-05-06",
-              "displayDate": "2026/05/06(水)",
-              "hours": "閉館 / Closed",
-              "bgcolor": "#FF6666",
-              "fontcolor": "#4D4D4D",
-              "closed": true
-            },
-            {
-              "date": "2026-05-07",
-              "displayDate": "2026/05/07(木)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-05-08",
-              "displayDate": "2026/05/08(金)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-05-09",
-              "displayDate": "2026/05/09(土)",
+              "date": "2026-07-05",
+              "displayDate": "2026/07/05(日)",
               "hours": "10:00-17:00",
               "bgcolor": "#99FFFF",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-10",
-              "displayDate": "2026/05/10(日)",
+              "date": "2026-07-06",
+              "displayDate": "2026/07/06(月)",
+              "hours": "8:30-22:00",
+              "bgcolor": "#FFFFFF",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-07-07",
+              "displayDate": "2026/07/07(火)",
+              "hours": "8:30-22:00",
+              "bgcolor": "#FFFFFF",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-07-08",
+              "displayDate": "2026/07/08(水)",
+              "hours": "8:30-22:00",
+              "bgcolor": "#FFFFFF",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-07-09",
+              "displayDate": "2026/07/09(木)",
+              "hours": "8:30-22:00",
+              "bgcolor": "#FFFFFF",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-07-10",
+              "displayDate": "2026/07/10(金)",
+              "hours": "8:30-22:00",
+              "bgcolor": "#FFFFFF",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-07-11",
+              "displayDate": "2026/07/11(土)",
               "hours": "10:00-17:00",
               "bgcolor": "#99FFFF",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-11",
-              "displayDate": "2026/05/11(月)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-05-12",
-              "displayDate": "2026/05/12(火)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-05-13",
-              "displayDate": "2026/05/13(水)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-05-14",
-              "displayDate": "2026/05/14(木)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-05-15",
-              "displayDate": "2026/05/15(金)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-05-16",
-              "displayDate": "2026/05/16(土)",
+              "date": "2026-07-12",
+              "displayDate": "2026/07/12(日)",
               "hours": "10:00-17:00",
               "bgcolor": "#99FFFF",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-17",
-              "displayDate": "2026/05/17(日)",
+              "date": "2026-07-13",
+              "displayDate": "2026/07/13(月)",
+              "hours": "8:30-22:00",
+              "bgcolor": "#FFFFFF",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-07-14",
+              "displayDate": "2026/07/14(火)",
+              "hours": "8:30-22:00",
+              "bgcolor": "#FFFFFF",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-07-15",
+              "displayDate": "2026/07/15(水)",
+              "hours": "8:30-22:00",
+              "bgcolor": "#FFFFFF",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-07-16",
+              "displayDate": "2026/07/16(木)",
+              "hours": "8:30-22:00",
+              "bgcolor": "#FFFFFF",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-07-17",
+              "displayDate": "2026/07/17(金)",
+              "hours": "8:30-22:00",
+              "bgcolor": "#FFFFFF",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-07-18",
+              "displayDate": "2026/07/18(土)",
+              "hours": "8:30-22:00",
+              "bgcolor": "#FFFFFF",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-07-19",
+              "displayDate": "2026/07/19(日)",
               "hours": "10:00-17:00",
               "bgcolor": "#99FFFF",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-18",
-              "displayDate": "2026/05/18(月)",
+              "date": "2026-07-20",
+              "displayDate": "2026/07/20(月)",
               "hours": "8:30-22:00",
               "bgcolor": "#FFFFFF",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-19",
-              "displayDate": "2026/05/19(火)",
+              "date": "2026-07-21",
+              "displayDate": "2026/07/21(火)",
               "hours": "8:30-22:00",
               "bgcolor": "#FFFFFF",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-20",
-              "displayDate": "2026/05/20(水)",
+              "date": "2026-07-22",
+              "displayDate": "2026/07/22(水)",
               "hours": "8:30-22:00",
               "bgcolor": "#FFFFFF",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-21",
-              "displayDate": "2026/05/21(木)",
+              "date": "2026-07-23",
+              "displayDate": "2026/07/23(木)",
               "hours": "8:30-22:00",
               "bgcolor": "#FFFFFF",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-22",
-              "displayDate": "2026/05/22(金)",
+              "date": "2026-07-24",
+              "displayDate": "2026/07/24(金)",
               "hours": "8:30-22:00",
               "bgcolor": "#FFFFFF",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-23",
-              "displayDate": "2026/05/23(土)",
+              "date": "2026-07-25",
+              "displayDate": "2026/07/25(土)",
+              "hours": "8:30-22:00",
+              "bgcolor": "#FFFFFF",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-07-26",
+              "displayDate": "2026/07/26(日)",
+              "hours": "10:00-17:00",
+              "bgcolor": "#99FFFF",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-07-27",
+              "displayDate": "2026/07/27(月)",
               "hours": "9:00-19:30",
               "bgcolor": "#FFFF00",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-24",
-              "displayDate": "2026/05/24(日)",
-              "hours": "10:00-17:00",
-              "bgcolor": "#99FFFF",
+              "date": "2026-07-28",
+              "displayDate": "2026/07/28(火)",
+              "hours": "9:00-19:30",
+              "bgcolor": "#FFFF00",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-25",
-              "displayDate": "2026/05/25(月)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
+              "date": "2026-07-29",
+              "displayDate": "2026/07/29(水)",
+              "hours": "9:00-19:30",
+              "bgcolor": "#FFFF00",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-26",
-              "displayDate": "2026/05/26(火)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
+              "date": "2026-07-30",
+              "displayDate": "2026/07/30(木)",
+              "hours": "9:00-19:30",
+              "bgcolor": "#FFFF00",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-27",
-              "displayDate": "2026/05/27(水)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-05-28",
-              "displayDate": "2026/05/28(木)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-05-29",
-              "displayDate": "2026/05/29(金)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-05-30",
-              "displayDate": "2026/05/30(土)",
-              "hours": "10:00-17:00",
-              "bgcolor": "#99FFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-05-31",
-              "displayDate": "2026/05/31(日)",
-              "hours": "10:00-17:00",
-              "bgcolor": "#99FFFF",
+              "date": "2026-07-31",
+              "displayDate": "2026/07/31(金)",
+              "hours": "9:00-19:30",
+              "bgcolor": "#FFFF00",
               "fontcolor": "#4D4D4D",
               "closed": false
             }
           ]
         },
         {
-          "query": "2026-06",
-          "label": "2026/06",
+          "query": "2026-08",
+          "label": "2026/08",
           "days": [
             {
-              "date": "2026-06-01",
-              "displayDate": "2026/06/01(月)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-06-02",
-              "displayDate": "2026/06/02(火)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-06-03",
-              "displayDate": "2026/06/03(水)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-06-04",
-              "displayDate": "2026/06/04(木)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-06-05",
-              "displayDate": "2026/06/05(金)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-06-06",
-              "displayDate": "2026/06/06(土)",
+              "date": "2026-08-01",
+              "displayDate": "2026/08/01(土)",
               "hours": "10:00-17:00",
               "bgcolor": "#99FFFF",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-06-07",
-              "displayDate": "2026/06/07(日)",
+              "date": "2026-08-02",
+              "displayDate": "2026/08/02(日)",
               "hours": "10:00-17:00",
               "bgcolor": "#99FFFF",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-06-08",
-              "displayDate": "2026/06/08(月)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-06-09",
-              "displayDate": "2026/06/09(火)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-06-10",
-              "displayDate": "2026/06/10(水)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-06-11",
-              "displayDate": "2026/06/11(木)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-06-12",
-              "displayDate": "2026/06/12(金)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-06-13",
-              "displayDate": "2026/06/13(土)",
-              "hours": "10:00-17:00",
-              "bgcolor": "#99FFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-06-14",
-              "displayDate": "2026/06/14(日)",
-              "hours": "10:00-17:00",
-              "bgcolor": "#99FFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-06-15",
-              "displayDate": "2026/06/15(月)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-06-16",
-              "displayDate": "2026/06/16(火)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-06-17",
-              "displayDate": "2026/06/17(水)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-06-18",
-              "displayDate": "2026/06/18(木)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-06-19",
-              "displayDate": "2026/06/19(金)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-06-20",
-              "displayDate": "2026/06/20(土)",
-              "hours": "10:00-17:00",
-              "bgcolor": "#99FFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-06-21",
-              "displayDate": "2026/06/21(日)",
-              "hours": "10:00-17:00",
-              "bgcolor": "#99FFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-06-22",
-              "displayDate": "2026/06/22(月)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-06-23",
-              "displayDate": "2026/06/23(火)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-06-24",
-              "displayDate": "2026/06/24(水)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-06-25",
-              "displayDate": "2026/06/25(木)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-06-26",
-              "displayDate": "2026/06/26(金)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-06-27",
-              "displayDate": "2026/06/27(土)",
+              "date": "2026-08-03",
+              "displayDate": "2026/08/03(月)",
               "hours": "9:00-19:30",
               "bgcolor": "#FFFF00",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-06-28",
-              "displayDate": "2026/06/28(日)",
+              "date": "2026-08-04",
+              "displayDate": "2026/08/04(火)",
+              "hours": "9:00-19:30",
+              "bgcolor": "#FFFF00",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-08-05",
+              "displayDate": "2026/08/05(水)",
+              "hours": "9:00-19:30",
+              "bgcolor": "#FFFF00",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-08-06",
+              "displayDate": "2026/08/06(木)",
+              "hours": "9:00-19:30",
+              "bgcolor": "#FFFF00",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-08-07",
+              "displayDate": "2026/08/07(金)",
+              "hours": "9:00-19:30",
+              "bgcolor": "#FFFF00",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-08-08",
+              "displayDate": "2026/08/08(土)",
               "hours": "10:00-17:00",
               "bgcolor": "#99FFFF",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-06-29",
-              "displayDate": "2026/06/29(月)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
+              "date": "2026-08-09",
+              "displayDate": "2026/08/09(日)",
+              "hours": "10:00-17:00",
+              "bgcolor": "#99FFFF",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-06-30",
-              "displayDate": "2026/06/30(火)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
+              "date": "2026-08-10",
+              "displayDate": "2026/08/10(月)",
+              "hours": "閉館 / Closed",
+              "bgcolor": "#FF6666",
+              "fontcolor": "#4D4D4D",
+              "closed": true
+            },
+            {
+              "date": "2026-08-11",
+              "displayDate": "2026/08/11(火)",
+              "hours": "閉館 / Closed",
+              "bgcolor": "#FF6666",
+              "fontcolor": "#4D4D4D",
+              "closed": true
+            },
+            {
+              "date": "2026-08-12",
+              "displayDate": "2026/08/12(水)",
+              "hours": "閉館 / Closed",
+              "bgcolor": "#FF6666",
+              "fontcolor": "#4D4D4D",
+              "closed": true
+            },
+            {
+              "date": "2026-08-13",
+              "displayDate": "2026/08/13(木)",
+              "hours": "閉館 / Closed",
+              "bgcolor": "#FF6666",
+              "fontcolor": "#4D4D4D",
+              "closed": true
+            },
+            {
+              "date": "2026-08-14",
+              "displayDate": "2026/08/14(金)",
+              "hours": "閉館 / Closed",
+              "bgcolor": "#FF6666",
+              "fontcolor": "#4D4D4D",
+              "closed": true
+            },
+            {
+              "date": "2026-08-15",
+              "displayDate": "2026/08/15(土)",
+              "hours": "閉館 / Closed",
+              "bgcolor": "#FF6666",
+              "fontcolor": "#4D4D4D",
+              "closed": true
+            },
+            {
+              "date": "2026-08-16",
+              "displayDate": "2026/08/16(日)",
+              "hours": "閉館 / Closed",
+              "bgcolor": "#FF6666",
+              "fontcolor": "#4D4D4D",
+              "closed": true
+            },
+            {
+              "date": "2026-08-17",
+              "displayDate": "2026/08/17(月)",
+              "hours": "閉館 / Closed",
+              "bgcolor": "#FF6666",
+              "fontcolor": "#4D4D4D",
+              "closed": true
+            },
+            {
+              "date": "2026-08-18",
+              "displayDate": "2026/08/18(火)",
+              "hours": "9:00-19:30",
+              "bgcolor": "#FFFF00",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-08-19",
+              "displayDate": "2026/08/19(水)",
+              "hours": "9:00-19:30",
+              "bgcolor": "#FFFF00",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-08-20",
+              "displayDate": "2026/08/20(木)",
+              "hours": "9:00-19:30",
+              "bgcolor": "#FFFF00",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-08-21",
+              "displayDate": "2026/08/21(金)",
+              "hours": "閉館 / Closed",
+              "bgcolor": "#FF6666",
+              "fontcolor": "#4D4D4D",
+              "closed": true
+            },
+            {
+              "date": "2026-08-22",
+              "displayDate": "2026/08/22(土)",
+              "hours": "10:00-17:00",
+              "bgcolor": "#99FFFF",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-08-23",
+              "displayDate": "2026/08/23(日)",
+              "hours": "10:00-17:00",
+              "bgcolor": "#99FFFF",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-08-24",
+              "displayDate": "2026/08/24(月)",
+              "hours": "9:00-19:30",
+              "bgcolor": "#FFFF00",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-08-25",
+              "displayDate": "2026/08/25(火)",
+              "hours": "9:00-19:30",
+              "bgcolor": "#FFFF00",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-08-26",
+              "displayDate": "2026/08/26(水)",
+              "hours": "9:00-19:30",
+              "bgcolor": "#FFFF00",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-08-27",
+              "displayDate": "2026/08/27(木)",
+              "hours": "9:00-19:30",
+              "bgcolor": "#FFFF00",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-08-28",
+              "displayDate": "2026/08/28(金)",
+              "hours": "9:00-19:30",
+              "bgcolor": "#FFFF00",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-08-29",
+              "displayDate": "2026/08/29(土)",
+              "hours": "10:00-17:00",
+              "bgcolor": "#99FFFF",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-08-30",
+              "displayDate": "2026/08/30(日)",
+              "hours": "10:00-17:00",
+              "bgcolor": "#99FFFF",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-08-31",
+              "displayDate": "2026/08/31(月)",
+              "hours": "9:00-19:30",
+              "bgcolor": "#FFFF00",
               "fontcolor": "#4D4D4D",
               "closed": false
             }
@@ -526,498 +534,506 @@ window.libraryHours = {
       "countercd": "101002",
       "months": [
         {
-          "query": "2026-05",
-          "label": "2026/05",
+          "query": "2026-07",
+          "label": "2026/07",
           "days": [
             {
-              "date": "2026-05-01",
-              "displayDate": "2026/05/01(金)",
+              "date": "2026-07-01",
+              "displayDate": "2026/07/01(水)",
               "hours": "9:00-20:00",
               "bgcolor": "#FEF8E0",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-02",
-              "displayDate": "2026/05/02(土)",
+              "date": "2026-07-02",
+              "displayDate": "2026/07/02(木)",
+              "hours": "9:00-20:00",
+              "bgcolor": "#FEF8E0",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-07-03",
+              "displayDate": "2026/07/03(金)",
+              "hours": "9:00-20:00",
+              "bgcolor": "#FEF8E0",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-07-04",
+              "displayDate": "2026/07/04(土)",
               "hours": "10:00-17:00",
               "bgcolor": "#99FFFF",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-03",
-              "displayDate": "2026/05/03(日)",
+              "date": "2026-07-05",
+              "displayDate": "2026/07/05(日)",
               "hours": "閉館 / Closed",
               "bgcolor": "#FF6666",
               "fontcolor": "#4D4D4D",
               "closed": true
             },
             {
-              "date": "2026-05-04",
-              "displayDate": "2026/05/04(月)",
-              "hours": "閉館 / Closed",
-              "bgcolor": "#FF6666",
-              "fontcolor": "#4D4D4D",
-              "closed": true
-            },
-            {
-              "date": "2026-05-05",
-              "displayDate": "2026/05/05(火)",
-              "hours": "閉館 / Closed",
-              "bgcolor": "#FF6666",
-              "fontcolor": "#4D4D4D",
-              "closed": true
-            },
-            {
-              "date": "2026-05-06",
-              "displayDate": "2026/05/06(水)",
-              "hours": "閉館 / Closed",
-              "bgcolor": "#FF6666",
-              "fontcolor": "#4D4D4D",
-              "closed": true
-            },
-            {
-              "date": "2026-05-07",
-              "displayDate": "2026/05/07(木)",
+              "date": "2026-07-06",
+              "displayDate": "2026/07/06(月)",
               "hours": "9:00-20:00",
               "bgcolor": "#FEF8E0",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-08",
-              "displayDate": "2026/05/08(金)",
+              "date": "2026-07-07",
+              "displayDate": "2026/07/07(火)",
               "hours": "9:00-20:00",
               "bgcolor": "#FEF8E0",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-09",
-              "displayDate": "2026/05/09(土)",
+              "date": "2026-07-08",
+              "displayDate": "2026/07/08(水)",
+              "hours": "9:00-20:00",
+              "bgcolor": "#FEF8E0",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-07-09",
+              "displayDate": "2026/07/09(木)",
+              "hours": "9:00-20:00",
+              "bgcolor": "#FEF8E0",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-07-10",
+              "displayDate": "2026/07/10(金)",
+              "hours": "9:00-20:00",
+              "bgcolor": "#FEF8E0",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-07-11",
+              "displayDate": "2026/07/11(土)",
               "hours": "10:00-17:00",
               "bgcolor": "#99FFFF",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-10",
-              "displayDate": "2026/05/10(日)",
+              "date": "2026-07-12",
+              "displayDate": "2026/07/12(日)",
               "hours": "閉館 / Closed",
               "bgcolor": "#FF6666",
               "fontcolor": "#4D4D4D",
               "closed": true
             },
             {
-              "date": "2026-05-11",
-              "displayDate": "2026/05/11(月)",
+              "date": "2026-07-13",
+              "displayDate": "2026/07/13(月)",
               "hours": "9:00-20:00",
               "bgcolor": "#FEF8E0",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-12",
-              "displayDate": "2026/05/12(火)",
+              "date": "2026-07-14",
+              "displayDate": "2026/07/14(火)",
               "hours": "9:00-20:00",
               "bgcolor": "#FEF8E0",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-13",
-              "displayDate": "2026/05/13(水)",
+              "date": "2026-07-15",
+              "displayDate": "2026/07/15(水)",
               "hours": "9:00-20:00",
               "bgcolor": "#FEF8E0",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-14",
-              "displayDate": "2026/05/14(木)",
+              "date": "2026-07-16",
+              "displayDate": "2026/07/16(木)",
               "hours": "9:00-20:00",
               "bgcolor": "#FEF8E0",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-15",
-              "displayDate": "2026/05/15(金)",
+              "date": "2026-07-17",
+              "displayDate": "2026/07/17(金)",
               "hours": "9:00-20:00",
               "bgcolor": "#FEF8E0",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-16",
-              "displayDate": "2026/05/16(土)",
-              "hours": "10:00-17:00",
-              "bgcolor": "#99FFFF",
+              "date": "2026-07-18",
+              "displayDate": "2026/07/18(土)",
+              "hours": "9:00-20:00",
+              "bgcolor": "#FEF8E0",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-17",
-              "displayDate": "2026/05/17(日)",
+              "date": "2026-07-19",
+              "displayDate": "2026/07/19(日)",
               "hours": "閉館 / Closed",
               "bgcolor": "#FF6666",
               "fontcolor": "#4D4D4D",
               "closed": true
             },
             {
-              "date": "2026-05-18",
-              "displayDate": "2026/05/18(月)",
+              "date": "2026-07-20",
+              "displayDate": "2026/07/20(月)",
               "hours": "9:00-20:00",
               "bgcolor": "#FEF8E0",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-19",
-              "displayDate": "2026/05/19(火)",
+              "date": "2026-07-21",
+              "displayDate": "2026/07/21(火)",
               "hours": "9:00-20:00",
               "bgcolor": "#FEF8E0",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-20",
-              "displayDate": "2026/05/20(水)",
+              "date": "2026-07-22",
+              "displayDate": "2026/07/22(水)",
               "hours": "9:00-20:00",
               "bgcolor": "#FEF8E0",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-21",
-              "displayDate": "2026/05/21(木)",
+              "date": "2026-07-23",
+              "displayDate": "2026/07/23(木)",
               "hours": "9:00-20:00",
               "bgcolor": "#FEF8E0",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-22",
-              "displayDate": "2026/05/22(金)",
+              "date": "2026-07-24",
+              "displayDate": "2026/07/24(金)",
               "hours": "9:00-20:00",
               "bgcolor": "#FEF8E0",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-23",
-              "displayDate": "2026/05/23(土)",
-              "hours": "10:00-17:00",
-              "bgcolor": "#99FFFF",
+              "date": "2026-07-25",
+              "displayDate": "2026/07/25(土)",
+              "hours": "9:00-20:00",
+              "bgcolor": "#FEF8E0",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-24",
-              "displayDate": "2026/05/24(日)",
+              "date": "2026-07-26",
+              "displayDate": "2026/07/26(日)",
               "hours": "閉館 / Closed",
               "bgcolor": "#FF6666",
               "fontcolor": "#4D4D4D",
               "closed": true
             },
             {
-              "date": "2026-05-25",
-              "displayDate": "2026/05/25(月)",
+              "date": "2026-07-27",
+              "displayDate": "2026/07/27(月)",
               "hours": "9:00-20:00",
               "bgcolor": "#FEF8E0",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-26",
-              "displayDate": "2026/05/26(火)",
+              "date": "2026-07-28",
+              "displayDate": "2026/07/28(火)",
               "hours": "9:00-20:00",
               "bgcolor": "#FEF8E0",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-27",
-              "displayDate": "2026/05/27(水)",
+              "date": "2026-07-29",
+              "displayDate": "2026/07/29(水)",
               "hours": "9:00-20:00",
               "bgcolor": "#FEF8E0",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-28",
-              "displayDate": "2026/05/28(木)",
+              "date": "2026-07-30",
+              "displayDate": "2026/07/30(木)",
               "hours": "9:00-20:00",
               "bgcolor": "#FEF8E0",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-29",
-              "displayDate": "2026/05/29(金)",
+              "date": "2026-07-31",
+              "displayDate": "2026/07/31(金)",
               "hours": "9:00-20:00",
               "bgcolor": "#FEF8E0",
               "fontcolor": "#4D4D4D",
               "closed": false
-            },
-            {
-              "date": "2026-05-30",
-              "displayDate": "2026/05/30(土)",
-              "hours": "10:00-17:00",
-              "bgcolor": "#99FFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-05-31",
-              "displayDate": "2026/05/31(日)",
-              "hours": "閉館 / Closed",
-              "bgcolor": "#FF6666",
-              "fontcolor": "#4D4D4D",
-              "closed": true
             }
           ]
         },
         {
-          "query": "2026-06",
-          "label": "2026/06",
+          "query": "2026-08",
+          "label": "2026/08",
           "days": [
             {
-              "date": "2026-06-01",
-              "displayDate": "2026/06/01(月)",
-              "hours": "9:00-20:00",
-              "bgcolor": "#FEF8E0",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-06-02",
-              "displayDate": "2026/06/02(火)",
-              "hours": "9:00-20:00",
-              "bgcolor": "#FEF8E0",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-06-03",
-              "displayDate": "2026/06/03(水)",
-              "hours": "9:00-20:00",
-              "bgcolor": "#FEF8E0",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-06-04",
-              "displayDate": "2026/06/04(木)",
-              "hours": "9:00-20:00",
-              "bgcolor": "#FEF8E0",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-06-05",
-              "displayDate": "2026/06/05(金)",
-              "hours": "9:00-20:00",
-              "bgcolor": "#FEF8E0",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-06-06",
-              "displayDate": "2026/06/06(土)",
+              "date": "2026-08-01",
+              "displayDate": "2026/08/01(土)",
               "hours": "10:00-17:00",
               "bgcolor": "#99FFFF",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-06-07",
-              "displayDate": "2026/06/07(日)",
+              "date": "2026-08-02",
+              "displayDate": "2026/08/02(日)",
               "hours": "閉館 / Closed",
               "bgcolor": "#FF6666",
               "fontcolor": "#4D4D4D",
               "closed": true
             },
             {
-              "date": "2026-06-08",
-              "displayDate": "2026/06/08(月)",
+              "date": "2026-08-03",
+              "displayDate": "2026/08/03(月)",
               "hours": "9:00-20:00",
               "bgcolor": "#FEF8E0",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-06-09",
-              "displayDate": "2026/06/09(火)",
+              "date": "2026-08-04",
+              "displayDate": "2026/08/04(火)",
               "hours": "9:00-20:00",
               "bgcolor": "#FEF8E0",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-06-10",
-              "displayDate": "2026/06/10(水)",
+              "date": "2026-08-05",
+              "displayDate": "2026/08/05(水)",
               "hours": "9:00-20:00",
               "bgcolor": "#FEF8E0",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-06-11",
-              "displayDate": "2026/06/11(木)",
+              "date": "2026-08-06",
+              "displayDate": "2026/08/06(木)",
               "hours": "9:00-20:00",
               "bgcolor": "#FEF8E0",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-06-12",
-              "displayDate": "2026/06/12(金)",
+              "date": "2026-08-07",
+              "displayDate": "2026/08/07(金)",
               "hours": "9:00-20:00",
               "bgcolor": "#FEF8E0",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-06-13",
-              "displayDate": "2026/06/13(土)",
+              "date": "2026-08-08",
+              "displayDate": "2026/08/08(土)",
               "hours": "10:00-17:00",
               "bgcolor": "#99FFFF",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-06-14",
-              "displayDate": "2026/06/14(日)",
+              "date": "2026-08-09",
+              "displayDate": "2026/08/09(日)",
               "hours": "閉館 / Closed",
               "bgcolor": "#FF6666",
               "fontcolor": "#4D4D4D",
               "closed": true
             },
             {
-              "date": "2026-06-15",
-              "displayDate": "2026/06/15(月)",
+              "date": "2026-08-10",
+              "displayDate": "2026/08/10(月)",
+              "hours": "閉館 / Closed",
+              "bgcolor": "#FF6666",
+              "fontcolor": "#4D4D4D",
+              "closed": true
+            },
+            {
+              "date": "2026-08-11",
+              "displayDate": "2026/08/11(火)",
+              "hours": "閉館 / Closed",
+              "bgcolor": "#FF6666",
+              "fontcolor": "#4D4D4D",
+              "closed": true
+            },
+            {
+              "date": "2026-08-12",
+              "displayDate": "2026/08/12(水)",
+              "hours": "閉館 / Closed",
+              "bgcolor": "#FF6666",
+              "fontcolor": "#4D4D4D",
+              "closed": true
+            },
+            {
+              "date": "2026-08-13",
+              "displayDate": "2026/08/13(木)",
+              "hours": "閉館 / Closed",
+              "bgcolor": "#FF6666",
+              "fontcolor": "#4D4D4D",
+              "closed": true
+            },
+            {
+              "date": "2026-08-14",
+              "displayDate": "2026/08/14(金)",
+              "hours": "閉館 / Closed",
+              "bgcolor": "#FF6666",
+              "fontcolor": "#4D4D4D",
+              "closed": true
+            },
+            {
+              "date": "2026-08-15",
+              "displayDate": "2026/08/15(土)",
+              "hours": "閉館 / Closed",
+              "bgcolor": "#FF6666",
+              "fontcolor": "#4D4D4D",
+              "closed": true
+            },
+            {
+              "date": "2026-08-16",
+              "displayDate": "2026/08/16(日)",
+              "hours": "閉館 / Closed",
+              "bgcolor": "#FF6666",
+              "fontcolor": "#4D4D4D",
+              "closed": true
+            },
+            {
+              "date": "2026-08-17",
+              "displayDate": "2026/08/17(月)",
+              "hours": "閉館 / Closed",
+              "bgcolor": "#FF6666",
+              "fontcolor": "#4D4D4D",
+              "closed": true
+            },
+            {
+              "date": "2026-08-18",
+              "displayDate": "2026/08/18(火)",
               "hours": "9:00-20:00",
               "bgcolor": "#FEF8E0",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-06-16",
-              "displayDate": "2026/06/16(火)",
+              "date": "2026-08-19",
+              "displayDate": "2026/08/19(水)",
               "hours": "9:00-20:00",
               "bgcolor": "#FEF8E0",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-06-17",
-              "displayDate": "2026/06/17(水)",
+              "date": "2026-08-20",
+              "displayDate": "2026/08/20(木)",
               "hours": "9:00-20:00",
               "bgcolor": "#FEF8E0",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-06-18",
-              "displayDate": "2026/06/18(木)",
+              "date": "2026-08-21",
+              "displayDate": "2026/08/21(金)",
               "hours": "9:00-20:00",
               "bgcolor": "#FEF8E0",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-06-19",
-              "displayDate": "2026/06/19(金)",
-              "hours": "9:00-20:00",
-              "bgcolor": "#FEF8E0",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-06-20",
-              "displayDate": "2026/06/20(土)",
+              "date": "2026-08-22",
+              "displayDate": "2026/08/22(土)",
               "hours": "10:00-17:00",
               "bgcolor": "#99FFFF",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-06-21",
-              "displayDate": "2026/06/21(日)",
+              "date": "2026-08-23",
+              "displayDate": "2026/08/23(日)",
               "hours": "閉館 / Closed",
               "bgcolor": "#FF6666",
               "fontcolor": "#4D4D4D",
               "closed": true
             },
             {
-              "date": "2026-06-22",
-              "displayDate": "2026/06/22(月)",
+              "date": "2026-08-24",
+              "displayDate": "2026/08/24(月)",
               "hours": "9:00-20:00",
               "bgcolor": "#FEF8E0",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-06-23",
-              "displayDate": "2026/06/23(火)",
+              "date": "2026-08-25",
+              "displayDate": "2026/08/25(火)",
               "hours": "9:00-20:00",
               "bgcolor": "#FEF8E0",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-06-24",
-              "displayDate": "2026/06/24(水)",
+              "date": "2026-08-26",
+              "displayDate": "2026/08/26(水)",
               "hours": "9:00-20:00",
               "bgcolor": "#FEF8E0",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-06-25",
-              "displayDate": "2026/06/25(木)",
+              "date": "2026-08-27",
+              "displayDate": "2026/08/27(木)",
               "hours": "9:00-20:00",
               "bgcolor": "#FEF8E0",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-06-26",
-              "displayDate": "2026/06/26(金)",
+              "date": "2026-08-28",
+              "displayDate": "2026/08/28(金)",
               "hours": "9:00-20:00",
               "bgcolor": "#FEF8E0",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-06-27",
-              "displayDate": "2026/06/27(土)",
+              "date": "2026-08-29",
+              "displayDate": "2026/08/29(土)",
               "hours": "10:00-17:00",
               "bgcolor": "#99FFFF",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-06-28",
-              "displayDate": "2026/06/28(日)",
+              "date": "2026-08-30",
+              "displayDate": "2026/08/30(日)",
               "hours": "閉館 / Closed",
               "bgcolor": "#FF6666",
               "fontcolor": "#4D4D4D",
               "closed": true
             },
             {
-              "date": "2026-06-29",
-              "displayDate": "2026/06/29(月)",
-              "hours": "9:00-20:00",
-              "bgcolor": "#FEF8E0",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-06-30",
-              "displayDate": "2026/06/30(火)",
+              "date": "2026-08-31",
+              "displayDate": "2026/08/31(月)",
               "hours": "9:00-20:00",
               "bgcolor": "#FEF8E0",
               "fontcolor": "#4D4D4D",
@@ -1033,498 +1049,506 @@ window.libraryHours = {
       "countercd": "101004",
       "months": [
         {
-          "query": "2026-05",
-          "label": "2026/05",
+          "query": "2026-07",
+          "label": "2026/07",
           "days": [
             {
-              "date": "2026-05-01",
-              "displayDate": "2026/05/01(金)",
+              "date": "2026-07-01",
+              "displayDate": "2026/07/01(水)",
               "hours": "9:00-20:00",
               "bgcolor": "#FEF8E0",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-02",
-              "displayDate": "2026/05/02(土)",
+              "date": "2026-07-02",
+              "displayDate": "2026/07/02(木)",
+              "hours": "9:00-20:00",
+              "bgcolor": "#FEF8E0",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-07-03",
+              "displayDate": "2026/07/03(金)",
+              "hours": "9:00-20:00",
+              "bgcolor": "#FEF8E0",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-07-04",
+              "displayDate": "2026/07/04(土)",
               "hours": "10:00-17:00",
               "bgcolor": "#99FFFF",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-03",
-              "displayDate": "2026/05/03(日)",
+              "date": "2026-07-05",
+              "displayDate": "2026/07/05(日)",
               "hours": "閉館 / Closed",
               "bgcolor": "#FF6666",
               "fontcolor": "#4D4D4D",
               "closed": true
             },
             {
-              "date": "2026-05-04",
-              "displayDate": "2026/05/04(月)",
-              "hours": "閉館 / Closed",
-              "bgcolor": "#FF6666",
-              "fontcolor": "#4D4D4D",
-              "closed": true
-            },
-            {
-              "date": "2026-05-05",
-              "displayDate": "2026/05/05(火)",
-              "hours": "閉館 / Closed",
-              "bgcolor": "#FF6666",
-              "fontcolor": "#4D4D4D",
-              "closed": true
-            },
-            {
-              "date": "2026-05-06",
-              "displayDate": "2026/05/06(水)",
-              "hours": "閉館 / Closed",
-              "bgcolor": "#FF6666",
-              "fontcolor": "#4D4D4D",
-              "closed": true
-            },
-            {
-              "date": "2026-05-07",
-              "displayDate": "2026/05/07(木)",
+              "date": "2026-07-06",
+              "displayDate": "2026/07/06(月)",
               "hours": "9:00-20:00",
               "bgcolor": "#FEF8E0",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-08",
-              "displayDate": "2026/05/08(金)",
+              "date": "2026-07-07",
+              "displayDate": "2026/07/07(火)",
               "hours": "9:00-20:00",
               "bgcolor": "#FEF8E0",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-09",
-              "displayDate": "2026/05/09(土)",
+              "date": "2026-07-08",
+              "displayDate": "2026/07/08(水)",
+              "hours": "9:00-20:00",
+              "bgcolor": "#FEF8E0",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-07-09",
+              "displayDate": "2026/07/09(木)",
+              "hours": "9:00-20:00",
+              "bgcolor": "#FEF8E0",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-07-10",
+              "displayDate": "2026/07/10(金)",
+              "hours": "9:00-20:00",
+              "bgcolor": "#FEF8E0",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-07-11",
+              "displayDate": "2026/07/11(土)",
               "hours": "10:00-17:00",
               "bgcolor": "#99FFFF",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-10",
-              "displayDate": "2026/05/10(日)",
+              "date": "2026-07-12",
+              "displayDate": "2026/07/12(日)",
               "hours": "閉館 / Closed",
               "bgcolor": "#FF6666",
               "fontcolor": "#4D4D4D",
               "closed": true
             },
             {
-              "date": "2026-05-11",
-              "displayDate": "2026/05/11(月)",
+              "date": "2026-07-13",
+              "displayDate": "2026/07/13(月)",
               "hours": "9:00-20:00",
               "bgcolor": "#FEF8E0",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-12",
-              "displayDate": "2026/05/12(火)",
+              "date": "2026-07-14",
+              "displayDate": "2026/07/14(火)",
               "hours": "9:00-20:00",
               "bgcolor": "#FEF8E0",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-13",
-              "displayDate": "2026/05/13(水)",
+              "date": "2026-07-15",
+              "displayDate": "2026/07/15(水)",
               "hours": "9:00-20:00",
               "bgcolor": "#FEF8E0",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-14",
-              "displayDate": "2026/05/14(木)",
+              "date": "2026-07-16",
+              "displayDate": "2026/07/16(木)",
               "hours": "9:00-20:00",
               "bgcolor": "#FEF8E0",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-15",
-              "displayDate": "2026/05/15(金)",
+              "date": "2026-07-17",
+              "displayDate": "2026/07/17(金)",
               "hours": "9:00-20:00",
               "bgcolor": "#FEF8E0",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-16",
-              "displayDate": "2026/05/16(土)",
-              "hours": "10:00-17:00",
-              "bgcolor": "#99FFFF",
+              "date": "2026-07-18",
+              "displayDate": "2026/07/18(土)",
+              "hours": "9:00-20:00",
+              "bgcolor": "#FEF8E0",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-17",
-              "displayDate": "2026/05/17(日)",
+              "date": "2026-07-19",
+              "displayDate": "2026/07/19(日)",
               "hours": "閉館 / Closed",
               "bgcolor": "#FF6666",
               "fontcolor": "#4D4D4D",
               "closed": true
             },
             {
-              "date": "2026-05-18",
-              "displayDate": "2026/05/18(月)",
+              "date": "2026-07-20",
+              "displayDate": "2026/07/20(月)",
               "hours": "9:00-20:00",
               "bgcolor": "#FEF8E0",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-19",
-              "displayDate": "2026/05/19(火)",
+              "date": "2026-07-21",
+              "displayDate": "2026/07/21(火)",
               "hours": "9:00-20:00",
               "bgcolor": "#FEF8E0",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-20",
-              "displayDate": "2026/05/20(水)",
+              "date": "2026-07-22",
+              "displayDate": "2026/07/22(水)",
               "hours": "9:00-20:00",
               "bgcolor": "#FEF8E0",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-21",
-              "displayDate": "2026/05/21(木)",
+              "date": "2026-07-23",
+              "displayDate": "2026/07/23(木)",
               "hours": "9:00-20:00",
               "bgcolor": "#FEF8E0",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-22",
-              "displayDate": "2026/05/22(金)",
+              "date": "2026-07-24",
+              "displayDate": "2026/07/24(金)",
               "hours": "9:00-20:00",
               "bgcolor": "#FEF8E0",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-23",
-              "displayDate": "2026/05/23(土)",
-              "hours": "10:00-17:00",
-              "bgcolor": "#99FFFF",
+              "date": "2026-07-25",
+              "displayDate": "2026/07/25(土)",
+              "hours": "9:00-20:00",
+              "bgcolor": "#FEF8E0",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-24",
-              "displayDate": "2026/05/24(日)",
+              "date": "2026-07-26",
+              "displayDate": "2026/07/26(日)",
               "hours": "閉館 / Closed",
               "bgcolor": "#FF6666",
               "fontcolor": "#4D4D4D",
               "closed": true
             },
             {
-              "date": "2026-05-25",
-              "displayDate": "2026/05/25(月)",
+              "date": "2026-07-27",
+              "displayDate": "2026/07/27(月)",
               "hours": "9:00-20:00",
               "bgcolor": "#FEF8E0",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-26",
-              "displayDate": "2026/05/26(火)",
+              "date": "2026-07-28",
+              "displayDate": "2026/07/28(火)",
               "hours": "9:00-20:00",
               "bgcolor": "#FEF8E0",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-27",
-              "displayDate": "2026/05/27(水)",
+              "date": "2026-07-29",
+              "displayDate": "2026/07/29(水)",
               "hours": "9:00-20:00",
               "bgcolor": "#FEF8E0",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-28",
-              "displayDate": "2026/05/28(木)",
+              "date": "2026-07-30",
+              "displayDate": "2026/07/30(木)",
               "hours": "9:00-20:00",
               "bgcolor": "#FEF8E0",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-29",
-              "displayDate": "2026/05/29(金)",
+              "date": "2026-07-31",
+              "displayDate": "2026/07/31(金)",
               "hours": "9:00-20:00",
               "bgcolor": "#FEF8E0",
               "fontcolor": "#4D4D4D",
               "closed": false
-            },
-            {
-              "date": "2026-05-30",
-              "displayDate": "2026/05/30(土)",
-              "hours": "10:00-17:00",
-              "bgcolor": "#99FFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-05-31",
-              "displayDate": "2026/05/31(日)",
-              "hours": "閉館 / Closed",
-              "bgcolor": "#FF6666",
-              "fontcolor": "#4D4D4D",
-              "closed": true
             }
           ]
         },
         {
-          "query": "2026-06",
-          "label": "2026/06",
+          "query": "2026-08",
+          "label": "2026/08",
           "days": [
             {
-              "date": "2026-06-01",
-              "displayDate": "2026/06/01(月)",
-              "hours": "9:00-20:00",
-              "bgcolor": "#FEF8E0",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-06-02",
-              "displayDate": "2026/06/02(火)",
-              "hours": "9:00-20:00",
-              "bgcolor": "#FEF8E0",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-06-03",
-              "displayDate": "2026/06/03(水)",
-              "hours": "9:00-20:00",
-              "bgcolor": "#FEF8E0",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-06-04",
-              "displayDate": "2026/06/04(木)",
-              "hours": "9:00-20:00",
-              "bgcolor": "#FEF8E0",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-06-05",
-              "displayDate": "2026/06/05(金)",
-              "hours": "9:00-20:00",
-              "bgcolor": "#FEF8E0",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-06-06",
-              "displayDate": "2026/06/06(土)",
+              "date": "2026-08-01",
+              "displayDate": "2026/08/01(土)",
               "hours": "10:00-17:00",
               "bgcolor": "#99FFFF",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-06-07",
-              "displayDate": "2026/06/07(日)",
+              "date": "2026-08-02",
+              "displayDate": "2026/08/02(日)",
               "hours": "閉館 / Closed",
               "bgcolor": "#FF6666",
               "fontcolor": "#4D4D4D",
               "closed": true
             },
             {
-              "date": "2026-06-08",
-              "displayDate": "2026/06/08(月)",
+              "date": "2026-08-03",
+              "displayDate": "2026/08/03(月)",
               "hours": "9:00-20:00",
               "bgcolor": "#FEF8E0",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-06-09",
-              "displayDate": "2026/06/09(火)",
+              "date": "2026-08-04",
+              "displayDate": "2026/08/04(火)",
               "hours": "9:00-20:00",
               "bgcolor": "#FEF8E0",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-06-10",
-              "displayDate": "2026/06/10(水)",
+              "date": "2026-08-05",
+              "displayDate": "2026/08/05(水)",
               "hours": "9:00-20:00",
               "bgcolor": "#FEF8E0",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-06-11",
-              "displayDate": "2026/06/11(木)",
+              "date": "2026-08-06",
+              "displayDate": "2026/08/06(木)",
               "hours": "9:00-20:00",
               "bgcolor": "#FEF8E0",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-06-12",
-              "displayDate": "2026/06/12(金)",
+              "date": "2026-08-07",
+              "displayDate": "2026/08/07(金)",
               "hours": "9:00-20:00",
               "bgcolor": "#FEF8E0",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-06-13",
-              "displayDate": "2026/06/13(土)",
+              "date": "2026-08-08",
+              "displayDate": "2026/08/08(土)",
               "hours": "10:00-17:00",
               "bgcolor": "#99FFFF",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-06-14",
-              "displayDate": "2026/06/14(日)",
+              "date": "2026-08-09",
+              "displayDate": "2026/08/09(日)",
               "hours": "閉館 / Closed",
               "bgcolor": "#FF6666",
               "fontcolor": "#4D4D4D",
               "closed": true
             },
             {
-              "date": "2026-06-15",
-              "displayDate": "2026/06/15(月)",
+              "date": "2026-08-10",
+              "displayDate": "2026/08/10(月)",
+              "hours": "閉館 / Closed",
+              "bgcolor": "#FF6666",
+              "fontcolor": "#4D4D4D",
+              "closed": true
+            },
+            {
+              "date": "2026-08-11",
+              "displayDate": "2026/08/11(火)",
+              "hours": "閉館 / Closed",
+              "bgcolor": "#FF6666",
+              "fontcolor": "#4D4D4D",
+              "closed": true
+            },
+            {
+              "date": "2026-08-12",
+              "displayDate": "2026/08/12(水)",
+              "hours": "閉館 / Closed",
+              "bgcolor": "#FF6666",
+              "fontcolor": "#4D4D4D",
+              "closed": true
+            },
+            {
+              "date": "2026-08-13",
+              "displayDate": "2026/08/13(木)",
+              "hours": "閉館 / Closed",
+              "bgcolor": "#FF6666",
+              "fontcolor": "#4D4D4D",
+              "closed": true
+            },
+            {
+              "date": "2026-08-14",
+              "displayDate": "2026/08/14(金)",
+              "hours": "閉館 / Closed",
+              "bgcolor": "#FF6666",
+              "fontcolor": "#4D4D4D",
+              "closed": true
+            },
+            {
+              "date": "2026-08-15",
+              "displayDate": "2026/08/15(土)",
+              "hours": "閉館 / Closed",
+              "bgcolor": "#FF6666",
+              "fontcolor": "#4D4D4D",
+              "closed": true
+            },
+            {
+              "date": "2026-08-16",
+              "displayDate": "2026/08/16(日)",
+              "hours": "閉館 / Closed",
+              "bgcolor": "#FF6666",
+              "fontcolor": "#4D4D4D",
+              "closed": true
+            },
+            {
+              "date": "2026-08-17",
+              "displayDate": "2026/08/17(月)",
+              "hours": "閉館 / Closed",
+              "bgcolor": "#FF6666",
+              "fontcolor": "#4D4D4D",
+              "closed": true
+            },
+            {
+              "date": "2026-08-18",
+              "displayDate": "2026/08/18(火)",
               "hours": "9:00-20:00",
               "bgcolor": "#FEF8E0",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-06-16",
-              "displayDate": "2026/06/16(火)",
+              "date": "2026-08-19",
+              "displayDate": "2026/08/19(水)",
               "hours": "9:00-20:00",
               "bgcolor": "#FEF8E0",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-06-17",
-              "displayDate": "2026/06/17(水)",
+              "date": "2026-08-20",
+              "displayDate": "2026/08/20(木)",
               "hours": "9:00-20:00",
               "bgcolor": "#FEF8E0",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-06-18",
-              "displayDate": "2026/06/18(木)",
+              "date": "2026-08-21",
+              "displayDate": "2026/08/21(金)",
               "hours": "9:00-20:00",
               "bgcolor": "#FEF8E0",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-06-19",
-              "displayDate": "2026/06/19(金)",
-              "hours": "9:00-20:00",
-              "bgcolor": "#FEF8E0",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-06-20",
-              "displayDate": "2026/06/20(土)",
+              "date": "2026-08-22",
+              "displayDate": "2026/08/22(土)",
               "hours": "10:00-17:00",
               "bgcolor": "#99FFFF",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-06-21",
-              "displayDate": "2026/06/21(日)",
+              "date": "2026-08-23",
+              "displayDate": "2026/08/23(日)",
               "hours": "閉館 / Closed",
               "bgcolor": "#FF6666",
               "fontcolor": "#4D4D4D",
               "closed": true
             },
             {
-              "date": "2026-06-22",
-              "displayDate": "2026/06/22(月)",
+              "date": "2026-08-24",
+              "displayDate": "2026/08/24(月)",
               "hours": "9:00-20:00",
               "bgcolor": "#FEF8E0",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-06-23",
-              "displayDate": "2026/06/23(火)",
+              "date": "2026-08-25",
+              "displayDate": "2026/08/25(火)",
               "hours": "9:00-20:00",
               "bgcolor": "#FEF8E0",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-06-24",
-              "displayDate": "2026/06/24(水)",
+              "date": "2026-08-26",
+              "displayDate": "2026/08/26(水)",
               "hours": "9:00-20:00",
               "bgcolor": "#FEF8E0",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-06-25",
-              "displayDate": "2026/06/25(木)",
+              "date": "2026-08-27",
+              "displayDate": "2026/08/27(木)",
               "hours": "9:00-20:00",
               "bgcolor": "#FEF8E0",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-06-26",
-              "displayDate": "2026/06/26(金)",
+              "date": "2026-08-28",
+              "displayDate": "2026/08/28(金)",
               "hours": "9:00-20:00",
               "bgcolor": "#FEF8E0",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-06-27",
-              "displayDate": "2026/06/27(土)",
+              "date": "2026-08-29",
+              "displayDate": "2026/08/29(土)",
               "hours": "10:00-17:00",
               "bgcolor": "#99FFFF",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-06-28",
-              "displayDate": "2026/06/28(日)",
+              "date": "2026-08-30",
+              "displayDate": "2026/08/30(日)",
               "hours": "閉館 / Closed",
               "bgcolor": "#FF6666",
               "fontcolor": "#4D4D4D",
               "closed": true
             },
             {
-              "date": "2026-06-29",
-              "displayDate": "2026/06/29(月)",
-              "hours": "9:00-20:00",
-              "bgcolor": "#FEF8E0",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-06-30",
-              "displayDate": "2026/06/30(火)",
+              "date": "2026-08-31",
+              "displayDate": "2026/08/31(月)",
               "hours": "9:00-20:00",
               "bgcolor": "#FEF8E0",
               "fontcolor": "#4D4D4D",
@@ -1540,500 +1564,508 @@ window.libraryHours = {
       "countercd": "101201",
       "months": [
         {
-          "query": "2026-05",
-          "label": "2026/05",
+          "query": "2026-07",
+          "label": "2026/07",
           "days": [
             {
-              "date": "2026-05-01",
-              "displayDate": "2026/05/01(金)",
+              "date": "2026-07-01",
+              "displayDate": "2026/07/01(水)",
               "hours": "9:00-22:00",
               "bgcolor": "#FFFFFF",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-02",
-              "displayDate": "2026/05/02(土)",
+              "date": "2026-07-02",
+              "displayDate": "2026/07/02(木)",
               "hours": "9:00-22:00",
               "bgcolor": "#FFFFFF",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-03",
-              "displayDate": "2026/05/03(日)",
+              "date": "2026-07-03",
+              "displayDate": "2026/07/03(金)",
+              "hours": "9:00-22:00",
+              "bgcolor": "#FFFFFF",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-07-04",
+              "displayDate": "2026/07/04(土)",
+              "hours": "9:00-22:00",
+              "bgcolor": "#FFFFFF",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-07-05",
+              "displayDate": "2026/07/05(日)",
               "hours": "10:00-17:00",
               "bgcolor": "#99FFFF",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-04",
-              "displayDate": "2026/05/04(月)",
+              "date": "2026-07-06",
+              "displayDate": "2026/07/06(月)",
               "hours": "9:00-22:00",
               "bgcolor": "#FFFFFF",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-05",
-              "displayDate": "2026/05/05(火)",
+              "date": "2026-07-07",
+              "displayDate": "2026/07/07(火)",
               "hours": "9:00-22:00",
               "bgcolor": "#FFFFFF",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-06",
-              "displayDate": "2026/05/06(水)",
+              "date": "2026-07-08",
+              "displayDate": "2026/07/08(水)",
               "hours": "9:00-22:00",
               "bgcolor": "#FFFFFF",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-07",
-              "displayDate": "2026/05/07(木)",
+              "date": "2026-07-09",
+              "displayDate": "2026/07/09(木)",
               "hours": "9:00-22:00",
               "bgcolor": "#FFFFFF",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-08",
-              "displayDate": "2026/05/08(金)",
+              "date": "2026-07-10",
+              "displayDate": "2026/07/10(金)",
               "hours": "9:00-22:00",
               "bgcolor": "#FFFFFF",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-09",
-              "displayDate": "2026/05/09(土)",
+              "date": "2026-07-11",
+              "displayDate": "2026/07/11(土)",
               "hours": "9:00-22:00",
               "bgcolor": "#FFFFFF",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-10",
-              "displayDate": "2026/05/10(日)",
+              "date": "2026-07-12",
+              "displayDate": "2026/07/12(日)",
               "hours": "10:00-17:00",
               "bgcolor": "#99FFFF",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-11",
-              "displayDate": "2026/05/11(月)",
+              "date": "2026-07-13",
+              "displayDate": "2026/07/13(月)",
               "hours": "9:00-22:00",
               "bgcolor": "#FFFFFF",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-12",
-              "displayDate": "2026/05/12(火)",
+              "date": "2026-07-14",
+              "displayDate": "2026/07/14(火)",
               "hours": "9:00-22:00",
               "bgcolor": "#FFFFFF",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-13",
-              "displayDate": "2026/05/13(水)",
+              "date": "2026-07-15",
+              "displayDate": "2026/07/15(水)",
               "hours": "9:00-22:00",
               "bgcolor": "#FFFFFF",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-14",
-              "displayDate": "2026/05/14(木)",
+              "date": "2026-07-16",
+              "displayDate": "2026/07/16(木)",
               "hours": "9:00-22:00",
               "bgcolor": "#FFFFFF",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-15",
-              "displayDate": "2026/05/15(金)",
+              "date": "2026-07-17",
+              "displayDate": "2026/07/17(金)",
               "hours": "9:00-22:00",
               "bgcolor": "#FFFFFF",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-16",
-              "displayDate": "2026/05/16(土)",
+              "date": "2026-07-18",
+              "displayDate": "2026/07/18(土)",
               "hours": "9:00-22:00",
               "bgcolor": "#FFFFFF",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-17",
-              "displayDate": "2026/05/17(日)",
+              "date": "2026-07-19",
+              "displayDate": "2026/07/19(日)",
               "hours": "10:00-17:00",
               "bgcolor": "#99FFFF",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-18",
-              "displayDate": "2026/05/18(月)",
+              "date": "2026-07-20",
+              "displayDate": "2026/07/20(月)",
               "hours": "9:00-22:00",
               "bgcolor": "#FFFFFF",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-19",
-              "displayDate": "2026/05/19(火)",
+              "date": "2026-07-21",
+              "displayDate": "2026/07/21(火)",
               "hours": "9:00-22:00",
               "bgcolor": "#FFFFFF",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-20",
-              "displayDate": "2026/05/20(水)",
+              "date": "2026-07-22",
+              "displayDate": "2026/07/22(水)",
               "hours": "9:00-22:00",
               "bgcolor": "#FFFFFF",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-21",
-              "displayDate": "2026/05/21(木)",
+              "date": "2026-07-23",
+              "displayDate": "2026/07/23(木)",
               "hours": "9:00-22:00",
               "bgcolor": "#FFFFFF",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-22",
-              "displayDate": "2026/05/22(金)",
+              "date": "2026-07-24",
+              "displayDate": "2026/07/24(金)",
               "hours": "9:00-22:00",
               "bgcolor": "#FFFFFF",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-23",
-              "displayDate": "2026/05/23(土)",
+              "date": "2026-07-25",
+              "displayDate": "2026/07/25(土)",
               "hours": "9:00-22:00",
               "bgcolor": "#FFFFFF",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-24",
-              "displayDate": "2026/05/24(日)",
-              "hours": "10:00-17:00",
-              "bgcolor": "#99FFFF",
+              "date": "2026-07-26",
+              "displayDate": "2026/07/26(日)",
+              "hours": "閉館 / Closed",
+              "bgcolor": "#FF6666",
               "fontcolor": "#4D4D4D",
-              "closed": false
+              "closed": true
             },
             {
-              "date": "2026-05-25",
-              "displayDate": "2026/05/25(月)",
+              "date": "2026-07-27",
+              "displayDate": "2026/07/27(月)",
               "hours": "9:00-22:00",
               "bgcolor": "#FFFFFF",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-26",
-              "displayDate": "2026/05/26(火)",
+              "date": "2026-07-28",
+              "displayDate": "2026/07/28(火)",
               "hours": "9:00-22:00",
               "bgcolor": "#FFFFFF",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-27",
-              "displayDate": "2026/05/27(水)",
+              "date": "2026-07-29",
+              "displayDate": "2026/07/29(水)",
               "hours": "9:00-22:00",
               "bgcolor": "#FFFFFF",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-28",
-              "displayDate": "2026/05/28(木)",
-              "hours": "9:00-22:00",
-              "bgcolor": "#FFFFFF",
+              "date": "2026-07-30",
+              "displayDate": "2026/07/30(木)",
+              "hours": "9:00-20:00",
+              "bgcolor": "#FFFF00",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-29",
-              "displayDate": "2026/05/29(金)",
-              "hours": "9:00-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-05-30",
-              "displayDate": "2026/05/30(土)",
-              "hours": "9:00-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-05-31",
-              "displayDate": "2026/05/31(日)",
-              "hours": "10:00-17:00",
-              "bgcolor": "#99FFFF",
+              "date": "2026-07-31",
+              "displayDate": "2026/07/31(金)",
+              "hours": "9:00-20:00",
+              "bgcolor": "#FFFF00",
               "fontcolor": "#4D4D4D",
               "closed": false
             }
           ]
         },
         {
-          "query": "2026-06",
-          "label": "2026/06",
+          "query": "2026-08",
+          "label": "2026/08",
           "days": [
             {
-              "date": "2026-06-01",
-              "displayDate": "2026/06/01(月)",
-              "hours": "9:00-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-06-02",
-              "displayDate": "2026/06/02(火)",
-              "hours": "9:00-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-06-03",
-              "displayDate": "2026/06/03(水)",
-              "hours": "9:00-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-06-04",
-              "displayDate": "2026/06/04(木)",
-              "hours": "9:00-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-06-05",
-              "displayDate": "2026/06/05(金)",
-              "hours": "9:00-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-06-06",
-              "displayDate": "2026/06/06(土)",
-              "hours": "9:00-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-06-07",
-              "displayDate": "2026/06/07(日)",
+              "date": "2026-08-01",
+              "displayDate": "2026/08/01(土)",
               "hours": "10:00-17:00",
               "bgcolor": "#99FFFF",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-06-08",
-              "displayDate": "2026/06/08(月)",
-              "hours": "9:00-22:00",
-              "bgcolor": "#FFFFFF",
+              "date": "2026-08-02",
+              "displayDate": "2026/08/02(日)",
+              "hours": "閉館 / Closed",
+              "bgcolor": "#FF6666",
+              "fontcolor": "#4D4D4D",
+              "closed": true
+            },
+            {
+              "date": "2026-08-03",
+              "displayDate": "2026/08/03(月)",
+              "hours": "9:00-20:00",
+              "bgcolor": "#FFFF00",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-06-09",
-              "displayDate": "2026/06/09(火)",
-              "hours": "9:00-22:00",
-              "bgcolor": "#FFFFFF",
+              "date": "2026-08-04",
+              "displayDate": "2026/08/04(火)",
+              "hours": "9:00-20:00",
+              "bgcolor": "#FFFF00",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-06-10",
-              "displayDate": "2026/06/10(水)",
-              "hours": "9:00-22:00",
-              "bgcolor": "#FFFFFF",
+              "date": "2026-08-05",
+              "displayDate": "2026/08/05(水)",
+              "hours": "9:00-20:00",
+              "bgcolor": "#FFFF00",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-06-11",
-              "displayDate": "2026/06/11(木)",
-              "hours": "9:00-22:00",
-              "bgcolor": "#FFFFFF",
+              "date": "2026-08-06",
+              "displayDate": "2026/08/06(木)",
+              "hours": "9:00-20:00",
+              "bgcolor": "#FFFF00",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-06-12",
-              "displayDate": "2026/06/12(金)",
-              "hours": "9:00-22:00",
-              "bgcolor": "#FFFFFF",
+              "date": "2026-08-07",
+              "displayDate": "2026/08/07(金)",
+              "hours": "9:00-20:00",
+              "bgcolor": "#FFFF00",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-06-13",
-              "displayDate": "2026/06/13(土)",
-              "hours": "9:00-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-06-14",
-              "displayDate": "2026/06/14(日)",
+              "date": "2026-08-08",
+              "displayDate": "2026/08/08(土)",
               "hours": "10:00-17:00",
               "bgcolor": "#99FFFF",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-06-15",
-              "displayDate": "2026/06/15(月)",
-              "hours": "9:00-22:00",
-              "bgcolor": "#FFFFFF",
+              "date": "2026-08-09",
+              "displayDate": "2026/08/09(日)",
+              "hours": "閉館 / Closed",
+              "bgcolor": "#FF6666",
+              "fontcolor": "#4D4D4D",
+              "closed": true
+            },
+            {
+              "date": "2026-08-10",
+              "displayDate": "2026/08/10(月)",
+              "hours": "閉館 / Closed",
+              "bgcolor": "#FF6666",
+              "fontcolor": "#4D4D4D",
+              "closed": true
+            },
+            {
+              "date": "2026-08-11",
+              "displayDate": "2026/08/11(火)",
+              "hours": "閉館 / Closed",
+              "bgcolor": "#FF6666",
+              "fontcolor": "#4D4D4D",
+              "closed": true
+            },
+            {
+              "date": "2026-08-12",
+              "displayDate": "2026/08/12(水)",
+              "hours": "閉館 / Closed",
+              "bgcolor": "#FF6666",
+              "fontcolor": "#4D4D4D",
+              "closed": true
+            },
+            {
+              "date": "2026-08-13",
+              "displayDate": "2026/08/13(木)",
+              "hours": "閉館 / Closed",
+              "bgcolor": "#FF6666",
+              "fontcolor": "#4D4D4D",
+              "closed": true
+            },
+            {
+              "date": "2026-08-14",
+              "displayDate": "2026/08/14(金)",
+              "hours": "閉館 / Closed",
+              "bgcolor": "#FF6666",
+              "fontcolor": "#4D4D4D",
+              "closed": true
+            },
+            {
+              "date": "2026-08-15",
+              "displayDate": "2026/08/15(土)",
+              "hours": "閉館 / Closed",
+              "bgcolor": "#FF6666",
+              "fontcolor": "#4D4D4D",
+              "closed": true
+            },
+            {
+              "date": "2026-08-16",
+              "displayDate": "2026/08/16(日)",
+              "hours": "閉館 / Closed",
+              "bgcolor": "#FF6666",
+              "fontcolor": "#4D4D4D",
+              "closed": true
+            },
+            {
+              "date": "2026-08-17",
+              "displayDate": "2026/08/17(月)",
+              "hours": "閉館 / Closed",
+              "bgcolor": "#FF6666",
+              "fontcolor": "#4D4D4D",
+              "closed": true
+            },
+            {
+              "date": "2026-08-18",
+              "displayDate": "2026/08/18(火)",
+              "hours": "9:00-20:00",
+              "bgcolor": "#FFFF00",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-06-16",
-              "displayDate": "2026/06/16(火)",
-              "hours": "9:00-22:00",
-              "bgcolor": "#FFFFFF",
+              "date": "2026-08-19",
+              "displayDate": "2026/08/19(水)",
+              "hours": "9:00-20:00",
+              "bgcolor": "#FFFF00",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-06-17",
-              "displayDate": "2026/06/17(水)",
-              "hours": "9:00-22:00",
-              "bgcolor": "#FFFFFF",
+              "date": "2026-08-20",
+              "displayDate": "2026/08/20(木)",
+              "hours": "9:00-20:00",
+              "bgcolor": "#FFFF00",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-06-18",
-              "displayDate": "2026/06/18(木)",
-              "hours": "9:00-22:00",
-              "bgcolor": "#FFFFFF",
+              "date": "2026-08-21",
+              "displayDate": "2026/08/21(金)",
+              "hours": "9:00-20:00",
+              "bgcolor": "#FFFF00",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-06-19",
-              "displayDate": "2026/06/19(金)",
-              "hours": "9:00-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-06-20",
-              "displayDate": "2026/06/20(土)",
-              "hours": "9:00-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-06-21",
-              "displayDate": "2026/06/21(日)",
+              "date": "2026-08-22",
+              "displayDate": "2026/08/22(土)",
               "hours": "10:00-17:00",
               "bgcolor": "#99FFFF",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-06-22",
-              "displayDate": "2026/06/22(月)",
-              "hours": "9:00-22:00",
-              "bgcolor": "#FFFFFF",
+              "date": "2026-08-23",
+              "displayDate": "2026/08/23(日)",
+              "hours": "閉館 / Closed",
+              "bgcolor": "#FF6666",
+              "fontcolor": "#4D4D4D",
+              "closed": true
+            },
+            {
+              "date": "2026-08-24",
+              "displayDate": "2026/08/24(月)",
+              "hours": "9:00-20:00",
+              "bgcolor": "#FFFF00",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-06-23",
-              "displayDate": "2026/06/23(火)",
-              "hours": "9:00-22:00",
-              "bgcolor": "#FFFFFF",
+              "date": "2026-08-25",
+              "displayDate": "2026/08/25(火)",
+              "hours": "9:00-20:00",
+              "bgcolor": "#FFFF00",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-06-24",
-              "displayDate": "2026/06/24(水)",
-              "hours": "9:00-22:00",
-              "bgcolor": "#FFFFFF",
+              "date": "2026-08-26",
+              "displayDate": "2026/08/26(水)",
+              "hours": "9:00-20:00",
+              "bgcolor": "#FFFF00",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-06-25",
-              "displayDate": "2026/06/25(木)",
-              "hours": "9:00-22:00",
-              "bgcolor": "#FFFFFF",
+              "date": "2026-08-27",
+              "displayDate": "2026/08/27(木)",
+              "hours": "9:00-20:00",
+              "bgcolor": "#FFFF00",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-06-26",
-              "displayDate": "2026/06/26(金)",
-              "hours": "9:00-22:00",
-              "bgcolor": "#FFFFFF",
+              "date": "2026-08-28",
+              "displayDate": "2026/08/28(金)",
+              "hours": "9:00-20:00",
+              "bgcolor": "#FFFF00",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-06-27",
-              "displayDate": "2026/06/27(土)",
-              "hours": "9:00-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-06-28",
-              "displayDate": "2026/06/28(日)",
+              "date": "2026-08-29",
+              "displayDate": "2026/08/29(土)",
               "hours": "10:00-17:00",
               "bgcolor": "#99FFFF",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-06-29",
-              "displayDate": "2026/06/29(月)",
-              "hours": "9:00-22:00",
-              "bgcolor": "#FFFFFF",
+              "date": "2026-08-30",
+              "displayDate": "2026/08/30(日)",
+              "hours": "閉館 / Closed",
+              "bgcolor": "#FF6666",
               "fontcolor": "#4D4D4D",
-              "closed": false
+              "closed": true
             },
             {
-              "date": "2026-06-30",
-              "displayDate": "2026/06/30(火)",
-              "hours": "9:00-22:00",
-              "bgcolor": "#FFFFFF",
+              "date": "2026-08-31",
+              "displayDate": "2026/08/31(月)",
+              "hours": "9:00-20:00",
+              "bgcolor": "#FFFF00",
               "fontcolor": "#4D4D4D",
               "closed": false
             }
@@ -2047,500 +2079,508 @@ window.libraryHours = {
       "countercd": "101302",
       "months": [
         {
-          "query": "2026-05",
-          "label": "2026/05",
+          "query": "2026-07",
+          "label": "2026/07",
           "days": [
             {
-              "date": "2026-05-01",
-              "displayDate": "2026/05/01(金)",
+              "date": "2026-07-01",
+              "displayDate": "2026/07/01(水)",
               "hours": "8:30-22:00",
               "bgcolor": "#FFFFFF",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-02",
-              "displayDate": "2026/05/02(土)",
+              "date": "2026-07-02",
+              "displayDate": "2026/07/02(木)",
+              "hours": "8:30-22:00",
+              "bgcolor": "#FFFFFF",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-07-03",
+              "displayDate": "2026/07/03(金)",
+              "hours": "8:30-22:00",
+              "bgcolor": "#FFFFFF",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-07-04",
+              "displayDate": "2026/07/04(土)",
               "hours": "10:00-17:00",
               "bgcolor": "#99FFFF",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-03",
-              "displayDate": "2026/05/03(日)",
-              "hours": "閉館 / Closed",
-              "bgcolor": "#FF6666",
-              "fontcolor": "#4D4D4D",
-              "closed": true
-            },
-            {
-              "date": "2026-05-04",
-              "displayDate": "2026/05/04(月)",
-              "hours": "閉館 / Closed",
-              "bgcolor": "#FF6666",
-              "fontcolor": "#4D4D4D",
-              "closed": true
-            },
-            {
-              "date": "2026-05-05",
-              "displayDate": "2026/05/05(火)",
-              "hours": "閉館 / Closed",
-              "bgcolor": "#FF6666",
-              "fontcolor": "#4D4D4D",
-              "closed": true
-            },
-            {
-              "date": "2026-05-06",
-              "displayDate": "2026/05/06(水)",
-              "hours": "閉館 / Closed",
-              "bgcolor": "#FF6666",
-              "fontcolor": "#4D4D4D",
-              "closed": true
-            },
-            {
-              "date": "2026-05-07",
-              "displayDate": "2026/05/07(木)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-05-08",
-              "displayDate": "2026/05/08(金)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-05-09",
-              "displayDate": "2026/05/09(土)",
+              "date": "2026-07-05",
+              "displayDate": "2026/07/05(日)",
               "hours": "10:00-17:00",
               "bgcolor": "#99FFFF",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-10",
-              "displayDate": "2026/05/10(日)",
+              "date": "2026-07-06",
+              "displayDate": "2026/07/06(月)",
+              "hours": "8:30-22:00",
+              "bgcolor": "#FFFFFF",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-07-07",
+              "displayDate": "2026/07/07(火)",
+              "hours": "8:30-22:00",
+              "bgcolor": "#FFFFFF",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-07-08",
+              "displayDate": "2026/07/08(水)",
+              "hours": "8:30-22:00",
+              "bgcolor": "#FFFFFF",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-07-09",
+              "displayDate": "2026/07/09(木)",
+              "hours": "8:30-22:00",
+              "bgcolor": "#FFFFFF",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-07-10",
+              "displayDate": "2026/07/10(金)",
+              "hours": "8:30-22:00",
+              "bgcolor": "#FFFFFF",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-07-11",
+              "displayDate": "2026/07/11(土)",
               "hours": "10:00-17:00",
               "bgcolor": "#99FFFF",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-11",
-              "displayDate": "2026/05/11(月)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-05-12",
-              "displayDate": "2026/05/12(火)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-05-13",
-              "displayDate": "2026/05/13(水)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-05-14",
-              "displayDate": "2026/05/14(木)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-05-15",
-              "displayDate": "2026/05/15(金)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-05-16",
-              "displayDate": "2026/05/16(土)",
+              "date": "2026-07-12",
+              "displayDate": "2026/07/12(日)",
               "hours": "10:00-17:00",
               "bgcolor": "#99FFFF",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-17",
-              "displayDate": "2026/05/17(日)",
+              "date": "2026-07-13",
+              "displayDate": "2026/07/13(月)",
+              "hours": "8:30-22:00",
+              "bgcolor": "#FFFFFF",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-07-14",
+              "displayDate": "2026/07/14(火)",
+              "hours": "8:30-22:00",
+              "bgcolor": "#FFFFFF",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-07-15",
+              "displayDate": "2026/07/15(水)",
+              "hours": "8:30-22:00",
+              "bgcolor": "#FFFFFF",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-07-16",
+              "displayDate": "2026/07/16(木)",
+              "hours": "8:30-22:00",
+              "bgcolor": "#FFFFFF",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-07-17",
+              "displayDate": "2026/07/17(金)",
+              "hours": "8:30-22:00",
+              "bgcolor": "#FFFFFF",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-07-18",
+              "displayDate": "2026/07/18(土)",
+              "hours": "8:30-22:00",
+              "bgcolor": "#FFFFFF",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-07-19",
+              "displayDate": "2026/07/19(日)",
               "hours": "10:00-17:00",
               "bgcolor": "#99FFFF",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-18",
-              "displayDate": "2026/05/18(月)",
+              "date": "2026-07-20",
+              "displayDate": "2026/07/20(月)",
               "hours": "8:30-22:00",
               "bgcolor": "#FFFFFF",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-19",
-              "displayDate": "2026/05/19(火)",
+              "date": "2026-07-21",
+              "displayDate": "2026/07/21(火)",
               "hours": "8:30-22:00",
               "bgcolor": "#FFFFFF",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-20",
-              "displayDate": "2026/05/20(水)",
+              "date": "2026-07-22",
+              "displayDate": "2026/07/22(水)",
               "hours": "8:30-22:00",
               "bgcolor": "#FFFFFF",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-21",
-              "displayDate": "2026/05/21(木)",
+              "date": "2026-07-23",
+              "displayDate": "2026/07/23(木)",
               "hours": "8:30-22:00",
               "bgcolor": "#FFFFFF",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-22",
-              "displayDate": "2026/05/22(金)",
+              "date": "2026-07-24",
+              "displayDate": "2026/07/24(金)",
               "hours": "8:30-22:00",
               "bgcolor": "#FFFFFF",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-23",
-              "displayDate": "2026/05/23(土)",
+              "date": "2026-07-25",
+              "displayDate": "2026/07/25(土)",
+              "hours": "8:30-22:00",
+              "bgcolor": "#FFFFFF",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-07-26",
+              "displayDate": "2026/07/26(日)",
+              "hours": "10:00-17:00",
+              "bgcolor": "#99FFFF",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-07-27",
+              "displayDate": "2026/07/27(月)",
               "hours": "9:00-19:30",
               "bgcolor": "#FFFF00",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-24",
-              "displayDate": "2026/05/24(日)",
-              "hours": "10:00-17:00",
-              "bgcolor": "#99FFFF",
+              "date": "2026-07-28",
+              "displayDate": "2026/07/28(火)",
+              "hours": "9:00-19:30",
+              "bgcolor": "#FFFF00",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-25",
-              "displayDate": "2026/05/25(月)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
+              "date": "2026-07-29",
+              "displayDate": "2026/07/29(水)",
+              "hours": "9:00-19:30",
+              "bgcolor": "#FFFF00",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-26",
-              "displayDate": "2026/05/26(火)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
+              "date": "2026-07-30",
+              "displayDate": "2026/07/30(木)",
+              "hours": "9:00-19:30",
+              "bgcolor": "#FFFF00",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-27",
-              "displayDate": "2026/05/27(水)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-05-28",
-              "displayDate": "2026/05/28(木)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-05-29",
-              "displayDate": "2026/05/29(金)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-05-30",
-              "displayDate": "2026/05/30(土)",
-              "hours": "10:00-17:00",
-              "bgcolor": "#99FFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-05-31",
-              "displayDate": "2026/05/31(日)",
-              "hours": "10:00-17:00",
-              "bgcolor": "#99FFFF",
+              "date": "2026-07-31",
+              "displayDate": "2026/07/31(金)",
+              "hours": "9:00-19:30",
+              "bgcolor": "#FFFF00",
               "fontcolor": "#4D4D4D",
               "closed": false
             }
           ]
         },
         {
-          "query": "2026-06",
-          "label": "2026/06",
+          "query": "2026-08",
+          "label": "2026/08",
           "days": [
             {
-              "date": "2026-06-01",
-              "displayDate": "2026/06/01(月)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-06-02",
-              "displayDate": "2026/06/02(火)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-06-03",
-              "displayDate": "2026/06/03(水)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-06-04",
-              "displayDate": "2026/06/04(木)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-06-05",
-              "displayDate": "2026/06/05(金)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-06-06",
-              "displayDate": "2026/06/06(土)",
+              "date": "2026-08-01",
+              "displayDate": "2026/08/01(土)",
               "hours": "10:00-17:00",
               "bgcolor": "#99FFFF",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-06-07",
-              "displayDate": "2026/06/07(日)",
+              "date": "2026-08-02",
+              "displayDate": "2026/08/02(日)",
               "hours": "10:00-17:00",
               "bgcolor": "#99FFFF",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-06-08",
-              "displayDate": "2026/06/08(月)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-06-09",
-              "displayDate": "2026/06/09(火)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-06-10",
-              "displayDate": "2026/06/10(水)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-06-11",
-              "displayDate": "2026/06/11(木)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-06-12",
-              "displayDate": "2026/06/12(金)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-06-13",
-              "displayDate": "2026/06/13(土)",
-              "hours": "10:00-17:00",
-              "bgcolor": "#99FFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-06-14",
-              "displayDate": "2026/06/14(日)",
-              "hours": "10:00-17:00",
-              "bgcolor": "#99FFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-06-15",
-              "displayDate": "2026/06/15(月)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-06-16",
-              "displayDate": "2026/06/16(火)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-06-17",
-              "displayDate": "2026/06/17(水)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-06-18",
-              "displayDate": "2026/06/18(木)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-06-19",
-              "displayDate": "2026/06/19(金)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-06-20",
-              "displayDate": "2026/06/20(土)",
-              "hours": "10:00-17:00",
-              "bgcolor": "#99FFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-06-21",
-              "displayDate": "2026/06/21(日)",
-              "hours": "10:00-17:00",
-              "bgcolor": "#99FFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-06-22",
-              "displayDate": "2026/06/22(月)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-06-23",
-              "displayDate": "2026/06/23(火)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-06-24",
-              "displayDate": "2026/06/24(水)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-06-25",
-              "displayDate": "2026/06/25(木)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-06-26",
-              "displayDate": "2026/06/26(金)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-06-27",
-              "displayDate": "2026/06/27(土)",
+              "date": "2026-08-03",
+              "displayDate": "2026/08/03(月)",
               "hours": "9:00-19:30",
               "bgcolor": "#FFFF00",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-06-28",
-              "displayDate": "2026/06/28(日)",
+              "date": "2026-08-04",
+              "displayDate": "2026/08/04(火)",
+              "hours": "9:00-19:30",
+              "bgcolor": "#FFFF00",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-08-05",
+              "displayDate": "2026/08/05(水)",
+              "hours": "9:00-19:30",
+              "bgcolor": "#FFFF00",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-08-06",
+              "displayDate": "2026/08/06(木)",
+              "hours": "9:00-19:30",
+              "bgcolor": "#FFFF00",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-08-07",
+              "displayDate": "2026/08/07(金)",
+              "hours": "9:00-19:30",
+              "bgcolor": "#FFFF00",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-08-08",
+              "displayDate": "2026/08/08(土)",
               "hours": "10:00-17:00",
               "bgcolor": "#99FFFF",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-06-29",
-              "displayDate": "2026/06/29(月)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
+              "date": "2026-08-09",
+              "displayDate": "2026/08/09(日)",
+              "hours": "10:00-17:00",
+              "bgcolor": "#99FFFF",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-06-30",
-              "displayDate": "2026/06/30(火)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
+              "date": "2026-08-10",
+              "displayDate": "2026/08/10(月)",
+              "hours": "閉館 / Closed",
+              "bgcolor": "#FF6666",
+              "fontcolor": "#4D4D4D",
+              "closed": true
+            },
+            {
+              "date": "2026-08-11",
+              "displayDate": "2026/08/11(火)",
+              "hours": "閉館 / Closed",
+              "bgcolor": "#FF6666",
+              "fontcolor": "#4D4D4D",
+              "closed": true
+            },
+            {
+              "date": "2026-08-12",
+              "displayDate": "2026/08/12(水)",
+              "hours": "閉館 / Closed",
+              "bgcolor": "#FF6666",
+              "fontcolor": "#4D4D4D",
+              "closed": true
+            },
+            {
+              "date": "2026-08-13",
+              "displayDate": "2026/08/13(木)",
+              "hours": "閉館 / Closed",
+              "bgcolor": "#FF6666",
+              "fontcolor": "#4D4D4D",
+              "closed": true
+            },
+            {
+              "date": "2026-08-14",
+              "displayDate": "2026/08/14(金)",
+              "hours": "閉館 / Closed",
+              "bgcolor": "#FF6666",
+              "fontcolor": "#4D4D4D",
+              "closed": true
+            },
+            {
+              "date": "2026-08-15",
+              "displayDate": "2026/08/15(土)",
+              "hours": "閉館 / Closed",
+              "bgcolor": "#FF6666",
+              "fontcolor": "#4D4D4D",
+              "closed": true
+            },
+            {
+              "date": "2026-08-16",
+              "displayDate": "2026/08/16(日)",
+              "hours": "閉館 / Closed",
+              "bgcolor": "#FF6666",
+              "fontcolor": "#4D4D4D",
+              "closed": true
+            },
+            {
+              "date": "2026-08-17",
+              "displayDate": "2026/08/17(月)",
+              "hours": "閉館 / Closed",
+              "bgcolor": "#FF6666",
+              "fontcolor": "#4D4D4D",
+              "closed": true
+            },
+            {
+              "date": "2026-08-18",
+              "displayDate": "2026/08/18(火)",
+              "hours": "9:00-19:30",
+              "bgcolor": "#FFFF00",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-08-19",
+              "displayDate": "2026/08/19(水)",
+              "hours": "9:00-19:30",
+              "bgcolor": "#FFFF00",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-08-20",
+              "displayDate": "2026/08/20(木)",
+              "hours": "閉館 / Closed",
+              "bgcolor": "#FF6666",
+              "fontcolor": "#4D4D4D",
+              "closed": true
+            },
+            {
+              "date": "2026-08-21",
+              "displayDate": "2026/08/21(金)",
+              "hours": "9:00-19:30",
+              "bgcolor": "#FFFF00",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-08-22",
+              "displayDate": "2026/08/22(土)",
+              "hours": "10:00-17:00",
+              "bgcolor": "#99FFFF",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-08-23",
+              "displayDate": "2026/08/23(日)",
+              "hours": "10:00-17:00",
+              "bgcolor": "#99FFFF",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-08-24",
+              "displayDate": "2026/08/24(月)",
+              "hours": "9:00-19:30",
+              "bgcolor": "#FFFF00",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-08-25",
+              "displayDate": "2026/08/25(火)",
+              "hours": "9:00-19:30",
+              "bgcolor": "#FFFF00",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-08-26",
+              "displayDate": "2026/08/26(水)",
+              "hours": "9:00-19:30",
+              "bgcolor": "#FFFF00",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-08-27",
+              "displayDate": "2026/08/27(木)",
+              "hours": "9:00-19:30",
+              "bgcolor": "#FFFF00",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-08-28",
+              "displayDate": "2026/08/28(金)",
+              "hours": "9:00-19:30",
+              "bgcolor": "#FFFF00",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-08-29",
+              "displayDate": "2026/08/29(土)",
+              "hours": "10:00-17:00",
+              "bgcolor": "#99FFFF",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-08-30",
+              "displayDate": "2026/08/30(日)",
+              "hours": "10:00-17:00",
+              "bgcolor": "#99FFFF",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-08-31",
+              "displayDate": "2026/08/31(月)",
+              "hours": "9:00-19:30",
+              "bgcolor": "#FFFF00",
               "fontcolor": "#4D4D4D",
               "closed": false
             }
@@ -2554,500 +2594,508 @@ window.libraryHours = {
       "countercd": "101301",
       "months": [
         {
-          "query": "2026-05",
-          "label": "2026/05",
+          "query": "2026-07",
+          "label": "2026/07",
           "days": [
             {
-              "date": "2026-05-01",
-              "displayDate": "2026/05/01(金)",
+              "date": "2026-07-01",
+              "displayDate": "2026/07/01(水)",
               "hours": "8:30-22:00",
               "bgcolor": "#FFFFFF",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-02",
-              "displayDate": "2026/05/02(土)",
+              "date": "2026-07-02",
+              "displayDate": "2026/07/02(木)",
+              "hours": "8:30-22:00",
+              "bgcolor": "#FFFFFF",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-07-03",
+              "displayDate": "2026/07/03(金)",
+              "hours": "8:30-22:00",
+              "bgcolor": "#FFFFFF",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-07-04",
+              "displayDate": "2026/07/04(土)",
               "hours": "10:00-17:00",
               "bgcolor": "#99FFFF",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-03",
-              "displayDate": "2026/05/03(日)",
-              "hours": "閉館 / Closed",
-              "bgcolor": "#FF6666",
-              "fontcolor": "#4D4D4D",
-              "closed": true
-            },
-            {
-              "date": "2026-05-04",
-              "displayDate": "2026/05/04(月)",
-              "hours": "閉館 / Closed",
-              "bgcolor": "#FF6666",
-              "fontcolor": "#4D4D4D",
-              "closed": true
-            },
-            {
-              "date": "2026-05-05",
-              "displayDate": "2026/05/05(火)",
-              "hours": "閉館 / Closed",
-              "bgcolor": "#FF6666",
-              "fontcolor": "#4D4D4D",
-              "closed": true
-            },
-            {
-              "date": "2026-05-06",
-              "displayDate": "2026/05/06(水)",
-              "hours": "閉館 / Closed",
-              "bgcolor": "#FF6666",
-              "fontcolor": "#4D4D4D",
-              "closed": true
-            },
-            {
-              "date": "2026-05-07",
-              "displayDate": "2026/05/07(木)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-05-08",
-              "displayDate": "2026/05/08(金)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-05-09",
-              "displayDate": "2026/05/09(土)",
+              "date": "2026-07-05",
+              "displayDate": "2026/07/05(日)",
               "hours": "10:00-17:00",
               "bgcolor": "#99FFFF",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-10",
-              "displayDate": "2026/05/10(日)",
+              "date": "2026-07-06",
+              "displayDate": "2026/07/06(月)",
+              "hours": "8:30-22:00",
+              "bgcolor": "#FFFFFF",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-07-07",
+              "displayDate": "2026/07/07(火)",
+              "hours": "8:30-22:00",
+              "bgcolor": "#FFFFFF",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-07-08",
+              "displayDate": "2026/07/08(水)",
+              "hours": "8:30-22:00",
+              "bgcolor": "#FFFFFF",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-07-09",
+              "displayDate": "2026/07/09(木)",
+              "hours": "8:30-22:00",
+              "bgcolor": "#FFFFFF",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-07-10",
+              "displayDate": "2026/07/10(金)",
+              "hours": "8:30-22:00",
+              "bgcolor": "#FFFFFF",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-07-11",
+              "displayDate": "2026/07/11(土)",
               "hours": "10:00-17:00",
               "bgcolor": "#99FFFF",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-11",
-              "displayDate": "2026/05/11(月)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-05-12",
-              "displayDate": "2026/05/12(火)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-05-13",
-              "displayDate": "2026/05/13(水)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-05-14",
-              "displayDate": "2026/05/14(木)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-05-15",
-              "displayDate": "2026/05/15(金)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-05-16",
-              "displayDate": "2026/05/16(土)",
+              "date": "2026-07-12",
+              "displayDate": "2026/07/12(日)",
               "hours": "10:00-17:00",
               "bgcolor": "#99FFFF",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-17",
-              "displayDate": "2026/05/17(日)",
+              "date": "2026-07-13",
+              "displayDate": "2026/07/13(月)",
+              "hours": "8:30-22:00",
+              "bgcolor": "#FFFFFF",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-07-14",
+              "displayDate": "2026/07/14(火)",
+              "hours": "8:30-22:00",
+              "bgcolor": "#FFFFFF",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-07-15",
+              "displayDate": "2026/07/15(水)",
+              "hours": "8:30-22:00",
+              "bgcolor": "#FFFFFF",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-07-16",
+              "displayDate": "2026/07/16(木)",
+              "hours": "8:30-22:00",
+              "bgcolor": "#FFFFFF",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-07-17",
+              "displayDate": "2026/07/17(金)",
+              "hours": "8:30-22:00",
+              "bgcolor": "#FFFFFF",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-07-18",
+              "displayDate": "2026/07/18(土)",
+              "hours": "8:30-22:00",
+              "bgcolor": "#FFFFFF",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-07-19",
+              "displayDate": "2026/07/19(日)",
               "hours": "10:00-17:00",
               "bgcolor": "#99FFFF",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-18",
-              "displayDate": "2026/05/18(月)",
+              "date": "2026-07-20",
+              "displayDate": "2026/07/20(月)",
               "hours": "8:30-22:00",
               "bgcolor": "#FFFFFF",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-19",
-              "displayDate": "2026/05/19(火)",
+              "date": "2026-07-21",
+              "displayDate": "2026/07/21(火)",
               "hours": "8:30-22:00",
               "bgcolor": "#FFFFFF",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-20",
-              "displayDate": "2026/05/20(水)",
+              "date": "2026-07-22",
+              "displayDate": "2026/07/22(水)",
               "hours": "8:30-22:00",
               "bgcolor": "#FFFFFF",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-21",
-              "displayDate": "2026/05/21(木)",
+              "date": "2026-07-23",
+              "displayDate": "2026/07/23(木)",
               "hours": "8:30-22:00",
               "bgcolor": "#FFFFFF",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-22",
-              "displayDate": "2026/05/22(金)",
+              "date": "2026-07-24",
+              "displayDate": "2026/07/24(金)",
               "hours": "8:30-22:00",
               "bgcolor": "#FFFFFF",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-23",
-              "displayDate": "2026/05/23(土)",
+              "date": "2026-07-25",
+              "displayDate": "2026/07/25(土)",
+              "hours": "8:30-22:00",
+              "bgcolor": "#FFFFFF",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-07-26",
+              "displayDate": "2026/07/26(日)",
+              "hours": "10:00-17:00",
+              "bgcolor": "#99FFFF",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-07-27",
+              "displayDate": "2026/07/27(月)",
               "hours": "9:00-19:30",
               "bgcolor": "#FFFF00",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-24",
-              "displayDate": "2026/05/24(日)",
-              "hours": "10:00-17:00",
-              "bgcolor": "#99FFFF",
+              "date": "2026-07-28",
+              "displayDate": "2026/07/28(火)",
+              "hours": "9:00-19:30",
+              "bgcolor": "#FFFF00",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-25",
-              "displayDate": "2026/05/25(月)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
+              "date": "2026-07-29",
+              "displayDate": "2026/07/29(水)",
+              "hours": "9:00-19:30",
+              "bgcolor": "#FFFF00",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-26",
-              "displayDate": "2026/05/26(火)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
+              "date": "2026-07-30",
+              "displayDate": "2026/07/30(木)",
+              "hours": "9:00-19:30",
+              "bgcolor": "#FFFF00",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-27",
-              "displayDate": "2026/05/27(水)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-05-28",
-              "displayDate": "2026/05/28(木)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-05-29",
-              "displayDate": "2026/05/29(金)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-05-30",
-              "displayDate": "2026/05/30(土)",
-              "hours": "10:00-17:00",
-              "bgcolor": "#99FFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-05-31",
-              "displayDate": "2026/05/31(日)",
-              "hours": "10:00-17:00",
-              "bgcolor": "#99FFFF",
+              "date": "2026-07-31",
+              "displayDate": "2026/07/31(金)",
+              "hours": "9:00-19:30",
+              "bgcolor": "#FFFF00",
               "fontcolor": "#4D4D4D",
               "closed": false
             }
           ]
         },
         {
-          "query": "2026-06",
-          "label": "2026/06",
+          "query": "2026-08",
+          "label": "2026/08",
           "days": [
             {
-              "date": "2026-06-01",
-              "displayDate": "2026/06/01(月)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-06-02",
-              "displayDate": "2026/06/02(火)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-06-03",
-              "displayDate": "2026/06/03(水)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-06-04",
-              "displayDate": "2026/06/04(木)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-06-05",
-              "displayDate": "2026/06/05(金)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-06-06",
-              "displayDate": "2026/06/06(土)",
+              "date": "2026-08-01",
+              "displayDate": "2026/08/01(土)",
               "hours": "10:00-17:00",
               "bgcolor": "#99FFFF",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-06-07",
-              "displayDate": "2026/06/07(日)",
+              "date": "2026-08-02",
+              "displayDate": "2026/08/02(日)",
               "hours": "10:00-17:00",
               "bgcolor": "#99FFFF",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-06-08",
-              "displayDate": "2026/06/08(月)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-06-09",
-              "displayDate": "2026/06/09(火)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-06-10",
-              "displayDate": "2026/06/10(水)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-06-11",
-              "displayDate": "2026/06/11(木)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-06-12",
-              "displayDate": "2026/06/12(金)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-06-13",
-              "displayDate": "2026/06/13(土)",
-              "hours": "10:00-17:00",
-              "bgcolor": "#99FFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-06-14",
-              "displayDate": "2026/06/14(日)",
-              "hours": "10:00-17:00",
-              "bgcolor": "#99FFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-06-15",
-              "displayDate": "2026/06/15(月)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-06-16",
-              "displayDate": "2026/06/16(火)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-06-17",
-              "displayDate": "2026/06/17(水)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-06-18",
-              "displayDate": "2026/06/18(木)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-06-19",
-              "displayDate": "2026/06/19(金)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-06-20",
-              "displayDate": "2026/06/20(土)",
-              "hours": "10:00-17:00",
-              "bgcolor": "#99FFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-06-21",
-              "displayDate": "2026/06/21(日)",
-              "hours": "10:00-17:00",
-              "bgcolor": "#99FFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-06-22",
-              "displayDate": "2026/06/22(月)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-06-23",
-              "displayDate": "2026/06/23(火)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-06-24",
-              "displayDate": "2026/06/24(水)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-06-25",
-              "displayDate": "2026/06/25(木)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-06-26",
-              "displayDate": "2026/06/26(金)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-06-27",
-              "displayDate": "2026/06/27(土)",
+              "date": "2026-08-03",
+              "displayDate": "2026/08/03(月)",
               "hours": "9:00-19:30",
               "bgcolor": "#FFFF00",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-06-28",
-              "displayDate": "2026/06/28(日)",
+              "date": "2026-08-04",
+              "displayDate": "2026/08/04(火)",
+              "hours": "9:00-19:30",
+              "bgcolor": "#FFFF00",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-08-05",
+              "displayDate": "2026/08/05(水)",
+              "hours": "9:00-19:30",
+              "bgcolor": "#FFFF00",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-08-06",
+              "displayDate": "2026/08/06(木)",
+              "hours": "9:00-19:30",
+              "bgcolor": "#FFFF00",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-08-07",
+              "displayDate": "2026/08/07(金)",
+              "hours": "9:00-19:30",
+              "bgcolor": "#FFFF00",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-08-08",
+              "displayDate": "2026/08/08(土)",
               "hours": "10:00-17:00",
               "bgcolor": "#99FFFF",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-06-29",
-              "displayDate": "2026/06/29(月)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
+              "date": "2026-08-09",
+              "displayDate": "2026/08/09(日)",
+              "hours": "10:00-17:00",
+              "bgcolor": "#99FFFF",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-06-30",
-              "displayDate": "2026/06/30(火)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
+              "date": "2026-08-10",
+              "displayDate": "2026/08/10(月)",
+              "hours": "閉館 / Closed",
+              "bgcolor": "#FF6666",
+              "fontcolor": "#4D4D4D",
+              "closed": true
+            },
+            {
+              "date": "2026-08-11",
+              "displayDate": "2026/08/11(火)",
+              "hours": "閉館 / Closed",
+              "bgcolor": "#FF6666",
+              "fontcolor": "#4D4D4D",
+              "closed": true
+            },
+            {
+              "date": "2026-08-12",
+              "displayDate": "2026/08/12(水)",
+              "hours": "閉館 / Closed",
+              "bgcolor": "#FF6666",
+              "fontcolor": "#4D4D4D",
+              "closed": true
+            },
+            {
+              "date": "2026-08-13",
+              "displayDate": "2026/08/13(木)",
+              "hours": "閉館 / Closed",
+              "bgcolor": "#FF6666",
+              "fontcolor": "#4D4D4D",
+              "closed": true
+            },
+            {
+              "date": "2026-08-14",
+              "displayDate": "2026/08/14(金)",
+              "hours": "閉館 / Closed",
+              "bgcolor": "#FF6666",
+              "fontcolor": "#4D4D4D",
+              "closed": true
+            },
+            {
+              "date": "2026-08-15",
+              "displayDate": "2026/08/15(土)",
+              "hours": "閉館 / Closed",
+              "bgcolor": "#FF6666",
+              "fontcolor": "#4D4D4D",
+              "closed": true
+            },
+            {
+              "date": "2026-08-16",
+              "displayDate": "2026/08/16(日)",
+              "hours": "閉館 / Closed",
+              "bgcolor": "#FF6666",
+              "fontcolor": "#4D4D4D",
+              "closed": true
+            },
+            {
+              "date": "2026-08-17",
+              "displayDate": "2026/08/17(月)",
+              "hours": "閉館 / Closed",
+              "bgcolor": "#FF6666",
+              "fontcolor": "#4D4D4D",
+              "closed": true
+            },
+            {
+              "date": "2026-08-18",
+              "displayDate": "2026/08/18(火)",
+              "hours": "9:00-19:30",
+              "bgcolor": "#FFFF00",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-08-19",
+              "displayDate": "2026/08/19(水)",
+              "hours": "9:00-19:30",
+              "bgcolor": "#FFFF00",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-08-20",
+              "displayDate": "2026/08/20(木)",
+              "hours": "9:00-19:30",
+              "bgcolor": "#FFFF00",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-08-21",
+              "displayDate": "2026/08/21(金)",
+              "hours": "閉館 / Closed",
+              "bgcolor": "#FF6666",
+              "fontcolor": "#4D4D4D",
+              "closed": true
+            },
+            {
+              "date": "2026-08-22",
+              "displayDate": "2026/08/22(土)",
+              "hours": "10:00-17:00",
+              "bgcolor": "#99FFFF",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-08-23",
+              "displayDate": "2026/08/23(日)",
+              "hours": "10:00-17:00",
+              "bgcolor": "#99FFFF",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-08-24",
+              "displayDate": "2026/08/24(月)",
+              "hours": "9:00-19:30",
+              "bgcolor": "#FFFF00",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-08-25",
+              "displayDate": "2026/08/25(火)",
+              "hours": "9:00-19:30",
+              "bgcolor": "#FFFF00",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-08-26",
+              "displayDate": "2026/08/26(水)",
+              "hours": "9:00-19:30",
+              "bgcolor": "#FFFF00",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-08-27",
+              "displayDate": "2026/08/27(木)",
+              "hours": "9:00-19:30",
+              "bgcolor": "#FFFF00",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-08-28",
+              "displayDate": "2026/08/28(金)",
+              "hours": "9:00-19:30",
+              "bgcolor": "#FFFF00",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-08-29",
+              "displayDate": "2026/08/29(土)",
+              "hours": "10:00-17:00",
+              "bgcolor": "#99FFFF",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-08-30",
+              "displayDate": "2026/08/30(日)",
+              "hours": "10:00-17:00",
+              "bgcolor": "#99FFFF",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-08-31",
+              "displayDate": "2026/08/31(月)",
+              "hours": "9:00-19:30",
+              "bgcolor": "#FFFF00",
               "fontcolor": "#4D4D4D",
               "closed": false
             }
@@ -3061,500 +3109,508 @@ window.libraryHours = {
       "countercd": "101601",
       "months": [
         {
-          "query": "2026-05",
-          "label": "2026/05",
+          "query": "2026-07",
+          "label": "2026/07",
           "days": [
             {
-              "date": "2026-05-01",
-              "displayDate": "2026/05/01(金)",
+              "date": "2026-07-01",
+              "displayDate": "2026/07/01(水)",
               "hours": "8:30-22:00",
               "bgcolor": "#FFFFFF",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-02",
-              "displayDate": "2026/05/02(土)",
+              "date": "2026-07-02",
+              "displayDate": "2026/07/02(木)",
+              "hours": "8:30-22:00",
+              "bgcolor": "#FFFFFF",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-07-03",
+              "displayDate": "2026/07/03(金)",
+              "hours": "8:30-22:00",
+              "bgcolor": "#FFFFFF",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-07-04",
+              "displayDate": "2026/07/04(土)",
               "hours": "10:00-17:00",
               "bgcolor": "#99FFFF",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-03",
-              "displayDate": "2026/05/03(日)",
-              "hours": "閉館/Closed",
-              "bgcolor": "#FF6666",
-              "fontcolor": "#4D4D4D",
-              "closed": true
-            },
-            {
-              "date": "2026-05-04",
-              "displayDate": "2026/05/04(月)",
-              "hours": "閉館/Closed",
-              "bgcolor": "#FF6666",
-              "fontcolor": "#4D4D4D",
-              "closed": true
-            },
-            {
-              "date": "2026-05-05",
-              "displayDate": "2026/05/05(火)",
-              "hours": "閉館/Closed",
-              "bgcolor": "#FF6666",
-              "fontcolor": "#4D4D4D",
-              "closed": true
-            },
-            {
-              "date": "2026-05-06",
-              "displayDate": "2026/05/06(水)",
-              "hours": "閉館/Closed",
-              "bgcolor": "#FF6666",
-              "fontcolor": "#4D4D4D",
-              "closed": true
-            },
-            {
-              "date": "2026-05-07",
-              "displayDate": "2026/05/07(木)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-05-08",
-              "displayDate": "2026/05/08(金)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-05-09",
-              "displayDate": "2026/05/09(土)",
+              "date": "2026-07-05",
+              "displayDate": "2026/07/05(日)",
               "hours": "10:00-17:00",
               "bgcolor": "#99FFFF",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-10",
-              "displayDate": "2026/05/10(日)",
+              "date": "2026-07-06",
+              "displayDate": "2026/07/06(月)",
+              "hours": "8:30-22:00",
+              "bgcolor": "#FFFFFF",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-07-07",
+              "displayDate": "2026/07/07(火)",
+              "hours": "8:30-22:00",
+              "bgcolor": "#FFFFFF",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-07-08",
+              "displayDate": "2026/07/08(水)",
+              "hours": "8:30-22:00",
+              "bgcolor": "#FFFFFF",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-07-09",
+              "displayDate": "2026/07/09(木)",
+              "hours": "8:30-22:00",
+              "bgcolor": "#FFFFFF",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-07-10",
+              "displayDate": "2026/07/10(金)",
+              "hours": "8:30-22:00",
+              "bgcolor": "#FFFFFF",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-07-11",
+              "displayDate": "2026/07/11(土)",
               "hours": "10:00-17:00",
               "bgcolor": "#99FFFF",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-11",
-              "displayDate": "2026/05/11(月)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-05-12",
-              "displayDate": "2026/05/12(火)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-05-13",
-              "displayDate": "2026/05/13(水)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-05-14",
-              "displayDate": "2026/05/14(木)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-05-15",
-              "displayDate": "2026/05/15(金)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-05-16",
-              "displayDate": "2026/05/16(土)",
+              "date": "2026-07-12",
+              "displayDate": "2026/07/12(日)",
               "hours": "10:00-17:00",
               "bgcolor": "#99FFFF",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-17",
-              "displayDate": "2026/05/17(日)",
+              "date": "2026-07-13",
+              "displayDate": "2026/07/13(月)",
+              "hours": "8:30-22:00",
+              "bgcolor": "#FFFFFF",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-07-14",
+              "displayDate": "2026/07/14(火)",
+              "hours": "8:30-22:00",
+              "bgcolor": "#FFFFFF",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-07-15",
+              "displayDate": "2026/07/15(水)",
+              "hours": "8:30-22:00",
+              "bgcolor": "#FFFFFF",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-07-16",
+              "displayDate": "2026/07/16(木)",
+              "hours": "8:30-22:00",
+              "bgcolor": "#FFFFFF",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-07-17",
+              "displayDate": "2026/07/17(金)",
+              "hours": "8:30-22:00",
+              "bgcolor": "#FFFFFF",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-07-18",
+              "displayDate": "2026/07/18(土)",
+              "hours": "8:30-22:00",
+              "bgcolor": "#FFFFFF",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-07-19",
+              "displayDate": "2026/07/19(日)",
               "hours": "10:00-17:00",
               "bgcolor": "#99FFFF",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-18",
-              "displayDate": "2026/05/18(月)",
+              "date": "2026-07-20",
+              "displayDate": "2026/07/20(月)",
               "hours": "8:30-22:00",
               "bgcolor": "#FFFFFF",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-19",
-              "displayDate": "2026/05/19(火)",
+              "date": "2026-07-21",
+              "displayDate": "2026/07/21(火)",
               "hours": "8:30-22:00",
               "bgcolor": "#FFFFFF",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-20",
-              "displayDate": "2026/05/20(水)",
+              "date": "2026-07-22",
+              "displayDate": "2026/07/22(水)",
               "hours": "8:30-22:00",
               "bgcolor": "#FFFFFF",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-21",
-              "displayDate": "2026/05/21(木)",
+              "date": "2026-07-23",
+              "displayDate": "2026/07/23(木)",
               "hours": "8:30-22:00",
               "bgcolor": "#FFFFFF",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-22",
-              "displayDate": "2026/05/22(金)",
+              "date": "2026-07-24",
+              "displayDate": "2026/07/24(金)",
               "hours": "8:30-22:00",
               "bgcolor": "#FFFFFF",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-23",
-              "displayDate": "2026/05/23(土)",
+              "date": "2026-07-25",
+              "displayDate": "2026/07/25(土)",
+              "hours": "8:30-22:00",
+              "bgcolor": "#FFFFFF",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-07-26",
+              "displayDate": "2026/07/26(日)",
+              "hours": "10:00-17:00",
+              "bgcolor": "#99FFFF",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-07-27",
+              "displayDate": "2026/07/27(月)",
               "hours": "9:00-19:30",
               "bgcolor": "#FFFF00",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-24",
-              "displayDate": "2026/05/24(日)",
-              "hours": "10:00-17:00",
-              "bgcolor": "#99FFFF",
+              "date": "2026-07-28",
+              "displayDate": "2026/07/28(火)",
+              "hours": "9:00-19:30",
+              "bgcolor": "#FFFF00",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-25",
-              "displayDate": "2026/05/25(月)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
+              "date": "2026-07-29",
+              "displayDate": "2026/07/29(水)",
+              "hours": "9:00-19:30",
+              "bgcolor": "#FFFF00",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-26",
-              "displayDate": "2026/05/26(火)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
+              "date": "2026-07-30",
+              "displayDate": "2026/07/30(木)",
+              "hours": "9:00-19:30",
+              "bgcolor": "#FFFF00",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-05-27",
-              "displayDate": "2026/05/27(水)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-05-28",
-              "displayDate": "2026/05/28(木)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-05-29",
-              "displayDate": "2026/05/29(金)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-05-30",
-              "displayDate": "2026/05/30(土)",
-              "hours": "10:00-17:00",
-              "bgcolor": "#99FFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-05-31",
-              "displayDate": "2026/05/31(日)",
-              "hours": "10:00-17:00",
-              "bgcolor": "#99FFFF",
+              "date": "2026-07-31",
+              "displayDate": "2026/07/31(金)",
+              "hours": "9:00-19:30",
+              "bgcolor": "#FFFF00",
               "fontcolor": "#4D4D4D",
               "closed": false
             }
           ]
         },
         {
-          "query": "2026-06",
-          "label": "2026/06",
+          "query": "2026-08",
+          "label": "2026/08",
           "days": [
             {
-              "date": "2026-06-01",
-              "displayDate": "2026/06/01(月)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-06-02",
-              "displayDate": "2026/06/02(火)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-06-03",
-              "displayDate": "2026/06/03(水)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-06-04",
-              "displayDate": "2026/06/04(木)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-06-05",
-              "displayDate": "2026/06/05(金)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-06-06",
-              "displayDate": "2026/06/06(土)",
+              "date": "2026-08-01",
+              "displayDate": "2026/08/01(土)",
               "hours": "10:00-17:00",
               "bgcolor": "#99FFFF",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-06-07",
-              "displayDate": "2026/06/07(日)",
+              "date": "2026-08-02",
+              "displayDate": "2026/08/02(日)",
               "hours": "10:00-17:00",
               "bgcolor": "#99FFFF",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-06-08",
-              "displayDate": "2026/06/08(月)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-06-09",
-              "displayDate": "2026/06/09(火)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-06-10",
-              "displayDate": "2026/06/10(水)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-06-11",
-              "displayDate": "2026/06/11(木)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-06-12",
-              "displayDate": "2026/06/12(金)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-06-13",
-              "displayDate": "2026/06/13(土)",
-              "hours": "10:00-17:00",
-              "bgcolor": "#99FFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-06-14",
-              "displayDate": "2026/06/14(日)",
-              "hours": "10:00-17:00",
-              "bgcolor": "#99FFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-06-15",
-              "displayDate": "2026/06/15(月)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-06-16",
-              "displayDate": "2026/06/16(火)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-06-17",
-              "displayDate": "2026/06/17(水)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-06-18",
-              "displayDate": "2026/06/18(木)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-06-19",
-              "displayDate": "2026/06/19(金)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-06-20",
-              "displayDate": "2026/06/20(土)",
-              "hours": "10:00-17:00",
-              "bgcolor": "#99FFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-06-21",
-              "displayDate": "2026/06/21(日)",
-              "hours": "10:00-17:00",
-              "bgcolor": "#99FFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-06-22",
-              "displayDate": "2026/06/22(月)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-06-23",
-              "displayDate": "2026/06/23(火)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-06-24",
-              "displayDate": "2026/06/24(水)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-06-25",
-              "displayDate": "2026/06/25(木)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-06-26",
-              "displayDate": "2026/06/26(金)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
-              "fontcolor": "#4D4D4D",
-              "closed": false
-            },
-            {
-              "date": "2026-06-27",
-              "displayDate": "2026/06/27(土)",
+              "date": "2026-08-03",
+              "displayDate": "2026/08/03(月)",
               "hours": "9:00-19:30",
               "bgcolor": "#FFFF00",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-06-28",
-              "displayDate": "2026/06/28(日)",
+              "date": "2026-08-04",
+              "displayDate": "2026/08/04(火)",
+              "hours": "9:00-19:30",
+              "bgcolor": "#FFFF00",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-08-05",
+              "displayDate": "2026/08/05(水)",
+              "hours": "9:00-19:30",
+              "bgcolor": "#FFFF00",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-08-06",
+              "displayDate": "2026/08/06(木)",
+              "hours": "9:00-19:30",
+              "bgcolor": "#FFFF00",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-08-07",
+              "displayDate": "2026/08/07(金)",
+              "hours": "9:00-19:30",
+              "bgcolor": "#FFFF00",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-08-08",
+              "displayDate": "2026/08/08(土)",
               "hours": "10:00-17:00",
               "bgcolor": "#99FFFF",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-06-29",
-              "displayDate": "2026/06/29(月)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
+              "date": "2026-08-09",
+              "displayDate": "2026/08/09(日)",
+              "hours": "10:00-17:00",
+              "bgcolor": "#99FFFF",
               "fontcolor": "#4D4D4D",
               "closed": false
             },
             {
-              "date": "2026-06-30",
-              "displayDate": "2026/06/30(火)",
-              "hours": "8:30-22:00",
-              "bgcolor": "#FFFFFF",
+              "date": "2026-08-10",
+              "displayDate": "2026/08/10(月)",
+              "hours": "閉館/Closed",
+              "bgcolor": "#FF6666",
+              "fontcolor": "#4D4D4D",
+              "closed": true
+            },
+            {
+              "date": "2026-08-11",
+              "displayDate": "2026/08/11(火)",
+              "hours": "閉館/Closed",
+              "bgcolor": "#FF6666",
+              "fontcolor": "#4D4D4D",
+              "closed": true
+            },
+            {
+              "date": "2026-08-12",
+              "displayDate": "2026/08/12(水)",
+              "hours": "閉館/Closed",
+              "bgcolor": "#FF6666",
+              "fontcolor": "#4D4D4D",
+              "closed": true
+            },
+            {
+              "date": "2026-08-13",
+              "displayDate": "2026/08/13(木)",
+              "hours": "閉館/Closed",
+              "bgcolor": "#FF6666",
+              "fontcolor": "#4D4D4D",
+              "closed": true
+            },
+            {
+              "date": "2026-08-14",
+              "displayDate": "2026/08/14(金)",
+              "hours": "閉館/Closed",
+              "bgcolor": "#FF6666",
+              "fontcolor": "#4D4D4D",
+              "closed": true
+            },
+            {
+              "date": "2026-08-15",
+              "displayDate": "2026/08/15(土)",
+              "hours": "閉館/Closed",
+              "bgcolor": "#FF6666",
+              "fontcolor": "#4D4D4D",
+              "closed": true
+            },
+            {
+              "date": "2026-08-16",
+              "displayDate": "2026/08/16(日)",
+              "hours": "閉館/Closed",
+              "bgcolor": "#FF6666",
+              "fontcolor": "#4D4D4D",
+              "closed": true
+            },
+            {
+              "date": "2026-08-17",
+              "displayDate": "2026/08/17(月)",
+              "hours": "閉館/Closed",
+              "bgcolor": "#FF6666",
+              "fontcolor": "#4D4D4D",
+              "closed": true
+            },
+            {
+              "date": "2026-08-18",
+              "displayDate": "2026/08/18(火)",
+              "hours": "9:00-19:30",
+              "bgcolor": "#FFFF00",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-08-19",
+              "displayDate": "2026/08/19(水)",
+              "hours": "9:00-19:30",
+              "bgcolor": "#FFFF00",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-08-20",
+              "displayDate": "2026/08/20(木)",
+              "hours": "9:00-19:30",
+              "bgcolor": "#FFFF00",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-08-21",
+              "displayDate": "2026/08/21(金)",
+              "hours": "閉館/Closed",
+              "bgcolor": "#FF6666",
+              "fontcolor": "#4D4D4D",
+              "closed": true
+            },
+            {
+              "date": "2026-08-22",
+              "displayDate": "2026/08/22(土)",
+              "hours": "10:00-17:00",
+              "bgcolor": "#99FFFF",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-08-23",
+              "displayDate": "2026/08/23(日)",
+              "hours": "10:00-17:00",
+              "bgcolor": "#99FFFF",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-08-24",
+              "displayDate": "2026/08/24(月)",
+              "hours": "9:00-19:30",
+              "bgcolor": "#FFFF00",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-08-25",
+              "displayDate": "2026/08/25(火)",
+              "hours": "9:00-19:30",
+              "bgcolor": "#FFFF00",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-08-26",
+              "displayDate": "2026/08/26(水)",
+              "hours": "9:00-19:30",
+              "bgcolor": "#FFFF00",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-08-27",
+              "displayDate": "2026/08/27(木)",
+              "hours": "9:00-19:30",
+              "bgcolor": "#FFFF00",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-08-28",
+              "displayDate": "2026/08/28(金)",
+              "hours": "9:00-19:30",
+              "bgcolor": "#FFFF00",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-08-29",
+              "displayDate": "2026/08/29(土)",
+              "hours": "10:00-17:00",
+              "bgcolor": "#99FFFF",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-08-30",
+              "displayDate": "2026/08/30(日)",
+              "hours": "10:00-17:00",
+              "bgcolor": "#99FFFF",
+              "fontcolor": "#4D4D4D",
+              "closed": false
+            },
+            {
+              "date": "2026-08-31",
+              "displayDate": "2026/08/31(月)",
+              "hours": "9:00-19:30",
+              "bgcolor": "#FFFF00",
               "fontcolor": "#4D4D4D",
               "closed": false
             }
