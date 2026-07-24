@@ -1,7 +1,7 @@
 // Generated from Ritsumeikan University Library official calendar pages.
 window.libraryHours = {
   "sourceUrl": "https://www.ritsumei.ac.jp/lib/a03/010/",
-  "generatedAt": "2026-07-01",
+  "generatedAt": "2026-07-24",
   "months": [
     {
       "query": "2026-07",
