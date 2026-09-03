@@ -55,12 +55,6 @@ window.siteContent = {
       url: "https://www2.sundai.ac.jp/yobi/sv/sundai/moshi_P/moshi_grade_PD/1337364908752.html",
       expiresAt: "",
     },
-    {
-      tag: "お知らせ",
-      title: "リリースしました",
-      body: "",
-      expiresAt: "",
-    },
   ],
   scheduleMonth: "2026年5月",
   schedule: [

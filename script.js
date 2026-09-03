@@ -101,28 +101,73 @@ function renderMockExam() {
     })
     .sort((a, b) => parseLocalDate(a.date) - parseLocalDate(b.date));
 
+  const initialCount = Math.max(1, Number(settings.initialCount) || 6);
+  let hiddenCount = 0;
+  let toggle = null;
+
   if (visibleExams.length === 0) {
     renderEmpty(list, "2か月以内に掲載対象の模試はありません。");
   } else {
+    const groups = [];
     visibleExams.forEach((exam) => {
+      const last = groups[groups.length - 1];
+      if (last && last.date === exam.date) {
+        last.exams.push(exam);
+      } else {
+        groups.push({ date: exam.date, displayDate: exam.displayDate, exams: [exam] });
+      }
+    });
+
+    let shown = 0;
+    groups.forEach((group) => {
       const row = document.createElement("article");
-      row.className = "exam-row";
+      row.className = "exam-group";
+      if (shown >= initialCount) {
+        row.hidden = true;
+        row.classList.add("exam-group--extra");
+        hiddenCount += group.exams.length;
+      }
+      shown += group.exams.length;
 
       const date = document.createElement("time");
-      date.dateTime = exam.date;
-      date.textContent = exam.displayDate || formatDateLabel(parseLocalDate(exam.date));
+      date.dateTime = group.date;
+      date.textContent = group.displayDate || formatDateLabel(parseLocalDate(group.date));
 
-      const body = document.createElement("div");
-      const name = document.createElement("h3");
-      name.textContent = exam.name || "";
+      const items = document.createElement("div");
+      items.className = "exam-group__items";
+      group.exams.forEach((exam) => {
+        const item = document.createElement("div");
+        item.className = "exam-item";
 
-      const meta = document.createElement("p");
-      meta.textContent = [exam.provider, exam.category, exam.fee].filter(Boolean).join(" / ");
+        const name = document.createElement("h3");
+        name.textContent = exam.name || "";
 
-      body.append(name, meta);
-      row.append(date, body);
+        const meta = document.createElement("p");
+        meta.textContent = [exam.provider, exam.category, exam.fee].filter(Boolean).join(" / ");
+
+        item.append(name, meta);
+        items.append(item);
+      });
+
+      row.append(date, items);
       list.append(row);
     });
+
+    if (hiddenCount > 0) {
+      toggle = document.createElement("button");
+      toggle.type = "button";
+      toggle.className = "exam-list__toggle";
+      toggle.setAttribute("aria-expanded", "false");
+      toggle.textContent = `残り${hiddenCount}件をすべて表示`;
+      toggle.addEventListener("click", () => {
+        const expanded = toggle.getAttribute("aria-expanded") === "true";
+        list.querySelectorAll(".exam-group--extra").forEach((row) => {
+          row.hidden = expanded;
+        });
+        toggle.setAttribute("aria-expanded", String(!expanded));
+        toggle.textContent = expanded ? `残り${hiddenCount}件をすべて表示` : "直近だけ表示に戻す";
+      });
+    }
   }
 
   const count = document.createElement("p");
@@ -130,6 +175,7 @@ function renderMockExam() {
   count.textContent = `${formatDateLabel(today)}から${Number(settings.windowMonths) || 2}か月以内: ${visibleExams.length}件`;
 
   root.append(header, count, list);
+  if (toggle) root.append(toggle);
 }
 
 function parseLocalDate(value) {
