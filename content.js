@@ -4,7 +4,7 @@ window.siteContent = {
   siteName: "立命館仮面浪人サークル",
   pageTitle: "立命館仮面浪人サークル",
   lead: "",
-  updatedAt: "2026-07-24",
+  updatedAt: "2026-09-03",
   commonTest: {
     title: "共通テスト開始まで",
     targetAt: "2027-01-16T09:30:00+09:00",
@@ -34,7 +34,7 @@ window.siteContent = {
   coop: {
     title: "今日の学食・生協営業時間",
     lead: "立命館生協の公式営業時間ページに従って、今日の営業時間をKIC・BKC・OICごとに表示します。他の日程は公式ページで確認してください。",
-    sourceUrl: "https://www.ritsco-op.jp/schedule/schedule_202607.html",
+    sourceUrl: "https://www.ritsco-op.jp/schedule/schedule_202609.html",
     displayDays: 1,
     previewDate: "",
   },
@@ -50,9 +50,9 @@ window.siteContent = {
   notices: [
     {
       tag: "模試",
-      title: "駿台 東大実戦・京大実戦の申し込み開始",
-      body: "駿台の東大入試実戦模試・京大入試実戦模試の申し込みが始まっています。受験予定者は日程・会場・締切を早めに確認してください。",
-      url: "https://www2.sundai.ac.jp/moshi/",
+      title: "駿台 冠模試の申し込み開始",
+      body: "駿台の大学別入試実戦模試は、九大・名大・阪大・北大・神戸大・第2回東大・東北大・第2回京大などの申し込みが9月上旬から始まっています。受験予定者は締切を早めに確認してください。",
+      url: "https://www2.sundai.ac.jp/yobi/sv/sundai/moshi_P/moshi_grade_PD/1337364908752.html",
       expiresAt: "",
     },
     {
