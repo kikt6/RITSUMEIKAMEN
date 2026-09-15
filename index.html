@@ -10,8 +10,8 @@
     <title>立命館仮面浪人サークル</title>
     <link rel="icon" type="image/png" href="./assets/ritsumeikan-kamen-logo.png" />
     <link rel="apple-touch-icon" href="./assets/ritsumeikan-kamen-logo.png" />
-    <link rel="manifest" href="./site.webmanifest?v=20260903-2" />
-    <link rel="stylesheet" href="./styles.css?v=20260903-2" />
+    <link rel="manifest" href="./site.webmanifest?v=20260915-1" />
+    <link rel="stylesheet" href="./styles.css?v=20260915-1" />
   </head>
   <body>
     <main class="page">
@@ -24,7 +24,6 @@
         <div class="side-tabs__links">
           <a href="#librarySection">開館時間</a>
           <a href="#coopSection">営業時間</a>
-          <a href="./rooms.html">空き教室</a>
           <a href="#mockExam">模試</a>
         </div>
       </nav>
@@ -74,6 +73,19 @@
         <div class="notice-grid" id="notices"></div>
       </section>
 
+      <section class="section push-section" id="pushSection" aria-label="更新通知" hidden>
+        <div class="push-card">
+          <div class="push-card__text">
+            <h2 id="pushTitle">更新通知を受け取る</h2>
+            <p id="pushLead"></p>
+          </div>
+          <div class="push-card__action">
+            <button class="push-button" id="pushButton" type="button">通知をオンにする</button>
+            <p class="push-status" id="pushStatus" aria-live="polite"></p>
+          </div>
+        </div>
+      </section>
+
       <section class="section library-hours" id="librarySection" aria-label="立命館大学図書館の開館時間">
         <div class="section__header section__header--stack">
           <div>
@@ -101,16 +113,6 @@
       </section>
 
       <section class="section mock-exam" id="mockExam" aria-label="次回模試日程"></section>
-
-      <section class="section room-entry" aria-label="空き教室一覧">
-        <div class="section__header section__header--stack">
-          <div>
-            <h2>空き教室一覧</h2>
-            <p>ログイン後に取得したシラバス・時間割の教室データを読み込んで、曜日・時限ごとの空き教室を確認できます。</p>
-          </div>
-          <a class="source-link" href="./rooms.html">空き教室を見る</a>
-        </div>
-      </section>
 
       <section class="section official-links" id="officialLinksSection" aria-label="公式リンク">
         <div class="section__header">
@@ -187,10 +189,10 @@
       </footer>
     </main>
 
-    <script src="./content.js?v=20260903-2"></script>
-    <script src="./exam-schedule.js?v=20260903-2"></script>
-    <script src="./library-hours.js?v=20260903-2"></script>
-    <script src="./coop-hours.js?v=20260903-2"></script>
-    <script src="./script.js?v=20260903-2"></script>
+    <script src="./content.js?v=20260915-1"></script>
+    <script src="./exam-schedule.js?v=20260915-1"></script>
+    <script src="./library-hours.js?v=20260915-1"></script>
+    <script src="./coop-hours.js?v=20260915-1"></script>
+    <script src="./script.js?v=20260915-1"></script>
   </body>
 </html>

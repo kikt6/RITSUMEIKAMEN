@@ -808,10 +808,146 @@ function initSideTabs() {
   });
 }
 
+function canUseServiceWorker() {
+  if (!("serviceWorker" in navigator)) return false;
+  return location.protocol === "https:" || location.hostname === "localhost";
+}
+
 function registerServiceWorker() {
-  if (!("serviceWorker" in navigator)) return;
-  if (location.protocol !== "https:" && location.hostname !== "localhost") return;
+  if (!canUseServiceWorker()) return;
   navigator.serviceWorker.register("./service-worker.js").catch(() => {});
+}
+
+function getPushSettings() {
+  const settings = content.pushNotifications || {};
+  const appId = String(settings.oneSignalAppId || "").trim();
+  return { ...settings, appId };
+}
+
+function isIosDevice() {
+  const ua = navigator.userAgent || "";
+  return /iPhone|iPad|iPod/.test(ua) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+}
+
+function isStandaloneApp() {
+  return window.navigator.standalone === true || window.matchMedia?.("(display-mode: standalone)").matches;
+}
+
+function initPushNotifications() {
+  const settings = getPushSettings();
+  const section = byId("pushSection");
+  if (!section) return;
+  if (!settings.appId || !canUseServiceWorker()) {
+    section.hidden = true;
+    return;
+  }
+
+  section.hidden = false;
+  setText("pushTitle", settings.title || "更新通知を受け取る");
+  setText("pushLead", settings.lead || "");
+
+  const button = byId("pushButton");
+  const status = byId("pushStatus");
+  button.textContent = settings.buttonLabel || "通知をオンにする";
+
+  const setStatus = (text, state = "") => {
+    status.textContent = text;
+    status.dataset.state = state;
+  };
+
+  if (isIosDevice() && !isStandaloneApp()) {
+    button.disabled = true;
+    setStatus("iPhone では、Safari の共有メニューから「ホーム画面に追加」したアプリで開くと登録できます。", "hint");
+    return;
+  }
+
+  if (typeof Notification !== "undefined" && Notification.permission === "denied") {
+    button.disabled = true;
+    setStatus("このブラウザで通知がブロックされています。サイト設定から通知を許可すると登録できます。", "blocked");
+    return;
+  }
+
+  // OneSignal SDK は App ID が設定されているときだけ読み込む。
+  // Service Worker は OneSignal 側が同じ service-worker.js を登録するので、二重登録を避けて任せる。
+  const base = location.pathname.replace(/[^/]*$/, "");
+  window.OneSignalDeferred = window.OneSignalDeferred || [];
+  window.OneSignalDeferred.push(async (OneSignal) => {
+    try {
+      await OneSignal.init({
+        appId: settings.appId,
+        safari_web_id: settings.safariWebId || undefined,
+        serviceWorkerPath: `${base.replace(/^\//, "")}service-worker.js`,
+        serviceWorkerParam: { scope: base },
+        allowLocalhostAsSecureOrigin: location.hostname === "localhost",
+      });
+    } catch (error) {
+      setStatus("通知サービスに接続できませんでした。時間をおいて再度お試しください。", "error");
+      button.disabled = true;
+      return;
+    }
+
+    if (!OneSignal.Notifications.isPushSupported()) {
+      button.disabled = true;
+      setStatus("このブラウザは通知に対応していません。", "blocked");
+      return;
+    }
+
+    const refresh = () => {
+      const optedIn = OneSignal.User.PushSubscription.optedIn === true;
+      const granted = OneSignal.Notifications.permission === true;
+      if (optedIn && granted) {
+        button.textContent = "通知をオフにする";
+        button.disabled = false;
+        setStatus("この端末で更新通知を受け取ります。", "on");
+      } else if (typeof Notification !== "undefined" && Notification.permission === "denied") {
+        button.disabled = true;
+        setStatus("このブラウザで通知がブロックされています。サイト設定から通知を許可すると登録できます。", "blocked");
+      } else {
+        button.textContent = settings.buttonLabel || "通知をオンにする";
+        button.disabled = false;
+        setStatus("まだ登録されていません。", "off");
+      }
+    };
+
+    OneSignal.Notifications.addEventListener("permissionChange", refresh);
+    OneSignal.User.PushSubscription.addEventListener("change", refresh);
+
+    button.addEventListener("click", async () => {
+      button.disabled = true;
+      try {
+        if (OneSignal.User.PushSubscription.optedIn === true) {
+          await OneSignal.User.PushSubscription.optOut();
+        } else {
+          await OneSignal.Notifications.requestPermission();
+          if (OneSignal.Notifications.permission === true) {
+            await OneSignal.User.PushSubscription.optIn();
+          }
+        }
+      } catch (error) {
+        setStatus("登録に失敗しました。もう一度お試しください。", "error");
+      }
+      refresh();
+    });
+
+    refresh();
+  });
+
+  const sdk = document.createElement("script");
+  sdk.src = "https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js";
+  sdk.defer = true;
+  sdk.addEventListener("error", () => {
+    button.disabled = true;
+    setStatus("通知サービスを読み込めませんでした（広告ブロッカー等）。", "error");
+    registerServiceWorker();
+  });
+  document.head.append(sdk);
+
+  // SDK 側の登録が何らかの理由で行われなかった場合の保険
+  window.setTimeout(() => {
+    navigator.serviceWorker.getRegistration().then((registration) => {
+      if (!registration) registerServiceWorker();
+    });
+  }, 10000);
 }
 
 setText("siteName", content.siteName);
@@ -821,7 +957,12 @@ setText("updatedAt", formatUpdatedAt(content.updatedAt));
 setText("noticeCount", `${getVisibleItems(content.notices).length}件`);
 setText("scheduleMonth", content.scheduleMonth);
 
-registerServiceWorker();
+if (getPushSettings().appId) {
+  initPushNotifications();
+} else {
+  registerServiceWorker();
+  initPushNotifications();
+}
 initSideTabs();
 renderCommonTestCountdown();
 renderMockExam();

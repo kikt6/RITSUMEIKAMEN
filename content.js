@@ -4,7 +4,7 @@ window.siteContent = {
   siteName: "立命館仮面浪人サークル",
   pageTitle: "立命館仮面浪人サークル",
   lead: "",
-  updatedAt: "2026-09-03",
+  updatedAt: "2026-09-15",
   commonTest: {
     title: "共通テスト開始まで",
     targetAt: "2027-01-16T09:30:00+09:00",
@@ -38,6 +38,14 @@ window.siteContent = {
     displayDays: 1,
     previewDate: "",
   },
+  pushNotifications: {
+    // OneSignal の App ID を貼ると「更新通知を受け取る」欄が表示されます。空のままなら非表示。
+    oneSignalAppId: "15a6bacb-69f5-42ce-a574-a4059c289cf7",
+    safariWebId: "web.onesignal.auto.2c5a7aa8-83b4-45ba-8e8f-e5cd6a2881a0",
+    title: "更新通知を受け取る",
+    lead: "お知らせが追加されたときにスマホ・PCへ通知します。iPhone は Safari の共有メニューから「ホーム画面に追加」したアプリで開いてから登録してください。",
+    buttonLabel: "通知をオンにする",
+  },
   quickLinks: [
     { label: "共有ドライブ", url: "#" },
     { label: "模試記録シート", url: "#" },
@@ -48,6 +56,13 @@ window.siteContent = {
     { label: "Moodle", url: "https://www.ritsumei.ac.jp/pathways-future/course/moodle.html" },
   ],
   notices: [
+    {
+      tag: "重要",
+      title: "共通テストの出願受付が始まりました",
+      body: "2027年1月実施の大学入学共通テストは、9月15日(火)10:00から出願内容の登録と検定料の支払いが始まっています。締切は10月2日(金)で、出願内容登録は17:00、検定料支払いは23:59まで。郵送出願はなく、全員が共通テスト出願サイトからのWeb出願です。大学在学中でも出願できるので、受験案内で出願資格と必要書類を確認して早めに済ませてください。",
+      url: "https://www.dnc.ac.jp/kyotsu/web_syutugan.html",
+      expiresAt: "2026-10-02",
+    },
     {
       tag: "模試",
       title: "駿台 冠模試の申し込み開始",

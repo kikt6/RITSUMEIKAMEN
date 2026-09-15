@@ -1,4 +1,11 @@
-﻿const CACHE_NAME = "ritsumeikamen-20260903-2";
+﻿// OneSignal の Web Push ワーカーを同居させる（CDN が読めない環境でも通常のキャッシュ動作は維持する）
+try {
+  importScripts("https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.sw.js");
+} catch (error) {
+  // 通知機能なしで続行
+}
+
+const CACHE_NAME = "ritsumeikamen-20260915-1";
 
 self.addEventListener("install", () => {
   self.skipWaiting();
