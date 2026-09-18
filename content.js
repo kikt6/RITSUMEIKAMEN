@@ -4,7 +4,7 @@ window.siteContent = {
   siteName: "立命館仮面浪人サークル",
   pageTitle: "立命館仮面浪人サークル",
   lead: "",
-  updatedAt: "2026-09-15",
+  updatedAt: "2026-09-18",
   commonTest: {
     title: "共通テスト開始まで",
     targetAt: "2027-01-16T09:30:00+09:00",
@@ -56,6 +56,13 @@ window.siteContent = {
     { label: "Moodle", url: "https://www.ritsumei.ac.jp/pathways-future/course/moodle.html" },
   ],
   notices: [
+    {
+      tag: "勉強会",
+      title: "9/22（火）BKCで勉強会を開催します",
+      body: "後期が始まる前に、BKCで大きな部屋を貸し切って勉強会を行います。日時は9月22日（火）9:00〜21:00、場所はBKC アクロスウィング1階 Academic Seminar Room。全員で共通テスト演習をした後、通常の勉強会をします。来たい方は、リアクションか代表宛のDMをお願いします。初めましてでも大丈夫です。途中参加・途中退出可能です。全員で士気上げていきましょう！",
+      url: "https://www.ritsumei.ac.jp/campusmap/bkc/",
+      expiresAt: "2026-09-22",
+    },
     {
       tag: "重要",
       title: "共通テストの出願受付が始まりました",

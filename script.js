@@ -870,6 +870,24 @@ function initPushNotifications() {
   // OneSignal SDK は App ID が設定されているときだけ読み込む。
   // Service Worker は OneSignal 側が同じ service-worker.js を登録するので、二重登録を避けて任せる。
   const base = location.pathname.replace(/[^/]*$/, "");
+  let sdkReady = false;
+  setStatus("通知サービスを読み込み中…", "hint");
+
+  // SDK の準備が終わる前にタップされたときの案内（準備後に本来のハンドラへ置き換わる）
+  const earlyClick = () => {
+    if (sdkReady) return;
+    setStatus("通知サービスを読み込み中です。数秒待ってからもう一度押してください。", "hint");
+  };
+  button.addEventListener("click", earlyClick);
+
+  const loadTimer = window.setTimeout(() => {
+    if (sdkReady) return;
+    setStatus(
+      "通知サービスの読み込みに時間がかかっています。アプリを一度閉じて開き直すか、ホーム画面のアイコンを削除して「ホーム画面に追加」をやり直してください。",
+      "error",
+    );
+  }, 15000);
+
   window.OneSignalDeferred = window.OneSignalDeferred || [];
   window.OneSignalDeferred.push(async (OneSignal) => {
     try {
@@ -881,10 +899,17 @@ function initPushNotifications() {
         allowLocalhostAsSecureOrigin: location.hostname === "localhost",
       });
     } catch (error) {
-      setStatus("通知サービスに接続できませんでした。時間をおいて再度お試しください。", "error");
+      window.clearTimeout(loadTimer);
+      sdkReady = true;
+      button.removeEventListener("click", earlyClick);
+      const detail = error && error.message ? `（${error.message}）` : "";
+      setStatus(`通知サービスに接続できませんでした。時間をおいて再度お試しください。${detail}`, "error");
       button.disabled = true;
       return;
     }
+    window.clearTimeout(loadTimer);
+    sdkReady = true;
+    button.removeEventListener("click", earlyClick);
 
     if (!OneSignal.Notifications.isPushSupported()) {
       button.disabled = true;
@@ -924,7 +949,8 @@ function initPushNotifications() {
           }
         }
       } catch (error) {
-        setStatus("登録に失敗しました。もう一度お試しください。", "error");
+        const detail = error && error.message ? `（${error.message}）` : "";
+        setStatus(`登録に失敗しました。もう一度お試しください。${detail}`, "error");
       }
       refresh();
     });
@@ -936,6 +962,9 @@ function initPushNotifications() {
   sdk.src = "https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js";
   sdk.defer = true;
   sdk.addEventListener("error", () => {
+    window.clearTimeout(loadTimer);
+    sdkReady = true;
+    button.removeEventListener("click", earlyClick);
     button.disabled = true;
     setStatus("通知サービスを読み込めませんでした（広告ブロッカー等）。", "error");
     registerServiceWorker();
