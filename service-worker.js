@@ -5,7 +5,7 @@ try {
   // 通知機能なしで続行
 }
 
-const CACHE_NAME = "ritsumeikamen-20260923-11";
+const CACHE_NAME = "ritsumeikamen-20260923-12";
 
 self.addEventListener("install", () => {
   self.skipWaiting();
@@ -27,8 +27,9 @@ self.addEventListener("fetch", (event) => {
   const url = new URL(request.url);
   if (url.origin !== location.origin) return;
 
+  // GitHub Pages は HTML/JS を最大10分ブラウザにキャッシュさせるので、毎回サーバーに更新を確認する（変わっていなければ 304 で軽い）
   event.respondWith(
-    fetch(request)
+    fetch(new Request(url.href, { cache: "no-cache", credentials: "same-origin" }))
       .then((response) => {
         const copy = response.clone();
         caches.open(CACHE_NAME).then((cache) => cache.put(request, copy));
