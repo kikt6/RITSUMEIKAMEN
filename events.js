@@ -143,7 +143,7 @@
       const mine = records[e.id];
 
       if (mine) {
-        const done = el("p", "ev-rsvp__done", `✓ 参加を代表に伝えました（${mine.name}）`);
+        const done = el("p", "ev-rsvp__done", `✓ 参加を送信しました（${mine.name}）`);
         const cancel = el("button", "ev-rsvp__link", "やっぱり行けない");
         cancel.type = "button";
         cancel.addEventListener("click", async () => {
@@ -178,7 +178,7 @@
       input.autocomplete = "nickname";
       input.value = storageGet(NAME_KEY, "");
       label.append(input);
-      const send = el("button", "ev-action ev-action--primary", "代表に伝える");
+      const send = el("button", "ev-action ev-action--primary", "送信する");
       send.type = "submit";
       const status = el("p", "ev-rsvp__note", "名前は代表にだけ届きます。ほかの人には人数も名前も表示されません。");
       form.append(label, send);
@@ -204,7 +204,7 @@
           render();
         } catch {
           send.disabled = false;
-          send.textContent = "代表に伝える";
+          send.textContent = "送信する";
           status.textContent = "送信できませんでした。電波の良いところでもう一度押してください。";
           status.classList.add("ev-rsvp__error");
         }
