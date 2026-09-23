@@ -19,6 +19,19 @@ window.circleEventsRsvp = {
 
 window.circleEvents = [
   {
+    id: "2026-10-10-bkc-kyote",
+    tag: "勉強会",
+    title: "BKC 勉強会（午後は共テ演習会）",
+    date: "2026-10-10",
+    start: "09:00",
+    end: "22:00",
+    campus: "BKC",
+    place: "アクロスウィング1階 Academic Seminar Room",
+    mapUrl: "https://www.ritsumei.ac.jp/campusmap/bkc/",
+    body: "9:00〜14:00は各自自習、14:00〜22:00は共通テスト演習会（国語・英語リーディング・社会）。途中参加・途中退出OK、初めての人も歓迎です。",
+    join: "下の「行く！」から名前を送信してください。",
+  },
+  {
     id: "2026-09-22-bkc-allday",
     tag: "勉強会",
     title: "BKC 終日勉強会",

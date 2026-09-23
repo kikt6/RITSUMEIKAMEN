@@ -296,7 +296,7 @@
     const { upcoming, past } = sorted(base);
 
     if (upcoming.length > 0) {
-      root.append(eventCard(upcoming[0], base, true));
+      root.append(eventCard(upcoming[0], base));
       if (upcoming.length > 1) root.append(el("p", "ev-more", `ほか${upcoming.length - 1}件の予定があります`));
       return;
     }

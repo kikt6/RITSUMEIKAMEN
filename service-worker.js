@@ -5,7 +5,7 @@ try {
   // 通知機能なしで続行
 }
 
-const CACHE_NAME = "ritsumeikamen-20260923-10";
+const CACHE_NAME = "ritsumeikamen-20260923-11";
 
 self.addEventListener("install", () => {
   self.skipWaiting();
