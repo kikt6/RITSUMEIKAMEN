@@ -2487,3 +2487,91 @@ h1 {
     margin: 0 0 11px;
   }
 }
+
+/* ===== 更新履歴 (トップの欄 / updates.html) ===== */
+.changelog-entry,
+.changelog-panel {
+  padding: clamp(16px, 4vw, 24px);
+  border: 1px solid var(--line);
+  background: #fff;
+  box-shadow: 0 8px 28px rgba(31, 42, 35, 0.06);
+}
+
+.changelog-entry .section__header {
+  margin-bottom: 6px;
+}
+
+.changelog-list {
+  display: grid;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.changelog-item {
+  display: grid;
+  grid-template-columns: 52px minmax(0, 1fr);
+  gap: 12px;
+  padding: 11px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.changelog-item:last-child {
+  border-bottom: 0;
+}
+
+.changelog-item time {
+  padding-top: 1px;
+  color: var(--red);
+  font-weight: 900;
+  line-height: 1.45;
+}
+
+.changelog-item__body {
+  min-width: 0;
+}
+
+.changelog-item__title {
+  display: inline;
+  color: var(--ink);
+  font-weight: 900;
+  line-height: 1.5;
+}
+
+a.changelog-item__title {
+  color: var(--green);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.changelog-item p {
+  margin: 4px 0 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+.changelog-new {
+  display: inline-block;
+  margin-left: 6px;
+  border-radius: 999px;
+  padding: 1px 7px;
+  background: var(--red);
+  color: #fff;
+  font-size: 0.68rem;
+  font-weight: 900;
+  line-height: 1.5;
+  vertical-align: 2px;
+  text-decoration: none;
+}
+
+.changelog-month {
+  margin: 18px 0 0;
+  padding: 8px 0;
+  border-bottom: 2px solid var(--green);
+  font-size: 1.1rem;
+}
+
+.changelog-month:first-child {
+  margin-top: 0;
+}
