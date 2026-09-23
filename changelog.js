@@ -4,7 +4,7 @@ window.siteChangelog = [
   {
     date: "2026-09-23",
     title: "サークル公式X・Instagramへのボタンを追加",
-    body: "トップの更新日の下のボタンから、公式X・公式Instagramを開けます。",
+    body: "トップの一番下の「公式リンク」から、サークル公式X・公式Instagramを開けます。",
   },
   {
     date: "2026-09-23",

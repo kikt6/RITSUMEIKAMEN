@@ -2646,35 +2646,23 @@ a.changelog-item__title {
   }
 }
 
-/* ===== トップ: 公式X / Instagram ボタン ===== */
-.hero-sns {
-  max-width: 640px;
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 8px;
+/* ===== 公式リンク欄: サークル公式X / Instagram ===== */
+.official-sns {
   margin-top: 12px;
 }
 
-.hero-sns .primary-link {
-  justify-content: center;
-}
-
-.insta-link {
-  gap: 6px;
-  background: linear-gradient(120deg, #7a3bb0, #d1306c 55%, #f0843a);
-  color: #fff;
-}
-
-.insta-link:hover {
-  filter: brightness(1.08);
-}
-
-.x-link {
-  gap: 6px;
+.official-link.x-link {
+  border-color: #111;
   background: #111;
   color: #fff;
 }
 
-.x-link:hover {
-  filter: brightness(1.2);
+.official-link.insta-link {
+  border-color: transparent;
+  background: linear-gradient(120deg, #7a3bb0, #d1306c 55%, #f0843a);
+  color: #fff;
+}
+
+.official-links + .site-footer {
+  margin-top: 28px;
 }
