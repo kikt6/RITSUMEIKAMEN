@@ -492,7 +492,7 @@ function renderLibraryCalendars(monthOffset = activeLibraryMonthOffset, campusVa
       cell.className = day.closed ? "library-day is-closed" : "library-day";
       if (cellDate.getDay() === 0) cell.classList.add("is-sunday");
       if (day.date === todayKey) cell.classList.add("is-today");
-      cell.style.setProperty("--day-bg", cellDate.getDay() === 0 ? "#ffe7e3" : normalizeCalendarColor(day.bgcolor));
+      cell.style.setProperty("--day-bg", cellDate.getDay() === 0 ? "var(--cal-sun)" : normalizeCalendarColor(day.bgcolor));
 
       const date = document.createElement("span");
       date.className = "library-day__date";
@@ -812,10 +812,10 @@ function weekdayLabel(date) {
 
 function normalizeCalendarColor(color) {
   const value = String(color || "").toLowerCase();
-  if (value === "#ff6666") return "#ffe7e3";
-  if (value === "#99ffff") return "#e1f5f5";
-  if (value === "#ffff00") return "#f4fbf6";
-  return "#ffffff";
+  if (value === "#ff6666") return "var(--cal-holiday)";
+  if (value === "#99ffff") return "var(--cal-special)";
+  if (value === "#ffff00") return "var(--cal-short)";
+  return "var(--surface)";
 }
 
 function simplifyHours(hours) {
