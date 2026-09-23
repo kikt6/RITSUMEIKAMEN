@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#9d1717" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="立命館仮面浪人サークル" />
+    <title>図書館の開館カレンダー | 立命館仮面浪人サークル</title>
+    <link rel="icon" type="image/png" href="./assets/ritsumeikan-kamen-logo.png" />
+    <link rel="apple-touch-icon" href="./assets/ritsumeikan-kamen-logo.png" />
+    <link rel="manifest" href="./site.webmanifest?v=20260923-13" />
+    <link rel="stylesheet" href="./styles.css?v=20260923-13" />
+  </head>
+  <body>
+    <main class="page">
+      <header class="faq-hero">
+        <p class="eyebrow">LIBRARY</p>
+        <h1>図書館の開館カレンダー</h1>
+        <a class="source-link" href="./index.html">トップへ戻る</a>
+      </header>
+
+      <section class="section library-hours" id="librarySection" aria-label="立命館大学図書館の開館時間">
+        <div class="section__header section__header--stack">
+          <div>
+            <h2 id="libraryTitle">立命館大学 図書館開館時間</h2>
+            <p id="libraryLead"></p>
+          </div>
+          <a class="source-link" id="librarySourceLink" href="https://www.ritsumei.ac.jp/lib/a03/010/" target="_blank" rel="noopener noreferrer">公式カレンダー</a>
+        </div>
+        <div class="control-row" id="libraryMonthControls" aria-label="表示月の切り替え"></div>
+        <div class="control-row campus-controls" id="libraryCampusControls" aria-label="図書館キャンパス切り替え"></div>
+        <div class="library-grid" id="libraryCalendars" data-expand-all="true"></div>
+      </section>
+
+      <footer class="site-footer">
+        <p>バグ報告・アプリへの要望は、代表宛てDMまでよろしくお願いします。</p>
+      </footer>
+    </main>
+
+    <script src="./content.js?v=20260923-13"></script>
+    <script src="./library-hours.js?v=20260923-13"></script>
+    <script src="./script.js?v=20260923-13"></script>
+  </body>
+</html>
