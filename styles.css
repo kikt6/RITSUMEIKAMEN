@@ -2368,3 +2368,122 @@ h1 {
     gap: 10px;
   }
 }
+
+/* ===== トップ: ★を付けた模試までのカウントダウン ===== */
+.hero-mock {
+  max-width: 640px;
+  display: grid;
+  gap: 8px;
+  margin: -12px 0 22px;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 8px;
+  padding: 12px 14px;
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+  text-decoration: none;
+}
+
+.hero-mock:hover {
+  background: rgba(255, 255, 255, 0.16);
+}
+
+.hero-mock--hint {
+  display: block;
+  padding: 10px 14px;
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 0.85rem;
+  font-weight: 800;
+  line-height: 1.5;
+}
+
+.hero-mock__main {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 12px;
+  align-items: center;
+}
+
+.hero-mock__text {
+  display: grid;
+  gap: 2px;
+  min-width: 0;
+}
+
+.hero-mock__label {
+  color: var(--gold);
+  font-size: 0.78rem;
+  font-weight: 900;
+}
+
+.hero-mock__name {
+  font-size: 1.02rem;
+  line-height: 1.4;
+}
+
+.hero-mock__meta {
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 0.8rem;
+  font-weight: 800;
+}
+
+.hero-mock__count {
+  display: flex;
+  align-items: baseline;
+  gap: 2px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 8px;
+  padding: 8px 12px;
+  background: rgba(255, 255, 255, 0.14);
+  white-space: nowrap;
+}
+
+.hero-mock__count strong {
+  font-size: clamp(1.5rem, 5vw, 2rem);
+  line-height: 1;
+}
+
+.hero-mock__count small {
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 0.78rem;
+  font-weight: 900;
+}
+
+.hero-mock__list {
+  display: grid;
+  gap: 4px;
+  margin: 0;
+  padding: 8px 0 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.16);
+  list-style: none;
+  font-size: 0.82rem;
+}
+
+.hero-mock__list li {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  color: rgba(255, 255, 255, 0.86);
+  font-weight: 700;
+}
+
+.hero-mock__list li span {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.hero-mock__list li b {
+  flex: none;
+  color: #fff;
+}
+
+.hero-mock__list .hero-mock__more {
+  color: rgba(255, 255, 255, 0.64);
+}
+
+@media (max-width: 620px) {
+  .hero-mock {
+    margin: 0 0 11px;
+  }
+}

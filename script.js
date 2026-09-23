@@ -286,6 +286,116 @@ function renderCommonTestCountdown() {
   window.setInterval(update, 1000);
 }
 
+const mockStarStorageKey = "ritsumeikamen-mock-stars";
+
+function loadMockStars() {
+  try {
+    const raw = window.localStorage?.getItem(mockStarStorageKey);
+    const list = raw ? JSON.parse(raw) : [];
+    return new Set(Array.isArray(list) ? list : []);
+  } catch {
+    return new Set();
+  }
+}
+
+function renderStarredMockCountdown() {
+  const root = byId("heroMockCountdown");
+  if (!root) return;
+
+  const stars = loadMockStars();
+  const today = getToday();
+  const upcoming = examSchedule
+    .filter((exam) => stars.has(`${exam.date}|${exam.provider}|${exam.name}`))
+    .filter((exam) => parseLocalDate(exam.endDate || exam.date) >= today)
+    .sort((a, b) => parseLocalDate(a.date) - parseLocalDate(b.date));
+
+  root.innerHTML = "";
+  root.hidden = false;
+
+  if (upcoming.length === 0) {
+    root.className = "hero-mock hero-mock--hint";
+    root.href = "./mock-exams.html";
+    root.textContent = "★ 受ける模試を設定すると、ここに模試までの日数が出ます →";
+    return;
+  }
+
+  root.className = "hero-mock";
+  root.href = "./mock-exams.html#star=1";
+
+  const daysUntil = (exam) => Math.round((parseLocalDate(exam.date) - today) / 86400000);
+  const dayLabel = (exam) => exam.displayDate || formatDateLabel(parseLocalDate(exam.date));
+
+  const [next, ...rest] = upcoming;
+  const main = document.createElement("div");
+  main.className = "hero-mock__main";
+
+  const text = document.createElement("div");
+  text.className = "hero-mock__text";
+  const label = document.createElement("span");
+  label.className = "hero-mock__label";
+  label.textContent = "★ 次に受ける模試";
+  const name = document.createElement("strong");
+  name.className = "hero-mock__name";
+  name.textContent = next.name || "";
+  const meta = document.createElement("span");
+  meta.className = "hero-mock__meta";
+  meta.textContent = [dayLabel(next), next.provider].filter(Boolean).join(" / ");
+  text.append(label, name, meta);
+
+  const count = document.createElement("div");
+  count.className = "hero-mock__count";
+  const days = daysUntil(next);
+  if (days <= 0) {
+    const strong = document.createElement("strong");
+    strong.textContent = "今日";
+    count.append(strong);
+  } else {
+    const pre = document.createElement("small");
+    pre.textContent = "あと";
+    const strong = document.createElement("strong");
+    strong.textContent = String(days);
+    const post = document.createElement("small");
+    post.textContent = "日";
+    count.append(pre, strong, post);
+  }
+
+  main.append(text, count);
+  root.append(main);
+
+  if (rest.length > 0) {
+    const list = document.createElement("ul");
+    list.className = "hero-mock__list";
+    rest.slice(0, 2).forEach((exam) => {
+      const item = document.createElement("li");
+      const itemName = document.createElement("span");
+      itemName.textContent = `${dayLabel(exam)} ${exam.name}`;
+      const itemDays = document.createElement("b");
+      itemDays.textContent = `あと${daysUntil(exam)}日`;
+      item.append(itemName, itemDays);
+      list.append(item);
+    });
+    if (rest.length > 2) {
+      const more = document.createElement("li");
+      more.className = "hero-mock__more";
+      more.textContent = `ほか${rest.length - 2}件`;
+      list.append(more);
+    }
+    root.append(list);
+  }
+}
+
+function initStarredMockCountdown() {
+  renderStarredMockCountdown();
+  window.addEventListener("pageshow", renderStarredMockCountdown);
+  window.addEventListener("storage", (event) => {
+    if (event.key === mockStarStorageKey) renderStarredMockCountdown();
+  });
+  document.addEventListener("visibilitychange", () => {
+    if (document.visibilityState === "visible") renderStarredMockCountdown();
+  });
+  window.setInterval(renderStarredMockCountdown, 60 * 1000);
+}
+
 function renderLibraryCalendars(monthOffset = activeLibraryMonthOffset, campusValue = activeLibraryCampus) {
   const settings = content.libraries || {};
   const calendars = libraryHours?.libraries || settings.calendars || [];
@@ -1000,6 +1110,7 @@ if (getPushSettings().appId) {
 }
 initSideTabs();
 renderCommonTestCountdown();
+initStarredMockCountdown();
 renderMockExam();
 renderTodayLibrary();
 renderLibraryCalendars();
