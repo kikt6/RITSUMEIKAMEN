@@ -81,12 +81,8 @@ function renderMockExam() {
   const lead = document.createElement("p");
   lead.textContent = settings.lead || "";
 
-  const source = document.createElement("span");
-  source.className = "source-pill";
-  source.textContent = settings.sourceLabel || "模擬試験PDF";
-
   headerText.append(title, lead);
-  header.append(headerText, source);
+  header.append(headerText);
 
   const list = document.createElement("div");
   list.className = "exam-list";

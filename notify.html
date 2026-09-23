@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#9d1717" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="立命館仮面浪人サークル" />
+    <title>通知の設定 | 立命館仮面浪人サークル</title>
+    <link rel="icon" type="image/png" href="./assets/ritsumeikan-kamen-logo.png" />
+    <link rel="apple-touch-icon" href="./assets/ritsumeikan-kamen-logo.png" />
+    <link rel="manifest" href="./site.webmanifest?v=20260923-4" />
+    <link rel="stylesheet" href="./styles.css?v=20260923-4" />
+  </head>
+  <body>
+    <main class="page">
+      <header class="faq-hero">
+        <p class="eyebrow">NOTIFICATIONS</p>
+        <h1>通知の設定</h1>
+        <a class="source-link" href="./index.html">トップへ戻る</a>
+      </header>
+
+      <section class="section push-section" id="pushSection" aria-label="更新通知" hidden>
+        <div class="push-card">
+          <div class="push-card__text">
+            <h2 id="pushTitle">更新通知を受け取る</h2>
+            <p id="pushLead"></p>
+          </div>
+          <div class="push-card__action">
+            <button class="push-button" id="pushButton" type="button">通知をオンにする</button>
+            <p class="push-status" id="pushStatus" aria-live="polite"></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section notify-steps" aria-label="通知をオンにする手順">
+        <div class="section__header">
+          <h2>通知をオンにする手順</h2>
+        </div>
+        <div class="notify-step-grid">
+          <article class="notify-step-card">
+            <h3>iPhone・iPad</h3>
+            <ol>
+              <li>このサイトを <b>Safari</b> で開く</li>
+              <li>下の共有ボタン（□に↑）→「ホーム画面に追加」</li>
+              <li>ホーム画面にできた <b>アイコンから</b> サイトを開く</li>
+              <li>トップか、このページの「通知をオンにする」を押す</li>
+              <li>「通知を送信します」と出たら「許可」</li>
+            </ol>
+            <p class="notify-note">iOS 16.4 以上が必要です。Safari のまま開いていると登録できません。</p>
+          </article>
+          <article class="notify-step-card">
+            <h3>Android</h3>
+            <ol>
+              <li>このサイトを <b>Chrome</b> で開く</li>
+              <li>「通知をオンにする」を押す</li>
+              <li>「通知の送信を許可しますか？」で「許可」</li>
+            </ol>
+            <p class="notify-note">ホーム画面に追加しなくても登録できます。</p>
+          </article>
+          <article class="notify-step-card">
+            <h3>パソコン</h3>
+            <ol>
+              <li>Chrome・Edge・Safari でこのサイトを開く</li>
+              <li>「通知をオンにする」を押す</li>
+              <li>アドレスバー付近に出る確認で「許可」</li>
+            </ol>
+          </article>
+        </div>
+      </section>
+
+      <section class="section faq-list notify-trouble" aria-label="通知がオンにならない時">
+        <div class="section__header">
+          <h2>通知がオンにならない時</h2>
+        </div>
+
+        <details class="faq-item">
+          <summary>ボタンが灰色で押せない（iPhone）</summary>
+          <p>Safari でサイトを開いたままになっています。共有ボタンから「ホーム画面に追加」し、ホーム画面のアイコンから開き直してください。</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>「通知がブロックされています」と出る</summary>
+          <p>以前「許可しない」を選んだため、端末側で止まっています。次の場所で許可に変えてから、ページを開き直してください。</p>
+          <p><b>iPhone：</b>設定アプリ →「通知」→「立命館仮面浪人サークル」→「通知を許可」をオン</p>
+          <p><b>Android（Chrome）：</b>アドレスバー左のアイコン →「権限」または「サイトの設定」→「通知」→「許可」</p>
+          <p><b>パソコン（Chrome・Edge）：</b>アドレスバー左の鍵マーク →「サイトの設定」→「通知」→「許可」</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>「読み込み中…」のまま進まない</summary>
+          <p>電波の良いところで、アプリ（またはタブ）を一度完全に閉じて開き直してください。それでも直らない時は、ホーム画面のアイコンを削除してから「ホーム画面に追加」をやり直すと直ることが多いです。</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>「読み込めませんでした（広告ブロッカー等）」と出る</summary>
+          <p>広告ブロッカーやコンテンツブロッカーが通知サービスを止めています。このサイトだけブロッカーをオフにしてから開き直してください。iPhone は 設定アプリ →「アプリ」→「Safari」→「拡張機能」やブロッカーアプリの設定を確認してください。</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>「このブラウザは通知に対応していません」と出る</summary>
+          <p>次のどれかの可能性があります。</p>
+          <p>・LINE・Instagram・Discord などのアプリ内でリンクを開いている → 右上のメニューから「Safari（ブラウザ）で開く」を選んでください。</p>
+          <p>・iPhone の iOS が 16.3 以前 → 設定アプリ →「一般」→「ソフトウェアアップデート」で更新してください。</p>
+          <p>・プライベートブラウズ／シークレットモードで開いている → 通常のモードで開いてください。</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>オンにしたのに通知が来ない</summary>
+          <p>通知はサイトの「お知らせ」が追加された時だけ届きます。集中モード・おやすみモードがオンになっていないか、iPhone は 設定アプリ →「通知」→「立命館仮面浪人サークル」で許可されているかを確認してください。直らない時は、ボタンで一度「通知をオフにする」→「通知をオンにする」とやり直してください。</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>機種変更した・アイコンを消してしまった</summary>
+          <p>通知の登録は端末（とホーム画面のアイコン）ごとです。新しい端末やアイコンを追加し直した後は、もう一度「通知をオンにする」を押してください。</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>それでもオンにならない</summary>
+          <p>使っている端末（例：iPhone 13 / iOS 18）と、ボタンの下に出ているメッセージをそのまま添えて、代表宛てにDMしてください。</p>
+        </details>
+      </section>
+
+      <footer class="site-footer">
+        <p>バグ報告・アプリへの要望は、代表宛てDMまでよろしくお願いします。</p>
+      </footer>
+    </main>
+
+    <script src="./content.js?v=20260923-4"></script>
+    <script src="./script.js?v=20260923-4"></script>
+  </body>
+</html>
