@@ -3203,3 +3203,83 @@ details.library-card[open] > summary {
     grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
   }
 }
+
+/* ===== 参加表明（行く！） ===== */
+.ev-rsvp {
+  display: grid;
+  gap: 8px;
+  margin-top: 12px;
+  border-top: 1px dashed var(--line);
+  padding-top: 12px;
+}
+
+.ev-rsvp__go {
+  width: fit-content;
+  min-height: 44px;
+  border-color: var(--red);
+  background: var(--red-soft);
+  color: var(--red);
+  font-size: 0.95rem;
+  padding: 0 20px;
+}
+
+.ev-rsvp__form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: end;
+  gap: 8px;
+}
+
+.ev-rsvp__label {
+  display: grid;
+  gap: 4px;
+  flex: 1 1 180px;
+  font-size: 0.8rem;
+  font-weight: 800;
+  color: var(--muted);
+}
+
+.ev-rsvp__label input {
+  min-height: 40px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 0 10px;
+  font: inherit;
+  font-size: 1rem;
+  color: var(--ink);
+}
+
+.ev-rsvp__form .ev-action {
+  min-height: 40px;
+}
+
+.ev-rsvp__note,
+.ev-rsvp__error {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.8rem;
+  line-height: 1.6;
+}
+
+.ev-rsvp__error {
+  color: var(--red);
+  font-weight: 800;
+}
+
+.ev-rsvp__done {
+  margin: 0;
+  color: #1f6b3a;
+  font-weight: 900;
+}
+
+.ev-rsvp__link {
+  width: fit-content;
+  border: 0;
+  padding: 0;
+  background: none;
+  color: var(--muted);
+  font: inherit;
+  font-size: 0.82rem;
+  text-decoration: underline;
+  cursor: pointer;
+}

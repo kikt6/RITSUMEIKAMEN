@@ -3,6 +3,20 @@
 // id: 重複しない英数字 / date: "YYYY-MM-DD" / start・end: "HH:MM"（省略すると終日）
 // campus: "KIC" | "BKC" | "OIC" | "オンライン" など / place: 部屋名 / mapUrl: 地図のURL（省略可）
 // body: 説明 / join: 参加方法（省略可）
+// 参加表明（「行く」ボタン）の送信先。代表の Google フォーム「勉強会 参加表明（サイト用・代表のみ閲覧）」。
+// 回答は代表の Google スプレッドシートにだけ保存され、サイト上には人数も名前も出ません。
+// 空にすると「行く」ボタンが消えます。イベントごとに止めたいときは、そのイベントに rsvp: false を付けます。
+window.circleEventsRsvp = {
+  formAction: "https://docs.google.com/forms/d/e/1FAIpQLSdZzuIQifASvgS14A5Sc8OwGFHwY4mKNyQgg9ikb_k7c-7CZg/formResponse",
+  fields: {
+    eventId: "entry.733817673",
+    eventTitle: "entry.616275667",
+    name: "entry.759776115",
+    action: "entry.418157998",
+    deviceId: "entry.798702741",
+  },
+};
+
 window.circleEvents = [
   {
     id: "2026-09-22-bkc-allday",
