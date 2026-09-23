@@ -14,6 +14,48 @@
     return diff >= 0 && diff < NEW_DAYS;
   }
 
+  // 一度画面に表示された（見た）更新は、次に開いたときから NEW を外す
+  const SEEN_KEY = "ritsumeikamen-changelog-seen";
+  const entryKey = (entry) => `${entry.date}|${entry.title || ""}`;
+
+  function loadSeen() {
+    try {
+      return new Set(JSON.parse(localStorage.getItem(SEEN_KEY) || "[]"));
+    } catch (error) {
+      return new Set();
+    }
+  }
+
+  const seen = loadSeen();
+
+  function markSeen(entry) {
+    const key = entryKey(entry);
+    if (seen.has(key)) return;
+    seen.add(key);
+    try {
+      localStorage.setItem(SEEN_KEY, JSON.stringify([...seen].slice(-200)));
+    } catch (error) {
+      // 保存できない環境では毎回 NEW が出るだけ
+    }
+  }
+
+  const seenObserver =
+    "IntersectionObserver" in window
+      ? new IntersectionObserver(
+          (items) => {
+            items.forEach((item) => {
+              if (!item.isIntersecting) return;
+              const target = item.target;
+              window.setTimeout(() => {
+                markSeen(target._changelogEntry);
+                seenObserver.unobserve(target);
+              }, 1000);
+            });
+          },
+          { threshold: 0.6 },
+        )
+      : null;
+
   function buildItem(entry, { withBody }) {
     const item = document.createElement("li");
     item.className = "changelog-item";
@@ -32,11 +74,15 @@
     if (entry.url) title.href = entry.url;
     body.append(title);
 
-    if (isNew(entry)) {
+    if (isNew(entry) && !seen.has(entryKey(entry))) {
       const badge = document.createElement("span");
       badge.className = "changelog-new";
       badge.textContent = "NEW";
       title.append(badge);
+      item._changelogEntry = entry;
+      if (seenObserver) seenObserver.observe(item);
+      else markSeen(entry);
+      title.addEventListener("click", () => markSeen(entry));
     }
 
     if (withBody && entry.body) {

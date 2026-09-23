@@ -445,7 +445,7 @@ function renderLibraryCalendars(monthOffset = activeLibraryMonthOffset, campusVa
 
   const visibleCalendars = calendars.filter((calendar) => campusMatches(calendar.campus, activeLibraryCampus));
 
-  const compact = window.matchMedia?.("(max-width: 620px)").matches;
+  const compact = root.dataset.expandAll !== "true" && window.matchMedia?.("(max-width: 620px)").matches;
 
   visibleCalendars.forEach((calendar, index) => {
     const card = document.createElement("details");
