@@ -1987,3 +1987,384 @@ h1 {
     grid-template-columns: 1fr;
   }
 }
+
+/* ===== 模試日程一覧ページ (mock-exams.html) ===== */
+.mock-exam__all {
+  width: 100%;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  border-radius: 8px;
+  background: var(--green);
+  color: #fff;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+.mock-exam__all:hover {
+  filter: brightness(0.94);
+}
+
+.mx-hero p:not(.eyebrow) {
+  max-width: 52rem;
+  margin-bottom: 4px;
+  color: rgba(255, 255, 255, 0.86);
+  line-height: 1.8;
+}
+
+.mx-next {
+  margin-top: 0;
+}
+
+.mx-next__card {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 16px;
+  align-items: center;
+  padding: clamp(16px, 4vw, 24px);
+  border: 1px solid #ead3aa;
+  border-radius: 8px;
+  background: var(--gold-soft);
+  box-shadow: 0 8px 28px rgba(31, 42, 35, 0.06);
+}
+
+.mx-next__text {
+  display: grid;
+  gap: 4px;
+  min-width: 0;
+}
+
+.mx-next__label {
+  color: var(--gold);
+  font-size: 0.8rem;
+  font-weight: 900;
+}
+
+.mx-next__name {
+  font-size: 1.15rem;
+  line-height: 1.4;
+}
+
+.mx-next__meta {
+  color: var(--muted);
+  font-size: 0.88rem;
+  line-height: 1.5;
+}
+
+.mx-next__count {
+  display: flex;
+  align-items: baseline;
+  gap: 2px;
+  color: var(--red);
+  font-weight: 900;
+  white-space: nowrap;
+}
+
+.mx-next__count strong {
+  font-size: clamp(2rem, 8vw, 2.8rem);
+  line-height: 1;
+}
+
+.mx-next__hint,
+.mx-next__empty {
+  margin: 8px 2px 0;
+  color: var(--muted);
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
+
+.mx-panel,
+.mx-results {
+  padding: clamp(16px, 4vw, 24px);
+  border: 1px solid var(--line);
+  background: #fff;
+  box-shadow: 0 8px 28px rgba(31, 42, 35, 0.06);
+}
+
+.mx-panel {
+  display: grid;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.mx-label {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--muted);
+  font-size: 0.8rem;
+  font-weight: 900;
+}
+
+.mx-search input {
+  width: 100%;
+  min-height: 46px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 0 14px;
+  background: var(--paper);
+  color: var(--ink);
+  font: inherit;
+  font-size: 16px;
+}
+
+.mx-search input:focus {
+  outline: 2px solid var(--green);
+  outline-offset: 1px;
+  background: #fff;
+}
+
+.mx-chips {
+  margin-bottom: 0;
+}
+
+.mx-toggles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 18px;
+}
+
+.mx-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 36px;
+  font-weight: 800;
+  font-size: 0.92rem;
+  cursor: pointer;
+}
+
+.mx-switch input {
+  width: 20px;
+  height: 20px;
+  accent-color: var(--green);
+}
+
+.mx-results {
+  margin-top: 16px;
+}
+
+.mx-results__head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.mx-results__head .mock-exam__count {
+  margin: 0;
+}
+
+.mx-reset {
+  min-height: 36px;
+  font-size: 0.85rem;
+}
+
+.mx-months {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 0 -4px 6px;
+  padding: 8px 4px;
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(6px);
+}
+
+.mx-months:empty {
+  display: none;
+}
+
+.mx-months a {
+  min-height: 32px;
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 0 11px;
+  background: #fff;
+  color: var(--green);
+  font-size: 0.82rem;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+.mx-month {
+  scroll-margin-top: 64px;
+}
+
+.mx-month__head {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  margin: 14px 0 0;
+  padding: 8px 0;
+  border-bottom: 2px solid var(--green);
+  font-size: 1.15rem;
+}
+
+.mx-month__head small {
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+.mx-day {
+  border-bottom: 1px solid var(--line);
+}
+
+.mx-month .mx-day:last-child {
+  border-bottom: 0;
+}
+
+.mx-day.is-past {
+  opacity: 0.55;
+}
+
+.mx-day.is-today {
+  margin: 0 -8px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 8px;
+  background: var(--green-soft);
+}
+
+.mx-day__when {
+  display: grid;
+  align-content: start;
+  justify-items: start;
+  gap: 4px;
+}
+
+.mx-day__when time {
+  color: var(--red);
+  font-weight: 900;
+  line-height: 1.4;
+}
+
+.mx-badge {
+  border-radius: 999px;
+  padding: 2px 8px;
+  background: var(--gold-soft);
+  color: #8a6420;
+  font-size: 0.74rem;
+  font-weight: 900;
+  white-space: nowrap;
+}
+
+.mx-badge.is-today {
+  background: var(--red);
+  color: #fff;
+}
+
+.mx-badge.is-past {
+  background: #eef0ec;
+  color: var(--muted);
+}
+
+.mx-item {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 10px;
+  align-items: start;
+}
+
+.mx-item__body {
+  min-width: 0;
+}
+
+.mx-item__meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 5px 6px;
+  margin-top: 4px !important;
+}
+
+.mx-tag {
+  border-radius: 6px;
+  padding: 1px 7px;
+  font-size: 0.75rem;
+  font-weight: 900;
+  line-height: 1.6;
+}
+
+.mx-tag.is-kawai { background: #e4edf9; color: #1d4f91; }
+.mx-tag.is-sundai { background: #e7f2ea; color: #25613d; }
+.mx-tag.is-toshin { background: #fde9e7; color: #a4271c; }
+.mx-tag.is-yozemi { background: #f1e9f7; color: #6b3a8c; }
+
+.mx-tag--cat {
+  border: 1px solid var(--line);
+  background: #fff;
+  color: var(--ink);
+}
+
+.mx-tag--cat.is-kyote {
+  border-color: #ead3aa;
+  background: var(--gold-soft);
+  color: #8a6420;
+}
+
+.mx-fee {
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+.mx-star {
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+  color: #b6b9b5;
+  font-size: 1.25rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.mx-star.is-on {
+  border-color: #ead3aa;
+  background: var(--gold-soft);
+  color: var(--gold);
+}
+
+.mx-empty {
+  display: grid;
+  gap: 6px;
+  padding: 28px 12px;
+  text-align: center;
+}
+
+.mx-empty p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.mx-note {
+  margin: 16px 4px 0;
+  color: var(--muted);
+  font-size: 0.8rem;
+  line-height: 1.7;
+}
+
+@media (max-width: 620px) {
+  .mx-day {
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
+
+  .mx-day__when {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .mx-next__card {
+    gap: 10px;
+  }
+}

@@ -174,8 +174,14 @@ function renderMockExam() {
   count.className = "mock-exam__count";
   count.textContent = `${formatDateLabel(today)}から${Number(settings.windowMonths) || 2}か月以内: ${visibleExams.length}件`;
 
+  const allLink = document.createElement("a");
+  allLink.className = "mock-exam__all";
+  allLink.href = "./mock-exams.html";
+  allLink.textContent = "模試をすべて見る（年間一覧・検索）";
+
   root.append(header, count, list);
   if (toggle) root.append(toggle);
+  root.append(allLink);
 }
 
 function parseLocalDate(value) {
