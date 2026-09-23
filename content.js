@@ -4,15 +4,17 @@ window.siteContent = {
   siteName: "立命館仮面浪人サークル",
   pageTitle: "立命館仮面浪人サークル",
   lead: "",
-  updatedAt: "2026-09-18",
+  updatedAt: "2026-09-23",
   commonTest: {
     title: "共通テスト開始まで",
     targetAt: "2027-01-16T09:30:00+09:00",
     targetLabel: "",
+    // カウントダウンの下に小さく出す日程（label: 表示名 / date: "YYYY-MM-DD"）
+    milestones: [{ label: "国公立二次（前期）", date: "2027-02-25" }],
   },
   mockExam: {
     title: "次回模試日程",
-    lead: "模擬試験PDFの一覧から、今日から2か月以内に入った未実施の模試だけを自動表示します。",
+    lead: "これから2か月以内の模試です。受ける模試は「模試をすべて見る」で★を付けると、カウントダウンとカレンダー追加ができます。",
     windowMonths: 2,
     sourceLabel: "模擬試験.pdf",
     previewDate: "",

@@ -9,8 +9,8 @@
     <title>模試日程一覧 | 立命館仮面浪人サークル</title>
     <link rel="icon" type="image/png" href="./assets/ritsumeikan-kamen-logo.png" />
     <link rel="apple-touch-icon" href="./assets/ritsumeikan-kamen-logo.png" />
-    <link rel="manifest" href="./site.webmanifest?v=20260923-7" />
-    <link rel="stylesheet" href="./styles.css?v=20260923-7" />
+    <link rel="manifest" href="./site.webmanifest?v=20260923-8" />
+    <link rel="stylesheet" href="./styles.css?v=20260923-8" />
   </head>
   <body>
     <main class="page mx-page">
@@ -24,6 +24,21 @@
       </header>
 
       <section class="section mx-next" id="mxNext" aria-label="次の模試"></section>
+
+      <section class="section mx-cal" id="mxCal" aria-label="カレンダーに追加" hidden>
+        <div class="mx-cal__head">
+          <div>
+            <h2>★の模試をカレンダーに追加</h2>
+            <p id="mxCalLead"></p>
+          </div>
+          <button class="primary-action mx-cal__button" type="button" id="mxCalDownload">カレンダーに追加</button>
+        </div>
+        <details class="mx-cal__google">
+          <summary>Googleカレンダーに1件ずつ追加する（Android向け）</summary>
+          <ul id="mxCalGoogle"></ul>
+        </details>
+        <p class="mx-cal__note">iPhone・Mac は「すべて追加」、PC はダウンロードしたファイルを開くとカレンダーに入ります。前日20時に通知が出るように設定しています。★を増やしたときはもう一度押してください（同じ模試は二重に入りにくいようにしています）。</p>
+      </section>
 
       <section class="section mx-panel" aria-label="絞り込み">
         <label class="mx-search">
@@ -60,7 +75,8 @@
       </footer>
     </main>
 
-    <script src="./exam-schedule.js?v=20260923-7"></script>
-    <script src="./mock-exams.js?v=20260923-7"></script>
+    <script src="./exam-schedule.js?v=20260923-8"></script>
+    <script src="./calendar-export.js?v=20260923-8"></script>
+    <script src="./mock-exams.js?v=20260923-8"></script>
   </body>
 </html>

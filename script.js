@@ -282,6 +282,32 @@ function renderCommonTestCountdown() {
   window.setInterval(update, 1000);
 }
 
+function daysFromToday(value) {
+  return Math.round((parseLocalDate(value) - getToday()) / 86400000);
+}
+
+function renderMilestones() {
+  const root = byId("heroMilestones");
+  if (root) {
+    const items = ((content.commonTest || {}).milestones || []).filter((m) => m?.date && daysFromToday(m.date) >= 0);
+    root.textContent = items.map((m) => `${m.label}まで あと${daysFromToday(m.date)}日`).join("　/　");
+    root.hidden = items.length === 0;
+  }
+
+  document.querySelectorAll(".entrance-date-card[data-date]").forEach((card) => {
+    card.querySelector(".entrance-date-card__days")?.remove();
+    const days = daysFromToday(card.dataset.date);
+    if (days < 0) {
+      card.classList.add("is-past");
+      return;
+    }
+    const badge = document.createElement("em");
+    badge.className = "entrance-date-card__days";
+    badge.textContent = days === 0 ? "今日" : `あと${days}日`;
+    card.append(badge);
+  });
+}
+
 const mockStarStorageKey = "ritsumeikamen-mock-stars";
 
 function loadMockStars() {
@@ -419,11 +445,14 @@ function renderLibraryCalendars(monthOffset = activeLibraryMonthOffset, campusVa
 
   const visibleCalendars = calendars.filter((calendar) => campusMatches(calendar.campus, activeLibraryCampus));
 
-  visibleCalendars.forEach((calendar) => {
-    const card = document.createElement("article");
-    card.className = "library-card";
+  const compact = window.matchMedia?.("(max-width: 620px)").matches;
 
-    const header = document.createElement("div");
+  visibleCalendars.forEach((calendar, index) => {
+    const card = document.createElement("details");
+    card.className = "library-card";
+    card.open = !compact || index === 0;
+
+    const header = document.createElement("summary");
     header.className = "library-card__header";
 
     const title = document.createElement("h3");
@@ -590,8 +619,19 @@ function renderCoopHours(campusValue = activeCoopCampus) {
     const cards = document.createElement("div");
     cards.className = "coop-cards";
 
-    rows.forEach((row) => {
-      const key = toDateKey(days[0]);
+    const key = toDateKey(days[0]);
+    const openRows = rows.filter((row) => getCoopDayClass(row.days.get(key)) !== "is-closed");
+    const closedRows = rows.filter((row) => getCoopDayClass(row.days.get(key)) === "is-closed");
+
+    const summary = document.createElement("p");
+    summary.className = `coop-summary${openRows.length === 0 ? " is-all-closed" : ""}`;
+    summary.textContent =
+      openRows.length === 0
+        ? `今日は${campusLabel}の学食・生協はすべてお休みです。`
+        : `営業中の予定 ${openRows.length}店舗${closedRows.length ? ` / お休み ${closedRows.length}店舗` : ""}`;
+    root.append(summary);
+
+    openRows.forEach((row) => {
       const info = row.days.get(key);
       const card = document.createElement("article");
       card.className = `coop-card ${getCoopDayClass(info)}`;
@@ -613,7 +653,18 @@ function renderCoopHours(campusValue = activeCoopCampus) {
       cards.append(card);
     });
 
-    root.append(cards);
+    if (openRows.length) root.append(cards);
+
+    if (closedRows.length) {
+      const closed = document.createElement("details");
+      closed.className = "coop-closed";
+      const title = document.createElement("summary");
+      title.textContent = `今日お休みの店舗（${closedRows.length}）`;
+      const list = document.createElement("p");
+      list.textContent = closedRows.map((row) => (row.building ? `${row.name}（${row.building}）` : row.name)).join("、");
+      closed.append(title, list);
+      root.append(closed);
+    }
     return;
   }
 
@@ -841,10 +892,38 @@ function renderCards(id, items, emptyMessage = "表示する項目はまだあ�
     const title = document.createElement("h3");
     title.textContent = item.title || "";
 
+    const head = document.createElement("div");
+    head.className = "card__head";
+    head.append(tag);
+
+    if (item.expiresAt && id === "notices") {
+      const days = daysFromToday(item.expiresAt);
+      const date = parseLocalDate(item.expiresAt);
+      const due = document.createElement("span");
+      due.className = `card__due${days <= 7 ? " is-soon" : ""}`;
+      due.textContent = `${date.getMonth() + 1}/${date.getDate()}(${weekdayLabel(date)})まで${days === 0 ? "・今日" : `・あと${days}日`}`;
+      head.append(due);
+    }
+
     const body = document.createElement("p");
     body.textContent = item.body || "";
 
-    card.append(tag, title, body);
+    card.append(head, title, body);
+
+    if (id === "notices" && (item.body || "").length > 80) {
+      body.classList.add("card__body--clamp");
+      const more = document.createElement("button");
+      more.type = "button";
+      more.className = "card__more";
+      more.textContent = "続きを読む";
+      more.setAttribute("aria-expanded", "false");
+      more.addEventListener("click", () => {
+        const open = body.classList.toggle("is-open");
+        more.textContent = open ? "閉じる" : "続きを読む";
+        more.setAttribute("aria-expanded", String(open));
+      });
+      card.append(more);
+    }
 
     if (item.url) {
       const link = document.createElement("a");
@@ -1106,6 +1185,7 @@ if (getPushSettings().appId) {
 }
 initSideTabs();
 renderCommonTestCountdown();
+renderMilestones();
 initStarredMockCountdown();
 renderMockExam();
 renderTodayLibrary();

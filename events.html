@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#9d1717" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="立命館仮面浪人サークル" />
+    <title>勉強会・イベント | 立命館仮面浪人サークル</title>
+    <link rel="icon" type="image/png" href="./assets/ritsumeikan-kamen-logo.png" />
+    <link rel="apple-touch-icon" href="./assets/ritsumeikan-kamen-logo.png" />
+    <link rel="manifest" href="./site.webmanifest?v=20260923-8" />
+    <link rel="stylesheet" href="./styles.css?v=20260923-8" />
+  </head>
+  <body>
+    <main class="page">
+      <header class="faq-hero">
+        <p class="eyebrow">EVENTS</p>
+        <h1>勉強会・イベント</h1>
+        <p>サークルの勉強会やイベントの予定です。「カレンダーに追加」でスマホやPCのカレンダーに入れられます。初めての人も途中参加も大歓迎です。</p>
+        <a class="source-link" href="./index.html">トップへ戻る</a>
+      </header>
+
+      <section class="section ev-panel" aria-label="これからの予定">
+        <div class="section__header">
+          <h2>これからの予定</h2>
+        </div>
+        <div class="ev-list" id="evUpcoming"></div>
+      </section>
+
+      <section class="section ev-panel" id="evPastSection" aria-label="これまでの活動" hidden>
+        <div class="section__header">
+          <h2>これまでの活動</h2>
+          <span id="evPastCount"></span>
+        </div>
+        <div id="evPast"></div>
+      </section>
+
+      <footer class="site-footer">
+        <p>バグ報告・アプリへの要望は、代表宛てDMまでよろしくお願いします。</p>
+      </footer>
+    </main>
+
+    <script src="./circle-events.js?v=20260923-8"></script>
+    <script src="./calendar-export.js?v=20260923-8"></script>
+    <script src="./events.js?v=20260923-8"></script>
+  </body>
+</html>

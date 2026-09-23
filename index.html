@@ -10,8 +10,8 @@
     <title>立命館仮面浪人サークル</title>
     <link rel="icon" type="image/png" href="./assets/ritsumeikan-kamen-logo.png" />
     <link rel="apple-touch-icon" href="./assets/ritsumeikan-kamen-logo.png" />
-    <link rel="manifest" href="./site.webmanifest?v=20260923-7" />
-    <link rel="stylesheet" href="./styles.css?v=20260923-7" />
+    <link rel="manifest" href="./site.webmanifest?v=20260923-8" />
+    <link rel="stylesheet" href="./styles.css?v=20260923-8" />
   </head>
   <body>
     <main class="page">
@@ -22,9 +22,12 @@
           <span aria-hidden="true"></span>
         </button>
         <div class="side-tabs__links">
-          <a href="#librarySection">開館時間</a>
-          <a href="#coopSection">営業時間</a>
+          <a href="#todayLibrarySection">図書館</a>
+          <a href="#noticeSection">お知らせ</a>
+          <a href="#eventsSection">勉強会</a>
+          <a href="#coopSection">学食・生協</a>
           <a href="#mockExam">模試</a>
+          <a href="#entranceDates">受験日程</a>
         </div>
       </nav>
 
@@ -43,6 +46,7 @@
               <span><strong id="countdownMinutes">00</strong><small>分</small></span>
               <span><strong id="countdownSeconds">00</strong><small>秒</small></span>
             </div>
+            <p class="hero-milestones" id="heroMilestones" hidden></p>
           </section>
           <a class="hero-mock" id="heroMockCountdown" href="./mock-exams.html" hidden></a>
           <p class="lead" id="pageLead"></p>
@@ -55,6 +59,16 @@
         </div>
       </header>
 
+      <nav class="quick-nav" aria-label="ページ内メニュー">
+        <a href="#todayLibrarySection">図書館</a>
+        <a href="#noticeSection">お知らせ</a>
+        <a href="#eventsSection">勉強会</a>
+        <a href="#coopSection">学食・生協</a>
+        <a href="#mockExam">模試</a>
+        <a href="#entranceDates">受験日程</a>
+        <a href="./faq.html">FAQ</a>
+      </nav>
+
       <section class="section today-library" id="todayLibrarySection" aria-label="今日の図書館">
         <div class="section__header section__header--stack">
           <div>
@@ -66,12 +80,20 @@
         <div class="today-library-grid" id="todayLibrary"></div>
       </section>
 
-      <section class="section notice-section">
+      <section class="section notice-section" id="noticeSection">
         <div class="section__header">
           <h2>お知らせ</h2>
           <span id="noticeCount"></span>
         </div>
         <div class="notice-grid" id="notices"></div>
+      </section>
+
+      <section class="section events-entry" id="eventsSection" aria-label="勉強会・イベント">
+        <div class="section__header">
+          <h2>勉強会・イベント</h2>
+          <a class="source-link" href="./events.html">すべて見る</a>
+        </div>
+        <div id="eventsPreview"></div>
       </section>
 
       <section class="section push-section" id="pushSection" aria-label="更新通知" hidden>
@@ -115,6 +137,33 @@
       </section>
 
       <section class="section mock-exam" id="mockExam" aria-label="次回模試日程"></section>
+
+      <section class="section entrance-dates" id="entranceDates" aria-label="受験日程">
+        <div class="section__header section__header--stack">
+          <div>
+            <h2>受験日程</h2>
+            <p>2027年度入試の主な日程です。大学・学部ごとの詳細は募集要項で確認してください。</p>
+          </div>
+        </div>
+        <div class="entrance-date-grid">
+          <article class="entrance-date-card" data-date="2027-01-16">
+            <span>共通テスト</span>
+            <strong>2027年1月16日（土）・17日（日）</strong>
+          </article>
+          <article class="entrance-date-card" data-date="2027-02-25">
+            <span>二次試験 前期</span>
+            <strong>2027年2月25日（木）から</strong>
+          </article>
+          <article class="entrance-date-card" data-date="2027-03-08">
+            <span>二次試験 中期</span>
+            <strong>2027年3月8日（月）から</strong>
+          </article>
+          <article class="entrance-date-card" data-date="2027-03-12">
+            <span>二次試験 後期</span>
+            <strong>2027年3月12日（金）から</strong>
+          </article>
+        </div>
+      </section>
 
       <section class="section faq-entry" aria-label="よくある質問">
         <div class="section__header section__header--stack">
@@ -160,33 +209,6 @@
         </div>
       </section>
 
-      <section class="section entrance-dates" aria-label="受験日程">
-        <div class="section__header section__header--stack">
-          <div>
-            <h2>受験日程</h2>
-            <p>2027年度入試の主な日程です。大学・学部ごとの詳細は募集要項で確認してください。</p>
-          </div>
-        </div>
-        <div class="entrance-date-grid">
-          <article class="entrance-date-card">
-            <span>共通テスト</span>
-            <strong>2027年1月16日（土）・17日（日）</strong>
-          </article>
-          <article class="entrance-date-card">
-            <span>二次試験 前期</span>
-            <strong>2027年2月25日（木）から</strong>
-          </article>
-          <article class="entrance-date-card">
-            <span>二次試験 中期</span>
-            <strong>2027年3月8日（月）から</strong>
-          </article>
-          <article class="entrance-date-card">
-            <span>二次試験 後期</span>
-            <strong>2027年3月12日（金）から</strong>
-          </article>
-        </div>
-      </section>
-
       <section class="section official-links" id="officialLinksSection" aria-label="公式リンク">
         <div class="section__header">
           <h2>公式リンク</h2>
@@ -203,12 +225,15 @@
       </footer>
     </main>
 
-    <script src="./content.js?v=20260923-7"></script>
-    <script src="./exam-schedule.js?v=20260923-7"></script>
-    <script src="./library-hours.js?v=20260923-7"></script>
-    <script src="./coop-hours.js?v=20260923-7"></script>
-    <script src="./changelog.js?v=20260923-7"></script>
-    <script src="./updates.js?v=20260923-7"></script>
-    <script src="./script.js?v=20260923-7"></script>
+    <script src="./content.js?v=20260923-8"></script>
+    <script src="./exam-schedule.js?v=20260923-8"></script>
+    <script src="./library-hours.js?v=20260923-8"></script>
+    <script src="./coop-hours.js?v=20260923-8"></script>
+    <script src="./circle-events.js?v=20260923-8"></script>
+    <script src="./calendar-export.js?v=20260923-8"></script>
+    <script src="./events.js?v=20260923-8"></script>
+    <script src="./changelog.js?v=20260923-8"></script>
+    <script src="./updates.js?v=20260923-8"></script>
+    <script src="./script.js?v=20260923-8"></script>
   </body>
 </html>

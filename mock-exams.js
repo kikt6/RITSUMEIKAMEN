@@ -176,8 +176,59 @@
     root.append(card);
 
     if (!starredUpcoming[0]) {
-      root.append(el("p", "mx-next__hint", "受ける模試に★を付けると、ここに次の受験日までのカウントダウンが出ます。"));
+      root.append(el("p", "mx-next__hint", "受ける模試に★を付けると、ここに次の受験日までのカウントダウンが出て、スマホのカレンダーにも追加できます。"));
     }
+  }
+
+  function toCalendarEvent(exam) {
+    return {
+      uid: `mock|${exam.id}`,
+      title: `【模試】${exam.name}`,
+      date: exam.date,
+      endDate: exam.endDate,
+      description: [
+        [exam.provider, exam.category, exam.fee ? exam.fee.replace(/\s+/g, "") : ""].filter(Boolean).join(" / "),
+        "申込期間・会場は各予備校の公式サイトで確認してください。",
+        "立命館仮面浪人サークル 模試一覧:",
+      ].join("\n"),
+      url: new URL("./mock-exams.html#star=1", location.href).href,
+      alarmMinutesBefore: 240, // 終日予定の0時から4時間前 = 前日20時
+    };
+  }
+
+  function renderCalendar(base) {
+    const root = byId("mxCal");
+    if (!root || !window.calendarExport) return;
+    const targets = exams
+      .filter((e) => state.stars.has(e.id) && !isPast(e, base))
+      .sort((a, b) => parseLocalDate(a.date) - parseLocalDate(b.date));
+    root.hidden = targets.length === 0;
+    if (targets.length === 0) return;
+
+    byId("mxCalLead").textContent = `★を付けたこれからの模試 ${targets.length}件を、スマホやPCのカレンダーにまとめて入れられます。`;
+    byId("mxCalDownload").textContent = `${targets.length}件をカレンダーに追加`;
+
+    const google = byId("mxCalGoogle");
+    google.innerHTML = "";
+    targets.forEach((exam) => {
+      const item = el("li");
+      const link = el("a", "", `${dateLabel(exam)} ${exam.name}`);
+      link.href = window.calendarExport.googleUrl(toCalendarEvent(exam));
+      link.target = "_blank";
+      link.rel = "noopener noreferrer";
+      item.append(link);
+      google.append(item);
+    });
+  }
+
+  function downloadCalendar() {
+    const base = today();
+    const targets = exams
+      .filter((e) => state.stars.has(e.id) && !isPast(e, base))
+      .sort((a, b) => parseLocalDate(a.date) - parseLocalDate(b.date));
+    if (targets.length === 0) return;
+    const ics = window.calendarExport.toIcs(targets.map(toCalendarEvent), "受ける模試（立命館仮面浪人サークル）");
+    window.calendarExport.download("mock-exams.ics", ics);
   }
 
   function renderList(base) {
@@ -301,6 +352,7 @@
     const base = today();
     if (syncHash) writeHash();
     renderNext(base);
+    renderCalendar(base);
     renderList(base);
   }
 
@@ -337,6 +389,8 @@
     renderChips("mxCategory", CATEGORIES, "category");
     update();
   });
+
+  byId("mxCalDownload")?.addEventListener("click", downloadCalendar);
 
   renderChips("mxProvider", PROVIDERS, "provider");
   renderChips("mxCategory", CATEGORIES, "category");
